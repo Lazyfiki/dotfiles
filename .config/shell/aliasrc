@@ -1,0 +1,15 @@
+alias ytbdl="youtube-dl -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c"
+alias ytadl="youtube-dl -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c"
+alias ytdl="youtube-dl -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c"
+alias ytpdl="youtube-dl -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c"
+alias hst="history 1 -1 | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c"
+alias catgirl="catgirl -h irc.bugswriter.com -c ~/.local/share/catgirl/pounceprivkey.pem"
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias vim="nvim"
+
+alias 1234567890="setxkbmap real-mc-gamer;xmodmap ~/.config/xmodmap/Xmodmap"
+alias 12wvc5rgfe="setxkbmap us;xmodmap ~/.config/xmodmap/Xmodmap"
+alias my_ip="ip address | grep -o \"inet 192.*/\" | awk '{ print \$2 }' | tr / ' ' | xargs"
+
+alias python="python3"
+alias yolo="git push origin master --force --no-verify"
