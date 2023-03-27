@@ -2,6 +2,6 @@
     name = Ahmed Hamzaoui
     email = fikiuhc@gmail.com
 [advice]
-    statusHints = false
+    statusHints = true
 [init]
     defaultBranch = master
