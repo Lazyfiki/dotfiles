@@ -1,0 +1,7 @@
+[user]
+    name = Ahmed Hamzaoui
+    email = fikiuhc@gmail.com
+[advice]
+    statusHints = false
+[init]
+    defaultBranch = master
