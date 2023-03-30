@@ -1,8 +1,8 @@
-require("fiki.settings")
-require("fiki.remap")
+require("lazyfiki.settings")
+require("lazyfiki.remap")
 
 local augroup = vim.api.nvim_create_augroup
-local FikiGroup = augroup('Fiki', {})
+local LazyfikiGroup = augroup('Lazyfiki', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
@@ -23,7 +23,7 @@ autocmd('TextYankPost', {
 })
 
 autocmd({"BufWritePre"}, {
-    group = FikiGroup,
+    group = LazyfikiGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })

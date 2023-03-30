@@ -1,1 +1,1 @@
-require("fiki")
+require("lazyfiki")
