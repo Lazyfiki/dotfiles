@@ -1,10 +1,10 @@
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
-local Fiki_Fugitive = vim.api.nvim_create_augroup("Fiki_Fugitive", {})
+local Lazyfiki_Fugitive = vim.api.nvim_create_augroup("Lazyfiki_Fugitive", {})
 
 local autocmd = vim.api.nvim_create_autocmd
 autocmd("BufWinEnter", {
-    group = Fiki_Fugitive,
+    group = Lazyfiki_Fugitive,
     pattern = "*",
     callback = function()
         if vim.bo.ft ~= "fugitive" then

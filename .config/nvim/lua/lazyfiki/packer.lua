@@ -5,13 +5,13 @@ vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+    use('wbthomason/packer.nvim')
 
-    use {
+    use({
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
-    }
+    })
 
 
     -- Themes
@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
     use("tpope/vim-fugitive")
     use("nvim-treesitter/nvim-treesitter-context");
 
-    use {
+    use({
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
         requires = {
@@ -65,10 +65,8 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
             {'rafamadriz/friendly-snippets'},
         }
-    }
+    })
 
-    use("folke/zen-mode.nvim")
     use('manzeloth/live-server')
     use('theprimeagen/vim-be-good')
-    --use("github/copilot.vim")
 end)
