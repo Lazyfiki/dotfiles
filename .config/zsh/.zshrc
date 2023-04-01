@@ -5,14 +5,14 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 
-function move() {
+function move(){
     cd "$(find ~/ -type d | fzf --layout reverse)"
 }
 
 zle -N move move
 # blindkey ^; move
 
-function open() {
+function open(){
     xdg-open "$(find ~/ -type f | fzf --layout reverse)"
 }
 
@@ -34,5 +34,3 @@ function stopwatch(){
         sleep 0.1
     done
 }
-
-export FLASK_DEBUG=1
