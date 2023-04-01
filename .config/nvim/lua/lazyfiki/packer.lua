@@ -21,7 +21,6 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     })
-    use({'AlphaTechnolog/pywal.nvim', as = 'pywal'})
 
     use({
         "folke/trouble.nvim",
