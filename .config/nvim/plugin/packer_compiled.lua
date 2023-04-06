@@ -169,11 +169,6 @@ _G.packer_plugins = {
     path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  pywal = {
-    loaded = true,
-    path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/pywal",
-    url = "https://github.com/dylanaraps/wal.vim"
-  },
   ["refactoring.nvim"] = {
     loaded = true,
     path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
