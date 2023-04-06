@@ -6,10 +6,10 @@ Print
 super + Print
 	maim | tee ~/pix/ss/$(date +%s).jpg | xclip -sel c -t image/jpg
 
-super + alt + {Up,Down,0}
+XF86Audio{RaiseVolume,LowerVolume,Mute}
 	amixer set Master {5%+,5%-,toggle}; kill -34 $(cat ~/.cache/pidofbar)
 
-super + alt + {Right,Left}
+XF86MonBrightness{Up,Down}
 	brightnessctl s {+2%,2%-}
 
 super + Escape
