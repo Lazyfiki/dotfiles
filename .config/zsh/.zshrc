@@ -19,6 +19,13 @@ function open(){
 zle -N open open
 # blindkey ^o; open
 
+function share(){
+    curl -F "file=@$(find $(pwd) -type f | fzf --layout reverse)" 0x0.st | xclip -sel c
+}
+
+zle -N share share
+# blindkey ^s; open
+
 function countdown(){
     date1=$((`date +%s` + $1));
     while [ "$date1" -ge `date +%s` ]; do
