@@ -1,0 +1,35 @@
+[global]
+    width = 300
+    padding = 10
+    horizontal_padding = 12
+    offset = 10x25
+    corner_radius = 5
+    frame_color = "{color4}"
+    frame_width = 4
+    transparency = 5
+    font = "Liberation Mono 12"
+    gap_size = 10
+    format = "<b>%s</b>: %b"
+    markup = full
+    icon_path = "/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/apps"
+    icon_theme = "Papirus"
+
+[urgency_low]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[urgency_normal]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[urgency_critical]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[mpd]
+	appname = "mpd"
+	alignment = center
+	format = "<b>%s</b>\n%b"
+	icon_position = top
+	min_icon_size = 210
+	max_icon_size = 210
