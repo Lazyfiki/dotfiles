@@ -1,0 +1,1 @@
+/home/ahmed/.config/x11/xinitrc
