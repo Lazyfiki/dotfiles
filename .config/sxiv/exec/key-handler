@@ -7,6 +7,7 @@ do
     "d") rm "$file" ;;
     "s") curl -F "file=@$file" 0x0.st | xclip -sel c ;;
     "g") setsid -f gimp "$file" ;;
+    "p") scp $file phone:~/storage/pictures/Screenshots ;;
   esac
 done
 
