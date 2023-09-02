@@ -191,16 +191,6 @@ _G.packer_plugins = {
     path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-be-good"] = {
-    loaded = true,
-    path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/vim-be-good",
-    url = "https://github.com/theprimeagen/vim-be-good"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/ahmed/.local/share/nvim/site/pack/packer/start/vim-fugitive",

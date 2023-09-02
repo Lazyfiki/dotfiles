@@ -24,6 +24,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
+
 vim.keymap.set("n", "<leader>K", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<leader>J", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
@@ -31,3 +32,20 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- window split remaps
+vim.keymap.set("n", "ss", ":split<CR><C-w>w")
+vim.keymap.set("n", "sv", ":vsplit<CR><C-w>w")
+
+-- window navigation
+vim.keymap.set("n", "s<space>", "<C-w>w")
+vim.keymap.set("n", "sh", "<C-w>h")
+vim.keymap.set("n", "sj", "<C-w>j")
+vim.keymap.set("n", "sk","<C-w>k")
+vim.keymap.set("n", "sl", "<C-w>l")
+
+-- window resizing
+vim.keymap.set("n", "<C-w><left>", "<C-w><")
+vim.keymap.set("n", "<C-w><right>", "<C-w>>")
+vim.keymap.set("n", "<C-w><up>", "<C-w>+")
+vim.keymap.set("n", "<C-w><down>", "<C-w>-")
