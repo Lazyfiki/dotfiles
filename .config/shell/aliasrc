@@ -1,20 +1,27 @@
 # yt-dl
-alias ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c"
-alias ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c"
-alias ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c"
-alias ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c"
+alias  \
+    ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c" \
 
 # misc
-alias hst="history 1 -1 | cut -c 8- | sort | uniq | fzf --layout reverse | tr -d '\n' | xclip -sel c"
-alias my_ip="ip addr | grep -o 'inet 192.*/' | awk '{ print \$2 }' | tr -d '/'"
-alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias python="python3"
-alias ytfzf="ytfzf -t"
-alias vim="nvim"
-alias lf="lfub"
+alias  \
+    hst="history 1 -1 | cut -c 8- | sort | uniq | fzf --layout reverse | tr -d '\n' | xclip -sel c" \
+    my_ip="ip addr | grep -o 'inet 192.*/' | awk '{ print \$2 }' | tr -d '/'" \
+    dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
 
-# games
-alias rainworld="killall xcompmgr; protontricks-launch --appid 1229490 ~/.local/games/rainworld/RainWorld.exe; setsid xcompmgr &"
-alias undertale="killall xcompmgr; protontricks-launch --appid 1229490 ~/.local/games/undertale/Undertale.exe; setsid xcompmgr &"
-alias omori="killall xcompmgr; wine ~/.local/games/omori/Launch_OMORI.bat; setsid xcompmgr &"
-alias osu-wine="killall xcompmgr; gamemoderun osu-wine; setsid xcompmgr &"
+alias \
+    python="python3" \
+    ytfzf="ytfzf -t" \
+    sxiv="nsxiv" \
+    vim="nvim" \
+    lf="lfub" \
+
+alias \
+	ls="ls --color=auto" \
+	grep="grep --color=auto" \
+	egrep="egrep --color=auto" \
+	fgrep="fgrep --color=auto" \
+	diff="diff --color=auto" \
+	ip="ip -color=auto" \
