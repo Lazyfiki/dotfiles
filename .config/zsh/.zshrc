@@ -7,7 +7,7 @@ local return_code="%(?..%{$fg[red]%}%?%{$reset_color%})"
 
 setopt prompt_subst
 PROMPT='[%{$fg[magenta]%}%n@%{$fg[red]%}%M %{$fg[blue]%}%~%{$reset_color%}]$%b '
-RPROMPT='${return_code}${vcs_info_msg_0_}'
+RPROMPT='${return_code} ${vcs_info_msg_0_}'
 
 stty stop undef
 setopt interactive_comments
