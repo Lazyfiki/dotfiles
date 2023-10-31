@@ -10,4 +10,3 @@ do
     "p") scp $file phone:~/storage/pictures/Screenshots ;;
   esac
 done
-
