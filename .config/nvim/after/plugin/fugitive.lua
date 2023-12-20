@@ -1,5 +1,9 @@
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
+vim.cmd('highlight GitSignsAdd guibg=NONE')
+vim.cmd('highlight GitSignsChange guibg=NONE')
+vim.cmd('highlight GitSignsDelete guibg=NONE')
+
 local Lazyfiki_Fugitive = vim.api.nvim_create_augroup("Lazyfiki_Fugitive", {})
 
 local autocmd = vim.api.nvim_create_autocmd

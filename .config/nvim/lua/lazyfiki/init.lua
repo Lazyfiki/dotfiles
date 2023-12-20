@@ -1,5 +1,6 @@
 require("lazyfiki.settings")
 require("lazyfiki.remap")
+require("lazyfiki.lazy")
 
 local augroup = vim.api.nvim_create_augroup
 local LazyfikiGroup = augroup('Lazyfiki', {})
