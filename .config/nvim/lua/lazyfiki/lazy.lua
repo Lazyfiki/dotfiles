@@ -35,7 +35,8 @@ require("lazy").setup({
     { "theprimeagen/harpoon" },
     { "mbbill/undotree" },
     { "tpope/vim-fugitive" },
-    {'lewis6991/gitsigns.nvim',
+    {
+        "lewis6991/gitsigns.nvim",
         opts = {
             signs = {
                 add = { text = '+' },
@@ -46,18 +47,28 @@ require("lazy").setup({
             },
         },
     },
-    { "folke/trouble.nvim", opts = {
-        icons = false,
-        signs = {
-            error = "E",
-            warning = "W",
-            hint = "H",
-            information = "I",
-            other = "O",
-        },
-        fold_open = "v",
-        fold_closed = ">",
-    }},
+
+    {
+        "folke/trouble.nvim",
+        opts = {
+            icons = false,
+            signs = {
+                error = "E",
+                warning = "W",
+                hint = "H",
+                information = "I",
+                other = "O",
+            },
+            fold_open = "v",
+            fold_closed = ">",
+        }
+    },
+
+    {
+        "m4xshen/hardtime.nvim",
+        dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+        opts = {},
+    },
 
     { "ThePrimeagen/vim-be-good", cmd = "VimBeGood"},
     { "norcalli/nvim-colorizer.lua" },
