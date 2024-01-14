@@ -5,8 +5,8 @@
     path = .local/src/dwm
     url = git@github.com:Lazyfiki/dwm.git
 [submodule "st"]
-    path = .local/src/dwm
+    path = .local/src/st
     url = git@github.com:Lazyfiki/st.git
 [submodule "dmenu"]
-    path = .local/src/dwm
+    path = .local/src/dmenu
     url = git@github.com:Lazyfiki/dmenu.git
