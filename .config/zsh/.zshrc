@@ -1,31 +1,14 @@
-autoload -U colors && colors
-autoload -Uz vcs_info
-precmd() { vcs_info }
+export ZSH="$ZDOTDIR/ohmyzsh"
 
-zstyle ':vcs_info:git:*' formats "%{$fg[blue]%}%b%{$reset_color%}%m%u%c%{$reset_color%}"
-local return_code="%(?..%{$fg[red]%}%?%{$reset_color%})"
+ZSH_THEME="robbyrussell"
 
-setopt prompt_subst
-PROMPT='[%{$fg[magenta]%}%n@%{$fg[red]%}%M %{$fg[blue]%}%~%{$reset_color%}]$%b '
-RPROMPT='${return_code} ${vcs_info_msg_0_}'
+plugins=(git)
 
-stty stop undef
-setopt interactive_comments
-
-autoload -U compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' list-colors 'ex=32:di=34:fi=0:ln=36:pi=5:so=5:bd=5:cd=5:su=0:sg=0:tw=0:ow=0:'
-
-zmodload zsh/complist
-compinit
-
-HISTSIZE=10000000
-SAVEHIST=10000000
-HISTFILE="$XDG_DATA_HOME/zsh_history"
-
-bindkey -e
-bindkey -s "^o" "^utmux_session\n"
-
+source $ZSH/oh-my-zsh.sh
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
+
+HISTFILE="$XDG_DATA_HOME/zsh_history"
+
+bindkey -s "^o" "^utmux_session\n"
+bindkey -s "^k" "^utmux_session .\n"
