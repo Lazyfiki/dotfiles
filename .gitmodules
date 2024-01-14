@@ -1,3 +1,6 @@
 [submodule "personal"]
     path = personal
     url = git@github.com:Lazyfiki/personal.git
+[submodule "dwm"]
+    path = .local/src/dwm
+    url = git@github.com:Lazyfiki/dwm.git
