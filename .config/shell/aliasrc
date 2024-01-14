@@ -19,16 +19,7 @@ alias \
     lf="lfub" \
 
 alias \
-	ls="ls -F --color=auto" \
-	grep="grep --color=auto" \
-	egrep="egrep --color=auto" \
-	fgrep="fgrep --color=auto" \
-	diff="diff --color=auto" \
-	ip="ip -color=auto" \
+    du="du -h" \
+    df="df -h" \
 
-alias \
-	la="ls -lah" \
-    ll="ls -lh" \
-	ta="tmux a" \
-	du="du -h" \
-	df="df -h" \
+alias btw="neofetch"
