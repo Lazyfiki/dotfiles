@@ -4,3 +4,9 @@
 [submodule "dwm"]
     path = .local/src/dwm
     url = git@github.com:Lazyfiki/dwm.git
+[submodule "st"]
+    path = .local/src/dwm
+    url = git@github.com:Lazyfiki/st.git
+[submodule "dmenu"]
+    path = .local/src/dwm
+    url = git@github.com:Lazyfiki/dmenu.git
