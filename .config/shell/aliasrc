@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 alias \
     ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
     ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
