@@ -1,0 +1,29 @@
+alias \
+    ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c" \
+
+alias \
+    hst="history 1 -1 | cut -c 8- | sort | uniq | fzf --layout reverse | tr -d '\n' | xclip -sel c" \
+    my_ip="ip addr | grep -o 'inet 192.*/' | awk '{ print \$2 }' | tr -d '/'" \
+    dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
+
+alias \
+    fzf="fzf --layout reverse" \
+    s="tmux-sessionizer" \
+    air="~/go/bin/air" \
+    python="python3" \
+    sqlite="sqlite3" \
+    ytfzf="ytfzf -t" \
+    sxiv="nsxiv" \
+    vim="nvim" \
+    lf="lfub" \
+
+alias \
+    ip="ip -color=auto" \
+    free="free -h" \
+    du="du -h" \
+    df="df -h" \
+
+alias btw="neofetch"
