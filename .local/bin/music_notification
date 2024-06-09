@@ -10,4 +10,4 @@ path="$music_dir/$file"
 ffmpeg -y -i "$path" -an -vcodec copy /tmp/cover.jpg >/dev/null 2>&1
 
 # Display the album art using feh
-dunstify -I /tmp/cover.jpg -r 0 "$title" "$artist"
+dunstify -I /tmp/cover.jpg -a "mpd" "$title" "$artist"

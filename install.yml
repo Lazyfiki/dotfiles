@@ -1,0 +1,27 @@
+---
+- name: Create a symbolic link
+  hosts: localhost
+  tasks:
+    - name: Create symlink from source to destination
+      ansible.builtin.file:
+        src: ~/.config/shell/profile
+        dest: ~/.zprofile
+        state: link
+
+    - name: Create symlink from source to destination
+      ansible.builtin.file:
+        src: ~/.config/x11/xinitrc
+        dest: ~/.xinitrc
+        state: link
+
+    - name: Create User Directories
+      ansible.builtin.file:
+        path: "{{ ansible_env.HOME }}/{{ item }}"
+        state: directory
+      loop:
+        - dox
+        - dl
+        - music
+        - pix/ss
+        - pub
+        - vids

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-wall_dir=~/pix/wall
+wall_dir=~/pix/wall/
 
 if [ -z "$1" ]; then
   wall="$(find "$wall_dir" -type f -name "*.jpg" -o -name "*.png" | shuf -n1)"
@@ -8,7 +8,7 @@ else
   wall="$1"
 fi
 
-convert "$wall" ~/.local/share/bg.jpg
+magick "$wall" ~/.local/share/bg.jpg
 xwallpaper --zoom ~/.local/share/bg.jpg
 wal -c
 wal -i ~/.local/share/bg.jpg
