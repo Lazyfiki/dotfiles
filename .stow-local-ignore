@@ -22,3 +22,5 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
+install.yml
+playbooks
