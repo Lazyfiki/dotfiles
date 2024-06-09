@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$(realpath $1)
 else
-    selected=$(find ~/ ~/work ~/personal -mindepth 1 -maxdepth 1 -type d | fzf --layout reverse)
+    selected=$(find ~/ ~/work/ ~/personal/ -mindepth 1 -maxdepth 1 -type d | fzf --layout reverse)
 fi
 
 if [[ -z $selected ]]; then
