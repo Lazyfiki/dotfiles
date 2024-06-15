@@ -1,0 +1,33 @@
+---
+- name: Install Zsh with dependencies
+  vars:
+    - zsh_dependencies: []
+  pacman:
+    name: "{{ ['zsh'] + zsh_dependencies }}"
+    state: present
+    update_cache: yes
+  become: true
+
+- name: Make Zsh default shell
+  user:
+    name: "{{ user }}"
+    shell: /usr/bin/zsh
+  become: true
+
+- name: Download OhMyZsh
+  get_url:
+    url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+    dest: /tmp/install_ohmyzsh.sh
+
+- name: Install OhMyZsh
+  command: sh /tmp/install_ohmyzsh.sh --unattended
+  register: ohmyzsh_result
+  failed_when: "'FAILED' in ohmyzsh_result.stderr"
+
+- name: Create .config/zsh directory
+  ansible.builtin.file:
+    path: ~/.config/zsh
+    state: directory
+
+- name: Move .oh-my-zsh to .config/zsh
+  command: mv ~/.oh-my-zsh ~/.config/zsh/ohmyzsh

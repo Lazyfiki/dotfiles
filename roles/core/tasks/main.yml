@@ -1,0 +1,13 @@
+---
+- name: the good shit
+  become: true
+  pacman: name={{ item }} state=latest
+  with_items:
+    - curl
+    - git
+    - htop
+    - jq
+    - stow
+    - tmux
+    - tree
+    - wget

@@ -1,0 +1,25 @@
+---
+- name: the linux experience baby
+  become: true
+  pacman: name={{ item }} state=latest
+  with_items:
+    - dunst
+    - fzf
+    - gimp
+    - lf
+    - maim
+    - mpd
+    - mpv
+    - nautilus
+    - ncmpcpp
+    - neovim
+    - nsxiv
+    - python-pywal
+    - python-pywalfox
+    - ripgrep
+    - slock
+    - sxhkd
+    - ueberzug
+    - xclip
+    - xdotool
+    - xwallpaper
