@@ -14,6 +14,7 @@
     - ncmpcpp
     - neovim
     - nsxiv
+    - pamixer
     - python-pywal
     - ripgrep
     - slock
@@ -22,6 +23,7 @@
     - xclip
     - xcompmgr
     - xdotool
-    - xrandr
+    - xorg-xrandr
+    - xsetroot
     - xwallpaper
     - zsh-syntax-highlighting
