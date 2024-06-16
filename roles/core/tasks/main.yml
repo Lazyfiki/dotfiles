@@ -7,7 +7,7 @@
     - git
     - htop
     - jq
-    - node
+    - nodejs
     - npm
     - python
     - python-pip
