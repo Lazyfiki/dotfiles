@@ -24,6 +24,6 @@
     - xcompmgr
     - xdotool
     - xorg-xrandr
-    - xsetroot
+    - xorg-xsetroot
     - xwallpaper
     - zsh-syntax-highlighting
