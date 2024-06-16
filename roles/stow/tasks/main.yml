@@ -2,14 +2,14 @@
 - name: Stow dotfiles
   shell: stow -d ~/.dotfiles -t ~ .
 
-- name: symlink profile
-  ansible.builtin.file:
+- name: Symlink profile
+  file:
     src: ~/.config/shell/profile
     dest: ~/.zprofile
     state: link
 
-- name: symlink xinitrc
-  ansible.builtin.file:
+- name: Symlink xinitrc
+  file:
     src: ~/.config/x11/xinitrc
     dest: ~/.xinitrc
     state: link
