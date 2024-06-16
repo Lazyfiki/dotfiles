@@ -1,5 +1,6 @@
 ---
 - name: Ensure ssh is installed
+  become: true
   pacman:
     name: openssh
     state: present
