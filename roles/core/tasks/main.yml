@@ -1,5 +1,5 @@
 ---
-- name: the good shit
+- name: The good shit
   become: true
   pacman: name={{ item }} state=latest
   with_items:
@@ -7,9 +7,16 @@
     - git
     - htop
     - jq
+    - node
+    - npm
     - python
     - python-pip
+    - python-pipx
+    - rustup
     - stow
     - tmux
     - tree
     - wget
+
+- name: Setup rustup
+  command: rustup default stable
