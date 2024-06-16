@@ -1,0 +1,8 @@
+---
+- name: install fonts
+  become: true
+  pacman: name={{ item }} state=latest
+  with_items:
+    - ttf-font-awesome
+    - ttf-jetbrains-mono
+    - ttf-joypixels
