@@ -1,0 +1,4 @@
+---
+- include_tasks: dwm.yml
+- include_tasks: dmenu.yml
+- include_tasks: st.yml

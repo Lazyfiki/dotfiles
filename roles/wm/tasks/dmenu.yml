@@ -1,0 +1,11 @@
+---
+- name: Get dmenu
+  git:
+    repo: https://github.com/lazyfiki/dmenu.git
+    dest: ~/.local/src/dmenu
+
+- name: install dmenu
+  become: true
+  command: make install
+  args:
+    chdir: /home/{{ user }}/.local/src/dmenu
