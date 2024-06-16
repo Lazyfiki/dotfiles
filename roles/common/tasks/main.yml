@@ -30,7 +30,7 @@
 
 - name: Create user directories
   file:
-    path: ~/{{ item }}"
+    path: "~/{{ item }}"
     state: directory
   loop:
     - dl
