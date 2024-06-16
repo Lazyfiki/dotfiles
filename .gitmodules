@@ -2,7 +2,7 @@
     path = personal
     url = git@github.com:Lazyfiki/personal.git
 
-[submodule "pix"]
+[submodule "wall"]
     path = pix/wall
     url = git@github.com:Lazyfiki/wall.git
 
