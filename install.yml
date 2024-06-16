@@ -5,5 +5,10 @@
   vars:
     user: "ahmed"
   roles:
-    - core
     - common
+    - core
+    - fonts
+    - ssh
+    - stow
+    - wm
+    - zsh
