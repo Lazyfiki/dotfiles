@@ -1,4 +1,8 @@
 ---
+- name: update cache
+  pacman:
+    update_cache: yes
+
 - name: The good shit
   become: true
   pacman: name={{ item }} state=latest
