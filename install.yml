@@ -5,8 +5,8 @@
   vars:
     user: "ahmed"
   roles:
-    - common
     - core
+    - common
     - fonts
     - ssh
     - stow
