@@ -1,4 +1,9 @@
 ---
+- name: Get dwm
+  git:
+    repo: https://github.com/lazyfiki/dwm.git
+    dest: ~/.local/src/dwm
+
 - name: install dwm
   become: true
   command: make install

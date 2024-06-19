@@ -1,4 +1,9 @@
 ---
+- name: Get st
+  git:
+    repo: https://github.com/lazyfiki/st.git
+    dest: ~/.local/src/st
+
 - name: install st
   become: true
   command: make install
