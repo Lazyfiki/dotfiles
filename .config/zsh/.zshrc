@@ -10,4 +10,7 @@ source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 HISTFILE="$XDG_DATA_HOME/zsh_history"
 
+unsetopt hist_verify
+
 bindkey -s "^o" "^utmux-sessionizer\n"
+eval "$(direnv hook zsh)"
