@@ -46,6 +46,19 @@ autocmd("LspAttach", {
     end
 })
 
+autocmd("FileType", {
+    pattern = "netrw",
+    callback = function()
+        vim.opt_local.number = true
+        vim.opt_local.relativenumber = true
+    end,
+})
+
+local makeprg = os.getenv("MAKEPRG")
+if makeprg then
+    vim.opt.makeprg = makeprg
+end
+
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
