@@ -6,10 +6,10 @@
     mode: 0755
 
 - name: Deploy Xorg config
+  become: true
   copy:
     src: xorg.conf.d/
     dest: /etc/X11/xorg.conf.d/
     owner: root
     group: root
     mode: 0644
-    recurse: yes
