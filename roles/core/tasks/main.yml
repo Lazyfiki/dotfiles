@@ -11,6 +11,7 @@
     - curl
     - direnv
     - git
+    - go
     - htop
     - jq
     - nodejs
