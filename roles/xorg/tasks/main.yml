@@ -7,7 +7,7 @@
 
 - name: Deploy Xorg config
   copy:
-    src: files/
+    src: xorg.conf.d/
     dest: /etc/X11/xorg.conf.d/
     owner: root
     group: root
