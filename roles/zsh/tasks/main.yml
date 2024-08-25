@@ -42,3 +42,4 @@
     - .bash_history
     - .bash_logout
     - .bash_profile
+    - .Xauthority
