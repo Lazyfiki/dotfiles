@@ -3,7 +3,9 @@
   become: true
   pacman: name={{ item }} state=latest
   with_items:
+    - chromium
     - dunst
+    - firefox
     - fzf
     - gimp
     - lf
