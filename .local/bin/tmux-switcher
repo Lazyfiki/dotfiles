@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+tmux-sessionizer $(pwd)
+tmux kill-session > /dev/null
