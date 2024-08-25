@@ -32,6 +32,6 @@
 	appname = "mpd"
 	alignment = center
 	format = "<b>%s</b>\n%b"
-	icon_position = top
-	min_icon_size = 210
-	max_icon_size = 210
+	icon_position = left
+	min_icon_size = 150
+	max_icon_size = 150
