@@ -31,3 +31,14 @@
 
 - name: Move .oh-my-zsh to .config/zsh
   command: mv ~/.oh-my-zsh ~/.config/zsh/ohmyzsh
+
+- name: Remove default bash files
+  file:
+    path: "~/{{ item }}"
+    state: absent
+  loop:
+    - .zshrc
+    - .bashrc
+    - .bash_history
+    - .bash_logout
+    - .bash_profile
