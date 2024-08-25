@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+dir=~/pix/ss
+icon=~/pix/omori_stickers/basil_cheese.png
+
+take_screenshot() {
+    local filename=$(date +%s)
+    local filepath="$dir/$filename.jpg"
+
+    if [[ $1 == "--select" ]]; then
+        maim --select "$filepath"
+    else
+        maim "$filepath"
+    fi
+
+    if [[ -s "$filepath" ]]; then
+        xclip -sel c -t image/jpg < "$filepath"
+        dunstify -I "$icon" "Say cheese..." "$(basename "$filepath")"
+    else
+        rm -f "$filepath"
+    fi
+}
+
+take_screenshot $1
