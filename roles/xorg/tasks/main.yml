@@ -1,0 +1,15 @@
+---
+- name: Ensure Xorg directory exists
+  file:
+    path: /etc/X11/xorg.conf.d/
+    state: directory
+    mode: 0755
+
+- name: Deploy Xorg config
+  copy:
+    src: files/
+    dest: /etc/X11/xorg.conf.d/
+    owner: root
+    group: root
+    mode: 0644
+    recurse: yes
