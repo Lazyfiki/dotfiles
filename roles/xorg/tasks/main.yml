@@ -8,8 +8,9 @@
 - name: Deploy Xorg config
   become: true
   copy:
-    src: xorg.conf.d/
+    src: "{{ item }}"
     dest: /etc/X11/xorg.conf.d/
     owner: root
     group: root
     mode: 0644
+  with_fileglob: "files/*"
