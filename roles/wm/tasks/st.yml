@@ -4,7 +4,7 @@
     repo: https://github.com/lazyfiki/st.git
     dest: ~/.local/src/st
 
-- name: install st
+- name: Install st
   become: true
   command: make install
   args:

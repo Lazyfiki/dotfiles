@@ -1,5 +1,5 @@
 ---
-- name: install fonts
+- name: Install fonts
   become: true
   pacman: name={{ item }} state=latest
   with_items:

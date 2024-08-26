@@ -1,5 +1,5 @@
 ---
-- name: the linux experience baby
+- name: The linux experience baby
   become: true
   pacman: name={{ item }} state=latest
   with_items:

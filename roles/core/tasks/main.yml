@@ -1,5 +1,5 @@
 ---
-- name: update cache
+- name: Update cache
   become: true
   pacman:
     update_cache: yes

@@ -1,0 +1,15 @@
+---
+- name: Ensure base-devel is installed
+  pacman:
+    name: base-devel
+    state: present
+
+- name: Clone paru
+  git:
+    repo: https://aur.archlinux.org/paru.git
+    dest: ~/.local/src/paru
+
+- name: Build paru
+  command: makepkg -si
+  args:
+    chdir: ~/.local/src/paru
