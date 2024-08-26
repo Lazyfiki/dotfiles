@@ -12,8 +12,6 @@ alias \
 
 alias \
     fzf="fzf --layout reverse" \
-    s="tmux-sessionizer" \
-    air="~/go/bin/air" \
     python="python3" \
     sqlite="sqlite3" \
     ytfzf="ytfzf -t" \
