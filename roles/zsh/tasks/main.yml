@@ -10,7 +10,7 @@
 
 - name: Make Zsh default shell
   user:
-    name: "{{ User }}"
+    name: "{{ user }}"
     shell: /usr/bin/zsh
   become: true
 
