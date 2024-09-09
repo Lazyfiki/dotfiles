@@ -13,6 +13,5 @@ HISTFILE="$XDG_DATA_HOME/zsh_history"
 unsetopt hist_verify
 
 bindkey -s "^o" "^utmux-sessionizer\n"
-bindkey -s "^f" "^utmux-switcher\n"
+bindkey -s "^k" "^utmux-switcher\n"
 eval "$(direnv hook zsh)"
-
