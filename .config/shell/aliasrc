@@ -26,3 +26,5 @@ alias \
     df="df -h" \
 
 alias btw="neofetch"
+alias notes='cd /home/ahmed/dox/notes/; \
+    nvim -o "$(rg --files -g '!archive/' ~/dox/notes | fzf)"'
