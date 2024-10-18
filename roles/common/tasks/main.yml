@@ -3,6 +3,8 @@
   become: true
   pacman: name={{ item }} state=latest
   with_items:
+    - bluez
+    - bluez-utils
     - chromium
     - dunst
     - firefox
