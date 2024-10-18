@@ -1,29 +1,49 @@
 ---
-- name: Update cache
-  become: true
-  pacman:
-    update_cache: yes
-
-- name: The good shit
+- name: The linux experience baby
   become: true
   pacman: name={{ item }} state=latest
   with_items:
-    - curl
-    - direnv
-    - git
-    - go
-    - htop
-    - jq
-    - nodejs
-    - npm
-    - python
-    - python-pip
-    - python-pipx
-    - rustup
-    - stow
-    - tmux
-    - tree
-    - wget
+    - bluez
+    - bluez-utils
+    - chromium
+    - dunst
+    - firefox
+    - fzf
+    - gimp
+    - lf
+    - maim
+    - mpd
+    - mpv
+    - nautilus
+    - ncmpcpp
+    - neovim
+    - nsxiv
+    - pamixer
+    - python-pywal
+    - ripgrep
+    - slock
+    - sxhkd
+    - ueberzug
+    - xclip
+    - xcompmgr
+    - xdotool
+    - xorg-xrandr
+    - xorg-xsetroot
+    - xwallpaper
+    - zsh-syntax-highlighting
 
-- name: Setup rustup
-  command: rustup default stable
+- name: Create user directories
+  file:
+    path: "~/{{ item }}"
+    state: directory
+  loop:
+    - dl
+    - dox
+    - music
+    - pix/ss
+    - pix/wall
+    - pub
+    - vids
+    - .local/bin
+    - .local/share
+    - .local/src
