@@ -24,6 +24,7 @@
     - slock
     - sxhkd
     - ueberzug
+    - ufw
     - xclip
     - xcompmgr
     - xdotool
