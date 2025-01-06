@@ -1,0 +1,7 @@
+[user]
+	name = Ahmed Hamzaoui
+	email = lazyfiki@gmail.com
+[init]
+	defaultBranch = master
+[advice]
+	statusHints = false

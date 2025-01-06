@@ -1,0 +1,17 @@
+Print
+    screenshot --select
+
+super + Print
+    screenshot
+
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	pamixer -{i,d,t} 2; kill -34 $(cat ~/.cache/pidofbar)
+
+XF86MonBrightness{Up,Down}
+	brightnessctl s {+2%,2%-}
+
+XF86Calculator
+    dmenu_calc
+
+super + Caps_Lock
+	system_action

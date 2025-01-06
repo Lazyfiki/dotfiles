@@ -1,0 +1,1227 @@
+info_begin
+format: 2
+mpd_version: 0.23.14
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumSort
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: OriginalDate
+tag: Composer
+tag: ComposerSort
+tag: Performer
+tag: Conductor
+tag: Work
+tag: Movement
+tag: MovementNumber
+tag: Ensemble
+tag: Location
+tag: Grouping
+tag: Disc
+tag: Label
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+tag: MUSICBRAINZ_RELEASETRACKID
+tag: MUSICBRAINZ_WORKID
+info_end
+song_begin: Ludacris - Act A Fool.mp3
+Time: 270.785000
+Artist: Ludacris
+AlbumArtist: Various Artists
+Title: Act A Fool
+Album: 2 Fast 2 Furious (Soundtrack)
+Track: 2
+Date: 2003-05-27
+Genre: Atl Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Dr. Dre, Eminem - Forgot About Dre.mp3
+Time: 222.328000
+Artist: Dr. Dre/Eminem
+AlbumArtist: Dr. Dre
+Title: Forgot About Dre
+Album: 2001
+Track: 10
+Date: 1999-11-16
+Genre: G Funk
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Masked Wolf - Astronaut In The Ocean.mp3
+Time: 132.816000
+Artist: Masked Wolf
+AlbumArtist: Masked Wolf
+Title: Astronaut In The Ocean
+Album: Astronaut In The Ocean
+Track: 1
+Date: 2021-01-06
+Genre: Australian Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Travis Scott - SICKO MODE.mp3
+Time: 312.864000
+Artist: Travis Scott
+AlbumArtist: Travis Scott
+Title: SICKO MODE
+Album: ASTROWORLD
+Track: 3
+Date: 2018-08-03
+Genre: Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Skillet - Hero.mp3
+Time: 186.840000
+Artist: Skillet
+AlbumArtist: Skillet
+Title: Hero
+Album: Awake
+Track: 1
+Date: 2009-08-21
+Genre: Alternative Metal
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Skillet - Monster.mp3
+Time: 178.050000
+Artist: Skillet
+AlbumArtist: Skillet
+Title: Monster
+Album: Awake
+Track: 2
+Date: 2009-08-21
+Genre: Alternative Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Germ - Han Solo.mp3
+Time: 110.863000
+Artist: Germ
+AlbumArtist: Germ
+Title: Han Solo
+Album: Badshit (Bootleg)
+Track: 10
+Date: 2017-04-01
+Genre: Dark Trap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Post Malone - rockstar (feat. 21 Savage).mp3
+Time: 218.200000
+Artist: Post Malone/21 Savage
+AlbumArtist: Post Malone
+Title: rockstar (feat. 21 Savage)
+Album: beerbongs & bentleys
+Track: 6
+Date: 2018-04-27
+Genre: Dfw Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Powerwolf - Army of the Night.mp3
+Time: 201.430000
+Artist: Powerwolf
+AlbumArtist: Powerwolf
+Title: Army of the Night
+Album: Blessed & Possessed
+Track: 3
+Date: 2015-07-17
+Genre: German Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Logic - Homicide (feat. Eminem).mp3
+Time: 245.424000
+Artist: Logic/Eminem
+AlbumArtist: Logic
+Title: Homicide (feat. Eminem)
+Album: Confessions of a Dangerous Mind
+Track: 2
+Date: 2019-05-10
+Genre: Conscious Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Eminem - Lose Yourself.mp3
+Time: 320.328000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Lose Yourself
+Album: Curtain Call: The Hits (Deluxe Edition)
+Track: 6
+Date: 2005-12-06
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: D12 - Purple Pills.mp3
+Time: 304.536000
+Artist: D12
+AlbumArtist: D12
+Title: Purple Pills
+Album: Devils Night
+Track: 10
+Date: 2001-01-01
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Blueface - Bleed It.mp3
+Time: 145.584000
+Artist: Blueface
+AlbumArtist: Blueface
+Title: Bleed It
+Album: Dirt Bag
+Track: 8
+Date: 2019-08-09
+Genre: Cali Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Mick Gordon - Bfg Division.mp3
+Time: 506.808000
+Artist: Mick Gordon
+AlbumArtist: Mick Gordon
+Title: Bfg Division
+Album: Doom (Original Game Soundtrack)
+Track: 11
+Date: 2016-09-28
+Genre: Electronic Djent
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Mick Gordon - Harbinger.mp3
+Time: 431.040000
+Artist: Mick Gordon
+AlbumArtist: Mick Gordon
+Title: Harbinger
+Album: Doom (Original Game Soundtrack)
+Track: 14
+Date: 2016-09-28
+Genre: Electronic Djent
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: bbno$, Rich Brian - edamame.mp3
+Time: 133.746000
+Artist: bbno$/Rich Brian
+AlbumArtist: bbno$
+Title: edamame
+Album: edamame
+Track: 1
+Date: 2021-07-24
+Genre: Canadian Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Eminem - Big Weenie.mp3
+Time: 266.976000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Big Weenie
+Album: Encore (Deluxe Version)
+Track: 11
+Date: 2004-11-12
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Ass Like That.mp3
+Time: 265.534000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Ass Like That
+Album: Encore (Deluxe Version)
+Track: 14
+Date: 2004-11-12
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Evanescence - Bring Me To Life.mp3
+Time: 235.937000
+Artist: Evanescence
+AlbumArtist: Evanescence
+Title: Bring Me To Life
+Album: Fallen
+Track: 2
+Date: 2003-03-04
+Genre: Alternative Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Friedrich Habetler - Funny Valentine.mp3
+Time: 379.924000
+Artist: Friedrich Habetler
+AlbumArtist: Friedrich Habetler
+Title: Funny Valentine
+Album: Funny Valentine
+Track: 1
+Date: 2020-11-13
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: T. Powell - Clear Eyes, Full Heart, Can't Lose.mp3
+Time: 176.520000
+Artist: T. Powell
+AlbumArtist: T. Powell
+Title: Clear Eyes, Full Heart, Can't Lose
+Album: Game Day Motivation
+Track: 3
+Date: 2016-01-01
+Genre: Hard Motivation
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Young Thug - Gang Up (with Young Thug, 2 Chainz & Wiz Khalifa feat. PnB Rock).mp3
+Time: 230.347000
+Artist: Young Thug/2 Chainz/Wiz Khalifa/PnB Rock
+AlbumArtist: Young Thug
+Title: Gang Up (with Young Thug, 2 Chainz & Wiz Khalifa feat. PnB Rock)
+Album: Gang Up (with Young Thug, 2 Chainz, Wiz Khalifa feat. PnB Rock)
+Track: 1
+Date: 2017-03-24
+Genre: Atl Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: PSY - Gangnam Style (강남스타일).mp3
+Time: 219.528000
+Artist: PSY
+AlbumArtist: PSY
+Title: Gangnam Style (강남스타일)
+Album: Gangnam Style (강남스타일)
+Track: 1
+Date: 2012-01-01
+Genre: K-Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Coolio, L.V. - Gangsta's Paradise.mp3
+Time: 240.720000
+Artist: Coolio/L.V.
+AlbumArtist: Coolio
+Title: Gangsta's Paradise
+Album: Gangsta's Paradise
+Track: 2
+Date: 1995-11-07
+Genre: G Funk
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: 50 Cent, Eminem - Patiently Waiting.mp3
+Time: 288.940000
+Artist: 50 Cent/Eminem
+AlbumArtist: 50 Cent
+Title: Patiently Waiting
+Album: Get Rich Or Die Tryin'
+Track: 3
+Date: 2003-02-06
+Genre: East Coast Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: 50 Cent - In Da Club.mp3
+Time: 193.512000
+Artist: 50 Cent
+AlbumArtist: 50 Cent
+Title: In Da Club
+Album: Get Rich Or Die Tryin'
+Track: 5
+Date: 2003-02-06
+Genre: East Coast Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Linkin Park - In the End.mp3
+Time: 216.999000
+Artist: Linkin Park
+AlbumArtist: Linkin Park
+Title: In the End
+Album: Hybrid Theory (Bonus Edition)
+Track: 8
+Date: 2000
+Genre: Alternative Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Kanye West - I Love It (& Lil Pump).mp3
+Time: 127.992000
+Artist: Kanye West/Lil Pump
+AlbumArtist: Kanye West
+Title: I Love It (& Lil Pump)
+Album: I Love It
+Track: 1
+Date: 2018-09-07
+Genre: Chicago Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Drake - Energy.mp3
+Time: 181.968000
+Artist: Drake
+AlbumArtist: Drake
+Title: Energy
+Album: If You're Reading This It's Too Late
+Track: 2
+Date: 2015-02-12
+Genre: Canadian Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Bo Burnham - Five Years.mp3
+Time: 228.720000
+Artist: Bo Burnham
+AlbumArtist: Bo Burnham
+Title: Five Years
+Album: INSIDE (DELUXE)
+Track: 6
+Date: 2022-06-03
+Genre: Comic
+Disc: 3
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Eminem - Lucky You (feat. Joyner Lucas).mp3
+Time: 244.741000
+Artist: Eminem/Joyner Lucas
+AlbumArtist: Eminem
+Title: Lucky You (feat. Joyner Lucas)
+Album: Kamikaze
+Track: 3
+Date: 2018-08-31
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Normal.mp3
+Time: 222.511000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Normal
+Album: Kamikaze
+Track: 5
+Date: 2018-08-31
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Venom - Music From The Motion Picture.mp3
+Time: 269.609000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Venom - Music From The Motion Picture
+Album: Kamikaze
+Track: 13
+Date: 2018-08-31
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Eminem - Killshot.mp3
+Time: 253.622000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Killshot
+Album: Killshot
+Track: 1
+Date: 2018-09-19
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: J. Cole - ATM.mp3
+Time: 216.768000
+Artist: J. Cole
+AlbumArtist: J. Cole
+Title: ATM
+Album: KOD
+Track: 5
+Date: 2018-04-20
+Genre: Conscious Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Danny Gonzalez - La Croix.mp3
+Time: 129.515000
+Artist: Danny Gonzalez
+AlbumArtist: Danny Gonzalez
+Title: La Croix
+Album: La Croix
+Track: 1
+Date: 2020-04-17
+Genre: Pov: Indie
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Gloryhammer - Hootsforce.mp3
+Time: 230.347000
+Artist: Gloryhammer
+AlbumArtist: Gloryhammer
+Title: Hootsforce
+Album: Legends from Beyond the Galactic Terrorvortex
+Track: 8
+Date: 2019-05-31
+Genre: British Power Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: David Guetta - Hey Mama (feat. Nicki Minaj, Bebe Rexha & Afrojack).mp3
+Time: 192.600000
+Artist: David Guetta/AFROJACK/Bebe Rexha/Nicki Minaj
+AlbumArtist: David Guetta
+Title: Hey Mama (feat. Nicki Minaj, Bebe Rexha & Afrojack)
+Album: Listen
+Track: 10
+Date: 2014-11-10
+Genre: Big Room
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Cheriimoya, Sierra Kidd - Living Life, In The Night.mp3
+Time: 122.544000
+Artist: Cheriimoya/Sierra Kidd
+AlbumArtist: Cheriimoya
+Title: Living Life, In The Night
+Album: Living Life, In The Night
+Track: 1
+Date: 2018-10-13
+Genre: Sad Lo-Fi
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Yelawolf, Eminem - Best Friend.mp3
+Time: 314.331000
+Artist: Yelawolf/Eminem
+AlbumArtist: Yelawolf
+Title: Best Friend
+Album: Love Story
+Track: 8
+Date: 2015-04-21
+Genre: Alabama Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Flo Rida - Low (feat. T-Pain).mp3
+Time: 231.432000
+Artist: Flo Rida/T-Pain
+AlbumArtist: Flo Rida
+Title: Low (feat. T-Pain)
+Album: Mail on Sunday
+Track: 5
+Date: 2008-03-17
+Genre: Dance Pop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Skrillex, Damian Marley - Make It Bun Dem.mp3
+Time: 213.744000
+Artist: Skrillex/Damian Marley
+AlbumArtist: Skrillex
+Title: Make It Bun Dem
+Album: Make It Bun Dem
+Track: 1
+Date: 2012-05-01
+Genre: Brostep
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Kid Cudi - Day 'N' Nite (Nightmare).mp3
+Time: 221.283000
+Artist: Kid Cudi
+AlbumArtist: Kid Cudi
+Title: Day 'N' Nite (Nightmare)
+Album: Man On The Moon: The End Of Day (Int'l Version)
+Track: 7
+Date: 2009-01-01
+Genre: Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Linkin Park - Numb.mp3
+Time: 187.585000
+Artist: Linkin Park
+AlbumArtist: Linkin Park
+Title: Numb
+Album: Meteora
+Track: 13
+Date: 2003-09-16
+Genre: Alternative Metal
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Shotgun Willy, Yung Craka - Mexico.mp3
+Time: 204.068000
+Artist: Shotgun Willy/Yung Craka
+AlbumArtist: Shotgun Willy
+Title: Mexico
+Album: Mexico
+Track: 1
+Date: 2021-04-30
+Genre: Meme Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Eminem - Godzilla (feat. Juice WRLD).mp3
+Time: 210.834000
+Artist: Eminem/Juice WRLD
+AlbumArtist: Eminem
+Title: Godzilla (feat. Juice WRLD)
+Album: Music To Be Murdered By
+Track: 7
+Date: 2020-01-17
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Lock It Up (feat. Anderson .Paak).mp3
+Time: 170.266000
+Artist: Eminem/Anderson .Paak
+AlbumArtist: Eminem
+Title: Lock It Up (feat. Anderson .Paak)
+Album: Music To Be Murdered By
+Track: 16
+Date: 2020-01-17
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Kanye West - POWER.mp3
+Time: 292.128000
+Artist: Kanye West
+AlbumArtist: Kanye West
+Title: POWER
+Album: My Beautiful Dark Twisted Fantasy
+Track: 3
+Date: 2010-11-22
+Genre: Chicago Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: liche - my eyes pt. 2 - lichmix.mp3
+Time: 97.044000
+Artist: liche
+AlbumArtist: liche
+Title: my eyes pt. 2 - lichmix
+Album: my eyes pt. 2 (lichmix)
+Track: 1
+Date: 2023-07-29
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Shakewell, Fat Nick - Pemex.mp3
+Time: 156.264000
+Artist: Shakewell/Fat Nick
+AlbumArtist: Shakewell
+Title: Pemex
+Album: Pemex
+Track: 1
+Date: 2019-01-21
+Genre: Dark Trap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Eminem - Not Afraid.mp3
+Time: 248.160000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Not Afraid
+Album: Recovery
+Track: 7
+Date: 2010-06-18
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Space Bound.mp3
+Time: 278.700000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Space Bound
+Album: Recovery
+Track: 10
+Date: 2010-06-18
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - 3 a.m..mp3
+Time: 319.896000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: 3 a.m.
+Album: Relapse
+Track: 2
+Date: 2009-05-15
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Eminem - My Mom.mp3
+Time: 319.896000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: My Mom
+Album: Relapse
+Track: 3
+Date: 2009-05-15
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Drake, Kanye West, Lil Wayne, Eminem - Forever.mp3
+Time: 357.746000
+Artist: Drake/Kanye West/Lil Wayne/Eminem
+AlbumArtist: Eminem
+Title: Forever
+Album: Relapse: Refill
+Track: 1
+Date: 2009-05-15
+Genre: Canadian Hip Hop
+Disc: 2
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Eminem - Music Box.mp3
+Time: 304.944000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Music Box
+Album: Relapse: Refill
+Track: 6
+Date: 2009-05-15
+Genre: Detroit Hip Hop
+Disc: 2
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Framed.mp3
+Time: 252.995000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Framed
+Album: Revival
+Track: 12
+Date: 2017-12-15
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Krewella - Say Goodbye.mp3
+Time: 233.168000
+Artist: Krewella
+AlbumArtist: Krewella
+Title: Say Goodbye
+Album: Say Goodbye
+Track: 1
+Date: 2014-11-24
+Genre: Edm
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Juicy J, Wiz Khalifa, Ty Dolla $ign - Shell Shocked (feat. Kill the Noise & Madsonik) - From 'Teenage Mutant Ninja Turtles'.mp3
+Time: 206.592000
+Artist: Juicy J/Wiz Khalifa/Ty Dolla $ign/Kill The Noise/Madsonik
+AlbumArtist: Juicy J, Wiz Khalifa & Ty Dolla $ign
+Title: Shell Shocked (feat. Kill the Noise & Madsonik) - From "Teenage Mutant Ninja Turtles"
+Album: Shell Shocked (feat. Kill the Noise & Madsonik) [From "Teenage Mutant Ninja Turtles"]
+Track: 1
+Date: 2014-07-22
+Genre: Crunk
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Pop Smoke - Got It On Me.mp3
+Time: 164.623000
+Artist: Pop Smoke
+AlbumArtist: Pop Smoke
+Title: Got It On Me
+Album: Shoot For The Stars Aim For The Moon
+Track: 17
+Date: 2020-07-03
+Genre: Brooklyn Drill
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Tech N9ne Collabos - Dysfunctional.mp3
+Time: 240.222000
+Artist: Tech N9ne Collabos
+AlbumArtist: Tech N9ne Collabos
+Title: Dysfunctional
+Album: Sickology 101
+Track: 13
+Date: 2009-05-19
+Genre: Country Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Cypress Hill, N.O.R.E. - (Rap) Superstar (feat. Eminem & Noreaga).mp3
+Time: 293.616000
+Artist: Cypress Hill/Eminem/N.O.R.E.
+AlbumArtist: Cypress Hill
+Title: (Rap) Superstar (feat. Eminem & Noreaga)
+Album: Skull & Bones
+Track: 3
+Date: 2000-04-25
+Genre: Chicano Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Slaughterhouse - Microphone.mp3
+Time: 284.734000
+Artist: Slaughterhouse
+AlbumArtist: Slaughterhouse
+Title: Microphone
+Album: Slaughterhouse (Bonus Track Version)
+Track: 3
+Date: 2009-08-11
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Soulja Boy - Crank That (Soulja Boy).mp3
+Time: 221.976000
+Artist: Soulja Boy
+AlbumArtist: Soulja Boy
+Title: Crank That (Soulja Boy)
+Album: souljaboytellem.com
+Track: 2
+Date: 2007-01-01
+Genre: Atl Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Lil Wayne - Sucker for Pain (with Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $ign feat. X Ambassadors).mp3
+Time: 244.218000
+Artist: Lil Wayne/Wiz Khalifa/Imagine Dragons/X Ambassadors/Logic/Ty Dolla $ign
+AlbumArtist: Various Artists
+Title: Sucker for Pain (with Wiz Khalifa, Imagine Dragons, Logic & Ty Dolla $ign feat. X Ambassadors)
+Album: Suicide Squad: The Album (Collector's Edition)
+Track: 2
+Date: 2016-08-04
+Genre: Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: G-Eazy - Him & I (with Halsey).mp3
+Time: 268.896000
+Artist: G-Eazy/Halsey
+AlbumArtist: G-Eazy
+Title: Him & I (with Halsey)
+Album: The Beautiful & Damned
+Track: 3
+Date: 2017-12-15
+Genre: Indie Pop Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Busta Rhymes Feat. Eminem - I'll Hurt You.mp3
+Time: 256.653000
+Artist: Busta Rhymes Feat. Eminem
+AlbumArtist: Busta Rhymes
+Title: I'll Hurt You
+Album: The Big Bang
+Track: 1
+Date: 2005
+Genre: Rap
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Dr. Dre, Snoop Dogg - Nuthin' But A 'G' Thang.mp3
+Time: 237.600000
+Artist: Dr. Dre/Snoop Dogg
+AlbumArtist: Dr. Dre
+Title: Nuthin' But A "G" Thang
+Album: The Chronic
+Track: 5
+Date: 1992-12-15
+Genre: G Funk
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920738
+song_end
+song_begin: Eminem - Tobey (feat. Big Sean and BabyTron).mp3
+Time: 284.928000
+Artist: Eminem/Big Sean/BabyTron
+AlbumArtist: Eminem
+Title: Tobey (feat. Big Sean and BabyTron)
+Album: The Death of Slim Shady (Coup De Grâce)
+Track: 17
+Date: 2024-07-12
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Cleanin' Out My Closet.mp3
+Time: 297.864000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Cleanin' Out My Closet
+Album: The Eminem Show
+Track: 4
+Date: 2002-05-26
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Soldier.mp3
+Time: 226.248000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Soldier
+Album: The Eminem Show
+Track: 7
+Date: 2002-05-26
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Without Me.mp3
+Time: 290.352000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Without Me
+Album: The Eminem Show
+Track: 10
+Date: 2002-05-26
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Eminem, Dina Rae - Superman.mp3
+Time: 350.380000
+Artist: Eminem/Dina Rae
+AlbumArtist: Eminem
+Title: Superman
+Album: The Eminem Show
+Track: 13
+Date: 2002-05-26
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem, Nate Dogg - Till I Collapse.mp3
+Time: 297.848000
+Artist: Eminem/Nate Dogg
+AlbumArtist: Eminem
+Title: Till I Collapse
+Album: The Eminem Show
+Track: 18
+Date: 2002-05-26
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Macklemore & Ryan Lewis, Macklemore, Ryan Lewis - Can't Hold Us (feat. Ray Dalton).mp3
+Time: 258.456000
+Artist: Macklemore & Ryan Lewis/Macklemore/Ryan Lewis/Ray Dalton
+AlbumArtist: Macklemore
+Title: Can't Hold Us (feat. Ray Dalton)
+Album: The Heist
+Track: 2
+Date: 2012-10-09
+Genre: Pop Rap
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Eminem, Dido - Stan.mp3
+Time: 404.136000
+Artist: Eminem/Dido
+AlbumArtist: Eminem
+Title: Stan
+Album: The Marshall Mathers LP
+Track: 3
+Date: 2000-05-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - The Real Slim Shady.mp3
+Time: 284.232000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: The Real Slim Shady
+Album: The Marshall Mathers LP
+Track: 8
+Date: 2000-05-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - I'm Back.mp3
+Time: 309.792000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: I'm Back
+Album: The Marshall Mathers LP
+Track: 10
+Date: 2000-05-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Rap God.mp3
+Time: 364.016000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Rap God
+Album: The Marshall Mathers LP2 (Deluxe)
+Track: 9
+Date: 2013-11-05
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Fort Minor - Remember the Name (feat. Styles of Beyond).mp3
+Time: 230.520000
+Artist: Fort Minor/Styles Of Beyond
+AlbumArtist: Fort Minor
+Title: Remember the Name (feat. Styles of Beyond)
+Album: The Rising Tied
+Track: 2
+Date: 2005-11-21
+Genre: Rap Rock
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Powerwolf - Venom of Venus.mp3
+Time: 208.704000
+Artist: Powerwolf
+AlbumArtist: Powerwolf
+Title: Venom of Venus
+Album: The Sacrament of Sin
+Track: 9
+Date: 2018-07-20
+Genre: German Metal
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: Eminem - My Name Is.mp3
+Time: 268.440000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: My Name Is
+Album: The Slim Shady LP
+Track: 2
+Date: 1999-02-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem, Royce Da 5'9' - Bad Meets Evil.mp3
+Time: 253.204000
+Artist: Eminem/Royce Da 5'9"
+AlbumArtist: Eminem
+Title: Bad Meets Evil
+Album: The Slim Shady LP
+Track: 19
+Date: 1999-02-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920739
+song_end
+song_begin: Eminem - Role Model.mp3
+Time: 205.440000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: Role Model
+Album: The Slim Shady LP (Explicit)
+Track: 9
+Date: 1999-02-23
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920739
+song_end
+song_begin: G-Eazy, Remo the Hitmaker - I Mean It (feat. Remo).mp3
+Time: 236.512000
+Artist: G-Eazy/Remo the Hitmaker
+AlbumArtist: G-Eazy
+Title: I Mean It (feat. Remo)
+Album: These Things Happen
+Track: 3
+Date: 2014-06-20
+Genre: Indie Pop Rap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Kendrick Lamar - Alright.mp3
+Time: 219.360000
+Artist: Kendrick Lamar
+AlbumArtist: Kendrick Lamar
+Title: Alright
+Album: To Pimp A Butterfly
+Track: 7
+Date: 2015-03-16
+Genre: Conscious Hip Hop
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920740
+song_end
+song_begin: Rarin, BrxkenBxy - SO WHAT!.mp3
+Time: 206.496000
+Artist: Rarin/BrxkenBxy
+AlbumArtist: Rarin
+Title: SO WHAT!
+Album: Toxic Ends
+Track: 5
+Date: 2021-06-25
+Disc: 1
+Format: 48000:24:2
+mtime: 1735920741
+song_end
+song_begin: STARSET - My Demons.mp3
+Time: 288.104000
+Artist: STARSET
+AlbumArtist: STARSET
+Title: My Demons
+Album: Transmissions (Deluxe Version)
+Track: 7
+Date: 2014
+Genre: Future Rock
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: Denzel Curry - Ultimate.mp3
+Time: 190.040000
+Artist: Denzel Curry
+AlbumArtist: Denzel Curry
+Title: Ultimate
+Album: Ultimate
+Track: 1
+Date: 2015-01-01
+Genre: Dark Trap
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920738
+song_end
+song_begin: Scott Benson Band - Requiem for a Dream.mp3
+Time: 297.534000
+Artist: Scott Benson Band
+AlbumArtist: Scott Benson Band
+Title: Requiem for a Dream
+Album: Volume II
+Track: 8
+Date: 2015-03-10
+Genre: Epicore
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920741
+song_end
+song_begin: JAY-Z, Kanye West - Nias In Paris.mp3
+Time: 219.350000
+Artist: JAY-Z/Kanye West
+AlbumArtist: JAY-Z
+Title: Ni**as In Paris
+Album: Watch The Throne
+Track: 3
+Date: 2011-08-08
+Genre: East Coast Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end
+song_begin: Eminem - When I'm Gone.mp3
+Time: 281.182000
+Artist: Eminem
+AlbumArtist: Eminem
+Title: When I'm Gone
+Album: When I'm Gone
+Track: 1
+Date: 2005-01-01
+Genre: Detroit Hip Hop
+Disc: 1
+Format: 44100:24:2
+mtime: 1735920740
+song_end

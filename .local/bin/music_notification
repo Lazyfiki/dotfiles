@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+title=$(mpc --format "%title%" current)
+artist=$(mpc --format "%artist%" current)
+
+music_dir=~/music
+file=$(mpc --format "%file%" current)
+path="$music_dir/$file"
+
+ffmpeg -y -i "$path" -an -vcodec copy /tmp/cover.jpg >/dev/null 2>&1
+
+# Display the album art using feh
+dunstctl close && dunstify -I /tmp/cover.jpg -a "mpd" "$title" "$artist"

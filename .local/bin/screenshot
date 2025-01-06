@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+take_screenshot() {
+    local dir=~/pix/ss
+    local filename=$(date +%s)
+    local filepath="$dir/$filename.jpg"
+
+    if [[ $1 == "--select" ]]; then
+        maim --select "$filepath"
+    else
+        maim "$filepath"
+    fi
+
+    if [[ -s "$filepath" ]]; then
+        xclip -sel c -t image/jpg < "$filepath"
+        dunstify -I "$filepath" "Say cheese..." "$(basename "$filepath")"
+    else
+        rm -f "$filepath"
+    fi
+}
+
+take_screenshot $1

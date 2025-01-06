@@ -1,0 +1,122 @@
+@import url("/home/ahmed/.cache/wal/colors-waybar.css");
+/* Mohammad Mahdi Tayebi
+ *
+ * To apply transparent sidebar. copy this file into ~/.config/gtk-4.0/gtk.css and if
+ * you use adw-gtk3 theme you can add it to ~/.config/gtk-3.0/gtk.css as well
+ *
+ * Use blur my shell extension to add blur effect behind the transparent part of windows
+*/
+
+/* Transparent Sidebar */
+window {
+  background: alpha(@background, 0.9);
+}
+
+.view {
+  color: @foreground;
+}
+
+.vertical {
+  color: @foreground;
+}
+
+.sidebar-pane,
+.sidebar,
+.navigation-sidebar {
+  background: transparent;
+  color: @foreground;
+}
+
+.content-pane {
+  background: @background;
+  color: @foreground;
+}
+
+/* Lollypop */
+window>deck>grid>headerbar.titlebar>widget>widget>box>image {
+  margin-top: -1px;
+}
+
+window>deck>grid>headerbar.titlebar>box> :nth-child(1) {
+  margin-right: -40px;
+  opacity: 0;
+}
+
+window>deck>grid>headerbar.titlebar>box> :nth-child(2) {
+  margin-right: 27px;
+}
+
+window>deck>grid>headerbar.titlebar>box>.close {
+  margin-right: 0;
+}
+
+window>deck>grid>headerbar.titlebar {
+  background: linear-gradient(90deg,
+      transparent 0%,
+      transparent 197px,
+      @headerbar_shade_color 198px,
+      @headerbar_bg_color 198px,
+      @headerbar_bg_color 100%);
+  border-bottom: none;
+}
+
+/* Builder */
+.org-gnome-Builder paneldockchild.center {
+  background: @background;
+}
+
+.org-gnome-Builder.workspace paneldockchild.start {
+  background: transparent;
+}
+
+/* Speedtest (xyz.ketok.Speedtest) */
+.horizontal>gauge.dl.horizontal>overlay>.background {
+  background: transparent;
+}
+
+.horizontal>gauge.up.horizontal>overlay>.background {
+  background: transparent;
+}
+
+/* Gnome Tweaks */
+window>leaflet>box:last-child>scrolledwindow>viewport.frame {
+  background: @background;
+}
+
+.tweak-titlebar-left {
+  background: alpha(@background, 0.8);
+}
+
+/* Geary */
+.geary-main-layout>leaflet>leaflet>box:first-child,
+.geary-main-layout>leaflet>leaflet>box:first-child>headerbar {
+  background: transparent;
+}
+
+/* Rhythmbox */
+window box:nth-child(2) paned:nth-child(3) paned:nth-child(3) box:nth-child(2) {
+  background: @background;
+}
+
+window box:nth-child(2) paned:nth-child(3) box:first-child paned grid .sidebar-toolbar,
+window box:nth-child(2) paned:nth-child(3) box:first-child paned grid .sidebar-toolbar button {
+  background: transparent;
+}
+
+window box toolbar {
+  background: transparent; /* Comment this if you don't want transparency on rhythmbox topbar */
+}
+
+.titlebar,
+.titlebar .background,
+decoration,
+window,
+window.background
+{
+    border-radius: 0;
+}
+
+decoration, decoration:backdrop
+{
+    box-shadow: none;
+}

@@ -1,0 +1,37 @@
+[global]
+    width = (150,400)
+    height = 250
+    origin = top-right
+    padding = 15
+    horizontal_padding = 18
+    offset = 12x34
+    frame_color = "{color4}"
+    frame_width = 2
+    transparency = 5
+    font = "JetBrains Mono 13"
+    format = "<b>%s</b>\n%b"
+    markup = full
+    icon_path = "/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/apps"
+    icon_theme = "Papirus"
+	min_icon_size = 80
+	max_icon_size = 80
+
+[urgency_low]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[urgency_normal]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[urgency_critical]
+    background = "{background}"
+    foreground = "{foreground}"
+
+[mpd]
+	appname = "mpd"
+	alignment = center
+	format = "<b>%s</b>\n%b"
+	icon_position = left
+	min_icon_size = 150
+	max_icon_size = 150

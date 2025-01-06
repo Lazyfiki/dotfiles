@@ -1,0 +1,19 @@
+font-family = "JetBrains Mono"
+font-size = 16
+
+theme = ghostty-wal
+background-opacity = 0
+
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+cursor-style = block
+cursor-style-blink = true
+
+window-decoration = false
+window-padding-balance = true
+
+desktop-notifications = false
+confirm-close-surface = false
+
+keybind = ctrl+backspace=text:\x17
