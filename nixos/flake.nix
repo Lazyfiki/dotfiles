@@ -11,7 +11,7 @@
   outputs = {
     self,
     nixpkgs,
-    ghostt,
+    ghostty,
     ...
   } @ inputs: let
     inherit (self) outputs;
