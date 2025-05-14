@@ -1,7 +1,6 @@
 /*
 * GTK Colors
 */
-@import url("/home/ahmed/.cache/wal/colors-waybar.css");
 
 @define-color accent_color {{ $primary }};
 @define-color accent_fg_color {{ $onPrimary }};

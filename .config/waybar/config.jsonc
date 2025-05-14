@@ -31,7 +31,7 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "format": {
-                "today": "<span color='#fAfBfC'><b>{}</b></span>"
+                "today": "<span background='#ffffff' color='#000000'><b>{}</b></span>"
             }
         },
         "actions": {
@@ -52,8 +52,8 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "󰝟",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -63,7 +63,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [" ", " ", " "]
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
