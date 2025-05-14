@@ -6,12 +6,15 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     ghostty.url = "github:ghostty-org/ghostty";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs = {
     self,
     nixpkgs,
     ghostty,
+    zen-browser,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -37,6 +40,7 @@
           {
             environment.systemPackages = [
               ghostty.packages.x86_64-linux.default
+              zen-browser.packages.x86_64-linux.default
             ];
           }
           ./hosts/configuration.nix

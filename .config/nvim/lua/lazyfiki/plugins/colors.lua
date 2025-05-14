@@ -16,31 +16,43 @@ function ColorMyPencils(color)
         fg = colors.special.background
     })
     vim.api.nvim_set_hl(0, "ColorColumn", { bg = colors.colors.color8 })
+    vim.api.nvim_set_hl(0, 'LineNr', { fg = colors.colors.color1 })
+
+    vim.api.nvim_set_hl(0, 'OilDir', { fg = colors.colors.color4, bold = true })
+    vim.api.nvim_set_hl(0, 'OilFile', { fg = colors.special.foreground })
+    vim.api.nvim_set_hl(0, 'OilLink', { fg = colors.colors.color6, bold = true })
+    vim.api.nvim_set_hl(0, 'OilLinkTarget', { fg = colors.special.foreground })
+    vim.api.nvim_set_hl(0, 'OilOrphanLink', {
+        fg = colors.colors.color1,
+        bg = colors.colors.color0,
+        bold = true
+    })
+    vim.api.nvim_set_hl(0, 'OilOrphanLinkTarget', {
+        fg = colors.colors.color1,
+        bg = colors.colors.color0,
+        bold = true
+    })
+    vim.api.nvim_set_hl(0, 'WinBar', {
+        fg = colors.special.foreground,
+        bg = colors.colors.color0,
+    })
 end
 
-return {
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        config = function()
-            require("rose-pine").setup({
-                styles = {
-                    bold = true,
-                    italic = true,
-                    transparency = true,
-                },
-            })
-            ColorMyPencils()
-        end,
-    },
+vim.api.nvim_create_user_command("ReloadColors", function()
+    ColorMyPencils()
+end, {})
 
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        config = function()
-            require("catppuccin").setup({
-                transparent_background = true,
-            })
-        end
-    },
+return {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+        require("rose-pine").setup({
+            styles = {
+                bold = true,
+                italic = true,
+                transparency = true,
+            },
+        })
+        ColorMyPencils()
+    end,
 }

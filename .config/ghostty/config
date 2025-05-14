@@ -2,7 +2,7 @@ font-family = "JetBrains Mono"
 font-size = 16
 
 theme = ghostty-wal
-background-opacity = 0
+background-opacity = 0.8
 
 shell-integration = zsh
 shell-integration-features = no-cursor

@@ -3,15 +3,15 @@
 wall_dir=~/pix/wall/
 
 if [ -z "$1" ]; then
-  wall="$(find "$wall_dir" -type f -name "*.jpg" -o -name "*.png" | shuf -n1)"
+  wall="$(find "$wall_dir" -type f | shuf -n1)"
 else
   wall="$1"
 fi
 
 magick "$wall" ~/.local/share/bg.jpg
-xwallpaper --zoom ~/.local/share/bg.jpg
+swww img ~/.local/share/bg.jpg --transition-type grow --transition-duration 1
 wal -c
 wal -i ~/.local/share/bg.jpg
-xdotool key super+F5
-pkill -f dunst
-dunst &
+pkill waybar; hyprctl dispatch exec waybar
+hyprctl dispatch exec reload-nvim
+# pkill dunst; hyprctl dispatch exec dunst

@@ -6,3 +6,4 @@
 
   services.blueman.enable = true;
 }
+

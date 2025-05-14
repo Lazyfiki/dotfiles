@@ -1,22 +1,10 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-take_screenshot() {
-    local dir=~/pix/ss
-    local filename=$(date +%s)
-    local filepath="$dir/$filename.jpg"
+active_workspace_monitor=$(hyprctl -j activeworkspace | jq -r '(.monitor)')
+screenshot_filename="$HOME/pix/ss/$(date +%s).png"
 
-    if [[ $1 == "--select" ]]; then
-        maim --select "$filepath"
-    else
-        maim "$filepath"
-    fi
+grim -o $active_workspace_monitor $screenshot_filename
 
-    if [[ -s "$filepath" ]]; then
-        xclip -sel c -t image/jpg < "$filepath"
-        dunstify -I "$filepath" "Say cheese..." "$(basename "$filepath")"
-    else
-        rm -f "$filepath"
-    fi
-}
-
-take_screenshot $1
+if [ -e $screenshot_filename ]; then
+    notify-send -i $screenshot_filename "Grim" "Active Monitor Screenshot Saved \n $screenshot_filename"
+fi

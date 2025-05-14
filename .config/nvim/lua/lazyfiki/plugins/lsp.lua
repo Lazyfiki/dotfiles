@@ -28,11 +28,12 @@ return {
 
         -- List of LSP servers you installed manually
         local lsp_servers = {
-            "lua_ls",
-            "rust_analyzer",
-            "gopls",
-            "clangd",
-            "nil_ls",
+            -- "lua_ls",
+            -- "rust_analyzer",
+            -- "gopls",
+            -- "clangd",
+            -- "nil_ls",
+            -- "ts_ls",
         }
 
         -- Set up each LSP server manually

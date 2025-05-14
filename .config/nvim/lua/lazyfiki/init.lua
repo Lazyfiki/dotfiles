@@ -1,5 +1,5 @@
-require("lazyfiki.settings")
-require("lazyfiki.remap")
+require("lazyfiki.options")
+require("lazyfiki.remaps")
 require("lazyfiki.lazy")
 
 local augroup = vim.api.nvim_create_augroup
@@ -46,13 +46,26 @@ autocmd("LspAttach", {
     end
 })
 
-autocmd("FileType", {
-    pattern = "netrw",
+autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = ".envrc",
+    command = "set filetype=bash",
+})
+
+autocmd("CmdlineEnter", {
+    pattern = { "/", "?" },
     callback = function()
-        vim.opt_local.number = true
-        vim.opt_local.relativenumber = true
+        vim.opt.hlsearch = true
     end,
 })
+
+autocmd("CmdlineLeave", {
+    pattern = { "/", "?" },
+    callback = function()
+        vim.opt.hlsearch = false
+    end,
+})
+
+vim.api.nvim_set_hl(0, "Search", { link = "IncSearch" })
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0

@@ -3,7 +3,9 @@
 
 set -e
 
-# $EDITOR $HOME/.dotfiles/nixos/hosts/configuration.nix
+path="$HOME/.dotfiles/nixos"
+
+# $EDITOR $path/hosts/configuration.nix
 
 pushd $HOME/.dotfiles/nixos/
 
@@ -20,8 +22,26 @@ git diff -U0 '*.nix'
 
 echo "NixOS Rebuilding..."
 
-sudo nixos-rebuild switch -I nixos-config=$HOME/.dotfiles/nixos/hosts/configuration.nix&>nixos-switch.log \
-  || (cat nixos-switch.log | grep --color error && exit 1)
+echo -n "Rebuilding NixOS... "
+echo -ne "\033[?1049h\033[H" # enter alt-buff and clear
+echo "Rebuilding NixOS..."
+
+set +o pipefail # Disable pipafail since we check ourselves
+# shellcheck disable=SC2024 #ah the irony
+sudo nixos-rebuild switch --show-trace --flake "$path" 2>&1 | tee .nixos-switch.log
+exit_code="${PIPESTATUS[0]}"
+set -o pipefail # Re-enable pipefail
+
+# Wait a bit before exiting buffer
+echo  -e "\n\033[34mNixOS rebuild completed\033[0m (code: $exit_code)"
+echo -ne "\rExit in 3" && sleep 1
+echo -ne "\rExit in 2" && sleep 1
+echo -ne "\rExit in 1" && sleep 1
+echo -ne "\033[?1049l" # exit alt-buff
+
+# Check exit code of nixos-rebuild and act accordingly
+if [[ "${exit_code}" == 0 ]]; then
+	echo -e "Done\n"
 
 current=$(nixos-rebuild list-generations | grep current)
 

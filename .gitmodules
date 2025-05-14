@@ -1,11 +1,11 @@
 [submodule "dmenu"]
-    path = nixos/pkgs/dmenu
+    path = nixos/pkgs/dmenu/src
     url = git@github.com:Lazyfiki/dmenu.git
 
 [submodule "dwm"]
-    path = nixos/pkgs/dwm
+    path = nixos/pkgs/dwm/src
     url = git@github.com:Lazyfiki/dwm.git
 
 [submodule "st"]
-    path = nixos/pkgs/st
+    path = nixos/pkgs/st/src
     url = git@github.com:Lazyfiki/st.git

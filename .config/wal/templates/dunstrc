@@ -4,7 +4,7 @@
     origin = top-right
     padding = 15
     horizontal_padding = 18
-    offset = 12x34
+    offset = 12x40
     frame_color = "{color4}"
     frame_width = 2
     transparency = 5

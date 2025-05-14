@@ -1,25 +1,14 @@
-{pkgs, ...}: let
-  localPkgs = with pkgs; [
-    dmenu
-    dwm
-    st
-  ];
+{ pkgs, inputs, ... }:
 
+let
   devPkgs = with pkgs; [
-    clang
-    direnv
-    fd
-    fzf
-    git
-    gnumake
-    ripgrep
-    tmux
-    unstable.neovim
-    vim
+    clang direnv docker-compose fd fzf gcc git gnumake nodejs openjdk17 ripgrep
+    tmux unstable.neovim vim ciscoPacketTracer8
   ];
 
   lspPkgs = with pkgs; [
     clang-tools
+    gopls
     lua-language-server
     nil
     nodePackages.typescript-language-server
@@ -27,58 +16,30 @@
   ];
 
   utils = with pkgs; [
-    brightnessctl
-    curl
-    ffmpeg
-    file
-    gnome.adwaita-icon-theme
-    jq
-    killall
-    libnotify
-    man-pages
-    picom
-    tree
-    unzip
-    wget
-    xclip
-    xdotool
-    xorg.xinit
-    xorg.xsetroot
+    bc brightnessctl cifs-utils curl ffmpeg file gnome.adwaita-icon-theme jq
+    killall libnotify man-pages tree tree-sitter unzip wget libwacom
   ];
 
   apps = with pkgs; [
-    chromium
-    dunst
-    firefox
-    gimp
-    htop-vim
-    imagemagick
-    krita
-    maestral
-    maim
-    mpd
-    mpv
-    ncmpcpp
-    nsxiv
-    obs-studio
-    pamixer
-    pywal
-    stow
-    sxhkd
-    transmission_4
-    unclutter
-    unstable.mpc
-    unstable.pywalfox-native
-    xwallpaper
-    zathura
-    zsh-syntax-highlighting
+    bottles chromium ddcutil discord dunst firefox gimp gjs grim gvfs htop-vim
+    hyprland hyprpicker imagemagick krita libinput lutris maestral mesa mpd mpv
+    ncmpcpp nsxiv obs-studio pango pavucontrol pkg-config playerctl
+    protontricks protonup-qt pulseaudio pulsemixer pyprland pywal rofi slurp
+    spotify steam stow swappy swaynotificationcenter swww texliveFull
+    transmission_4 unstable.clock-rs unstable.hyprland-qtutils
+    unstable.hyprlock unstable.hyprpolkitagent unstable.librewolf unstable.mpc
+    unstable.pywalfox-native wacomtablet waybar wayland-protocols
+    wineWow64Packages.staging winetricks wl-clipboard xdg-utils xwayland
+    ydotool zathura unstable.obsidian
   ];
-in {
-  environment.systemPackages = apps ++ devPkgs ++ localPkgs ++ lspPkgs ++ utils;
+in
+{
+  environment.systemPackages = apps ++ devPkgs ++ lspPkgs ++ utils;
 
   fonts.packages = with pkgs; [
     jetbrains-mono
     joypixels
     font-awesome
+    nerdfonts
   ];
 }
