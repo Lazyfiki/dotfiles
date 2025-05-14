@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 alias \
-    ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
-    ytadl="yt-dlp -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
-    ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
-    ytpdl="yt-dlp -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytbdl="nix run nixpkgs#yt-dlp -- -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytadl="nix run nixpkgs#yt-dlp -- -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytdl="nix run nixpkgs#yt-dlp -- -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytpdl="nix run nixpkgs#yt-dlp -- -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c" \
 
 alias \
     hst="history 1 -1 | cut -c 8- | sort | uniq | fzf --layout reverse | tr -d '\n' | xclip -sel c" \
@@ -24,3 +24,4 @@ alias \
     df="df -h" \
 
 alias nix-shell="nix-shell --run zsh"
+alias mnt="sudo mount -t cifs //lazyfiki.duckdns.org/myfiles /mnt/ -o username=ahmed,password=1919est1919"

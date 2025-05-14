@@ -1,16 +1,9 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i zsh -p neovim-remote
+#!nix-shell -i bash -p neovim-remote
 
 servers=$(nvr --nostart --serverlist)
-
-if [ -z "$servers" ]; then
-    echo "No Neovim instances found."
-    exit 1
-fi
 
 while IFS= read -r server; do
     echo "Sending ReloadColors to $server"
     nvr --servername "$server" -c "ReloadColors" --nostart -s
 done <<< "$servers"
-
-echo "Colors reloaded for all Neovim instances."

@@ -1,4 +1,4 @@
-#files: 1025	version: 5.9
+#files: 1035	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -317,6 +317,8 @@ _comps=(
 'dnf-2' '_dnf'
 'dnf-3' '_dnf'
 'doas' '_doas'
+'docker' '_docker'
+'dockerd' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
 'dosdel' '_floppy'
@@ -753,6 +755,7 @@ _comps=(
 'konqueror' '_webbrowser'
 'kpartx' '_kpartx'
 'kpdf' '_pdf'
+'kscreen-doctor' '_kscreen-doctor'
 'ksh' '_sh'
 'ksh88' '_sh'
 'ksh93' '_sh'
@@ -1273,6 +1276,7 @@ _comps=(
 'rubber-pipe' '_rubber'
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
+'run0' '_run0'
 'run-help' '_run-help'
 'rup' '_hosts'
 'rusage' '_precommand'
@@ -1414,9 +1418,12 @@ _comps=(
 'svnliteadmin' '_subversion'
 'swaks' '_swaks'
 'swanctl' '_swanctl'
+'swaync' '_swaync'
+'swaync-client' '_swaync-client'
 'swift' '_swift'
 'swiftc' '_swift'
 'sw_vers' '_sw_vers'
+'swww' '_swww'
 'sync' '_nothing'
 'sysclean' '_sysclean'
 'sysctl' '_sysctl'
@@ -1460,6 +1467,7 @@ _comps=(
 'tee' '_tee'
 'telnet' '_telnet'
 'tex' '_tex'
+'texdoc' '_texdoc'
 'texi2any' '_texinfo'
 'texi2dvi' '_texinfo'
 'texi2pdf' '_texinfo'
@@ -1626,6 +1634,7 @@ _comps=(
 '-value-,XZ_OPT,-default-' '_xz'
 '-vared-' '_in_vared'
 'vared' '_vared'
+'varlinkctl' '_varlinkctl'
 'vcs_info_hookadd' '_vcs_info'
 'vcs_info_hookdel' '_vcs_info'
 'vi' '_vi'
@@ -1669,8 +1678,11 @@ _comps=(
 'whom' '_mh'
 'wiggle' '_wiggle'
 'wipefs' '_wipefs'
+'wl-copy' '_wl-copy'
+'wl-paste' '_wl-paste'
 'wodim' '_cdrecord'
 'wpa_cli' '_wpa_cli'
+'wpctl' '_wpctl'
 'write' '_users_on'
 'www' '_webbrowser'
 'xargs' '_xargs'
@@ -1720,7 +1732,6 @@ _comps=(
 'xview' '_xloadimage'
 'xvnc4viewer' '_vnc'
 'xvncviewer' '_vnc'
-'xwallpaper' '_xwallpaper'
 'xwd' '_x_utils'
 'xwininfo' '_x_utils'
 'xwit' '_xwit'
@@ -1910,18 +1921,20 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _bluetoothctl _bootctl _busctl _coredumpctl _dunst \
-            _dunstctl _fd _ghostty _hostnamectl _journalctl \
-            _localectl _loginctl _machinectl _mpv _networkctl \
-            _nix _nix-build _nix-channel _nix-collect-garbage _nix-common-options \
-            _nix-copy-closure _nix-env _nix-hash _nix-install-package _nix-instantiate \
-            _nixops _nixos-build-vms _nixos-container _nixos-generate-config _nixos-install \
-            _nixos-option _nixos-rebuild _nixos-version _nix-prefetch-url _nix-push \
-            _nix-shell _nix-store _oomctl _pulseaudio _resolvectl \
-            _rg _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files \
-            _systemctl _systemd _systemd-analyze _systemd-delta _systemd-inhibit \
-            _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles _timedatectl \
-            _udevadm _xwallpaper _zathura _cdr _floppy \
+autoload -Uz _bluetoothctl _bootctl _busctl _coredumpctl _docker \
+            _dunst _dunstctl _fd _ghostty _hostnamectl \
+            _journalctl _kscreen-doctor _localectl _loginctl _machinectl \
+            _mpv _networkctl _nix _nix-build _nix-channel \
+            _nix-collect-garbage _nix-common-options _nix-copy-closure _nix-env _nix-hash \
+            _nix-install-package _nix-instantiate _nixops _nixos-build-vms _nixos-container \
+            _nixos-generate-config _nixos-install _nixos-option _nixos-rebuild _nixos-version \
+            _nix-prefetch-url _nix-push _nix-shell _nix-store _oomctl \
+            _pulseaudio _resolvectl _rg _run0 _sd_hosts_or_user_at_host \
+            _sd_machines _sd_outputmodes _sd_unit_files _swaync _swaync-client \
+            _swww _systemctl _systemd _systemd-analyze _systemd-delta \
+            _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles \
+            _texdoc _timedatectl _udevadm _varlinkctl _wl-copy \
+            _wl-paste _wpctl _zathura _cdr _floppy \
             _logical_volumes _lscfg _lsdev _lslv _lspv \
             _lsvg _object_classes _physical_volumes _smit _volume_groups \
             _bsdconfig _bsd_disks _bsdinstall _bsd_pkg _chflags \
@@ -2120,5 +2133,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: f733dc340b2a1c5b2e61a4da7de790b2f557175f
-#omz fpath: /home/ahmed/.config/zsh/ohmyzsh/plugins/fzf /home/ahmed/.config/zsh/ohmyzsh/plugins/git /home/ahmed/.config/zsh/ohmyzsh/functions /home/ahmed/.config/zsh/ohmyzsh/completions /home/ahmed/.config/zsh/ohmyzsh/custom/functions /home/ahmed/.config/zsh/ohmyzsh/custom/completions /home/ahmed/.config/zsh/ohmyzsh/cache/completions /home/ahmed/.nix-profile/share/zsh/site-functions /home/ahmed/.nix-profile/share/zsh/5.9/functions /home/ahmed/.nix-profile/share/zsh/vendor-completions /nix/profile/share/zsh/site-functions /nix/profile/share/zsh/5.9/functions /nix/profile/share/zsh/vendor-completions /home/ahmed/.local/state/nix/profile/share/zsh/site-functions /home/ahmed/.local/state/nix/profile/share/zsh/5.9/functions /home/ahmed/.local/state/nix/profile/share/zsh/vendor-completions /etc/profiles/per-user/ahmed/share/zsh/site-functions /etc/profiles/per-user/ahmed/share/zsh/5.9/functions /etc/profiles/per-user/ahmed/share/zsh/vendor-completions /nix/var/nix/profiles/default/share/zsh/site-functions /nix/var/nix/profiles/default/share/zsh/5.9/functions /nix/var/nix/profiles/default/share/zsh/vendor-completions /run/current-system/sw/share/zsh/site-functions /run/current-system/sw/share/zsh/5.9/functions /run/current-system/sw/share/zsh/vendor-completions /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Calendar /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Chpwd /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/AIX /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/BSD /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Base /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Cygwin /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Darwin /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Debian /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Linux /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Mandriva /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Redhat /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Solaris /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Unix /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/X /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Zsh /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/openSUSE /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Exceptions /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/MIME /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Math /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Misc /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Newuser /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Prompts /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/TCP /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/VCS_Info /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/VCS_Info/Backends /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Zftp /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Zle
+#omz revision: 
+#omz fpath: /nix/store/gvwshhbf0ga974gfhr9n3kkbp996hsln-oh-my-zsh-2023-06-26/share/oh-my-zsh/plugins/fzf /nix/store/gvwshhbf0ga974gfhr9n3kkbp996hsln-oh-my-zsh-2023-06-26/share/oh-my-zsh/plugins/git /nix/store/gvwshhbf0ga974gfhr9n3kkbp996hsln-oh-my-zsh-2023-06-26/share/oh-my-zsh/functions /nix/store/gvwshhbf0ga974gfhr9n3kkbp996hsln-oh-my-zsh-2023-06-26/share/oh-my-zsh/completions /home/ahmed/.cache/oh-my-zsh/completions /home/ahmed/.nix-profile/share/zsh/site-functions /home/ahmed/.nix-profile/share/zsh/5.9/functions /home/ahmed/.nix-profile/share/zsh/vendor-completions /nix/profile/share/zsh/site-functions /nix/profile/share/zsh/5.9/functions /nix/profile/share/zsh/vendor-completions /home/ahmed/.local/state/nix/profile/share/zsh/site-functions /home/ahmed/.local/state/nix/profile/share/zsh/5.9/functions /home/ahmed/.local/state/nix/profile/share/zsh/vendor-completions /etc/profiles/per-user/ahmed/share/zsh/site-functions /etc/profiles/per-user/ahmed/share/zsh/5.9/functions /etc/profiles/per-user/ahmed/share/zsh/vendor-completions /nix/var/nix/profiles/default/share/zsh/site-functions /nix/var/nix/profiles/default/share/zsh/5.9/functions /nix/var/nix/profiles/default/share/zsh/vendor-completions /run/current-system/sw/share/zsh/site-functions /run/current-system/sw/share/zsh/5.9/functions /run/current-system/sw/share/zsh/vendor-completions /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Calendar /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Chpwd /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/AIX /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/BSD /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Base /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Cygwin /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Darwin /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Debian /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Linux /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Mandriva /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Redhat /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Solaris /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Unix /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/X /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/Zsh /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Completion/openSUSE /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Exceptions /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/MIME /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Math /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Misc /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Newuser /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Prompts /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/TCP /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/VCS_Info /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/VCS_Info/Backends /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Zftp /nix/store/2cy4wkl5hhp2wha2cifxfrg7mr96f4z8-zsh-5.9/share/zsh/5.9/functions/Zle
