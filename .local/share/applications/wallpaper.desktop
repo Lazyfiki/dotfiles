@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Wallpaper Picker
+Exec=/run/current-system/sw/bin/nsxiv -t /home/ahmed/pix/wall
