@@ -3,6 +3,9 @@
   inputs,
   ...
 }: let
+  localPkgs = with pkgs; [
+  ];
+
   devPkgs = with pkgs; [
     clang
     direnv
@@ -114,7 +117,7 @@
     zathura
   ];
 in {
-  environment.systemPackages = apps ++ devPkgs ++ lspPkgs ++ utils;
+  environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;
 
   fonts.packages = with pkgs; [
     jetbrains-mono
