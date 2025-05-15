@@ -22,6 +22,7 @@
     unstable.neovim
     vim
     ciscoPacketTracer8
+    vscode
   ];
 
   lspPkgs = with pkgs; [

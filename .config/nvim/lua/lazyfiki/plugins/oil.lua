@@ -38,6 +38,12 @@ return {
                         return "OilDir"
                     end
                 end,
+
+                case_insensitive = true,
+                sort = {
+                    { "type", "asc" },
+                    { "name", "asc" },
+                },
             },
 
             win_options = {
