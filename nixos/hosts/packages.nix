@@ -88,7 +88,8 @@
     pulseaudio
     pulsemixer
     pyprland
-    pywal
+    # pywal
+    unstable.pywal16
     rofi
     slurp
     spotify
