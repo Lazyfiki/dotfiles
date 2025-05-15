@@ -88,8 +88,6 @@
     pulseaudio
     pulsemixer
     pyprland
-    # pywal
-    unstable.pywal16
     rofi
     slurp
     spotify
@@ -107,6 +105,7 @@
     unstable.librewolf
     unstable.mpc
     unstable.obsidian
+    unstable.pywal16
     unstable.pywalfox-native
     wacomtablet
     waybar
