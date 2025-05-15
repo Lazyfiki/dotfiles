@@ -7,12 +7,14 @@
   ];
 
   devPkgs = with pkgs; [
+    ciscoPacketTracer8
     clang
     direnv
     docker-compose
     fd
     fzf
     gcc
+    gdb
     git
     gnumake
     nodejs
@@ -21,7 +23,6 @@
     tmux
     unstable.neovim
     vim
-    ciscoPacketTracer8
     vscode
   ];
 

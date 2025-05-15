@@ -14,8 +14,6 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export MANPAGER="nvim +Man!"
 export PATH=$PATH:$HOME/.local/bin
 
-export NIX_PATH="nixos-config=/home/ahmed/.dotfiles/nixos/hosts/configuration.nix:$NIX_PATH"
-
 export MPD_HOST="localhost"
 export MPD_PORT="6600"
 
