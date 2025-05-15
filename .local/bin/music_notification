@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 title=$(mpc --format "%title%" current)
 artist=$(mpc --format "%artist%" current)

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # https://github.com/pystardust/waldl
 # script to find and download wallpapers from wallhaven

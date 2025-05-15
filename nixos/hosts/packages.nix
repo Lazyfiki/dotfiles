@@ -23,7 +23,6 @@
     tmux
     unstable.neovim
     vim
-    vscode
   ];
 
   lspPkgs = with pkgs; [
@@ -110,7 +109,8 @@
     wacomtablet
     waybar
     wayland-protocols
-    wineWow64Packages.staging
+    wineWow64Packages.stable
+    # wineWowPackages.stable
     winetricks
     wl-clipboard
     xdg-utils

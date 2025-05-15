@@ -11,7 +11,7 @@ fi
 magick "$wall" ~/.local/share/bg.jpg
 swww img ~/.local/share/bg.jpg --transition-type grow --transition-duration 1
 wal -c
-wal --cols16 -i ~/.local/share/bg.jpg
+wal -i ~/.local/share/bg.jpg
 pkill waybar; hyprctl dispatch exec waybar
 hyprctl dispatch exec reload-nvim
 # pkill dunst; hyprctl dispatch exec dunst
