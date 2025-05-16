@@ -1,14 +1,16 @@
 /***
  *    ┳┳┓┏┓┏┳┓┳┳┏┓┏┓┳┓  ┏┓┓ ┏┏┓┓┏┳┓┏┓
- *    ┃┃┃┣┫ ┃ ┃┃┃┓┣ ┃┃━━┗┓┃┃┃┣┫┗┫┃┃┃ 
+ *    ┃┃┃┣┫ ┃ ┃┃┃┓┣ ┃┃━━┗┓┃┃┃┣┫┗┫┃┃┃
  *    ┛ ┗┛┗ ┻ ┗┛┗┛┗┛┛┗  ┗┛┗┻┛┛┗┗┛┛┗┗┛
- *                                   
+ *
  */
 
 
 
 
 /*-----All Colors--------*/
+
+@import url("/home/ahmed/.cache/wal/colors-sway");
 
 @define-color background #1a1110;
 
@@ -109,5 +111,3 @@
 @define-color tertiary_fixed #fae0a6;
 
 @define-color tertiary_fixed_dim #ddc48c;
-
-

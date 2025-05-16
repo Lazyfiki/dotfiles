@@ -109,7 +109,7 @@
     wacomtablet
     waybar
     wayland-protocols
-    wineWow64Packages.stable
+    # wineWow64Packages.stable
     # wineWowPackages.stable
     winetricks
     wl-clipboard
