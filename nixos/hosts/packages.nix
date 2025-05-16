@@ -54,6 +54,7 @@
   ];
 
   apps = with pkgs; [
+    unstable.ghostty
     bottles
     chromium
     ddcutil

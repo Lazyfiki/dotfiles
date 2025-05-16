@@ -13,7 +13,7 @@
   outputs = {
     self,
     nixpkgs,
-    ghostty,
+    # ghostty,
     zen-browser,
     ...
   } @ inputs: let
@@ -39,7 +39,7 @@
         modules = [
           {
             environment.systemPackages = [
-              ghostty.packages.x86_64-linux.default
+              # ghostty.packages.x86_64-linux.default
               zen-browser.packages.x86_64-linux.default
             ];
           }
