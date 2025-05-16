@@ -54,7 +54,6 @@
   ];
 
   apps = with pkgs; [
-    unstable.ghostty
     bottles
     chromium
     ddcutil
@@ -99,6 +98,7 @@
     texliveFull
     transmission_4
     unstable.clock-rs
+    unstable.ghostty
     unstable.hyprland-qtutils
     unstable.hyprlock
     unstable.hyprpolkitagent
@@ -110,8 +110,6 @@
     wacomtablet
     waybar
     wayland-protocols
-    # wineWow64Packages.stable
-    # wineWowPackages.stable
     winetricks
     wl-clipboard
     xdg-utils
