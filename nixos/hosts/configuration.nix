@@ -11,7 +11,6 @@
     outputs.modules.bootloader
     outputs.modules.docker
     outputs.modules.firewall
-    outputs.modules.nvidia
     outputs.modules.power
     outputs.modules.spicetify
     outputs.modules.ssh
