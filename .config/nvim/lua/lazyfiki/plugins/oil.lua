@@ -40,10 +40,6 @@ return {
                 end,
 
                 case_insensitive = true,
-                sort = {
-                    { "type", "asc" },
-                    { "name", "asc" },
-                },
             },
 
             win_options = {

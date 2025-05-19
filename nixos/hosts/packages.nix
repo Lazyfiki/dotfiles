@@ -87,6 +87,7 @@
     pulseaudio
     pulsemixer
     pyprland
+    qbittorrent
     rofi
     slurp
     spotify
