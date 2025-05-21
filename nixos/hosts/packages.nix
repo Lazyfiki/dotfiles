@@ -103,7 +103,6 @@
     unstable.hyprland-qtutils
     unstable.hyprlock
     unstable.hyprpolkitagent
-    unstable.librewolf
     unstable.mpc
     unstable.obsidian
     unstable.pywal16

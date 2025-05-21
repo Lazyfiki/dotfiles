@@ -9,10 +9,9 @@ else
 fi
 
 magick "$wall" ~/.local/share/bg.jpg
-swww img ~/.local/share/bg.jpg --transition-type grow --transition-duration 1
+swww img ~/.local/share/bg.jpg --transition-duration 1 -t wave
 wal -c
-wal -i ~/.local/share/bg.jpg
+wal -n -i ~/.local/share/bg.jpg
 pkill waybar; hyprctl dispatch exec waybar
 pkill swaync; hyprctl dispatch exec swaync
 hyprctl dispatch exec reload-nvim
-# pkill dunst; hyprctl dispatch exec dunst
