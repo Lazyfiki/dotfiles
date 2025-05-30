@@ -19,10 +19,12 @@
     gnumake
     nodejs
     openjdk17
+    qemu
     ripgrep
     tmux
     unstable.neovim
     vim
+    virt-manager
   ];
 
   lspPkgs = with pkgs; [
