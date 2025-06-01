@@ -91,7 +91,6 @@
     pyprland
     qbittorrent
     rofi
-    wofi
     slurp
     spotify
     steam
@@ -116,7 +115,6 @@
     winetricks
     wl-clipboard
     xdg-utils
-    xdg-desktop-portal-hyprland
     xwayland
     ydotool
     zathura
