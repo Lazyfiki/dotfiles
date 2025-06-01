@@ -20,6 +20,13 @@
     background: rgba(0,0,0,0.5);
 }
 
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 5px;
+}
+
 
 #clock,
 #network,
