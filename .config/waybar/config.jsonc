@@ -1,32 +1,23 @@
 {
+    // General Waybar configuration
     "layer": "top",
-    "position": "top",
-    "spacing": 10,
-    "reload_style_on_change": true,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
-    "modules-right": ["group/expand","tray","bluetooth","network","pulseaudio","battery","clock"],
-
-
-    "hyprland/workspaces": {
-        "format": "{}:{icon} ",
-        "format-icons": {
-            "active": "",
-            "default": "",
-            "empty": ""
-        },
-        "persistent-workspaces": {
-            // "*": [ 1,2,3,4,5,6,7,8,9,10 ]
-        }
-    },
-    "custom/notification": {
-        "tooltip": false,
-        "format": "",
-        "on-click": "swaync-client -t -sw",
-        "escape": true
-    },
+    "margin": 0,
+    "spacing": 30,
+    "border-size": 0,
+    // Modules configuration
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/window",
+    ],
+    "modules-right": [
+        "hyprland/workspaces",
+        "network",
+        "bluetooth",
+        "clock",
+    ],
     "clock": {
-        "format": "{:%a %d %b %I:%M %p}",
+        // "format": "{:%a %d %b %I:%M %p}",
+        "format": "{:%b %d %I:%M%p}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -39,6 +30,49 @@
             "on-click": "shift_up"
         }
     },
+    "hyprland/workspaces": {
+        "active-only": true,
+    },
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        "max-length": 20,
+        "rewrite": {
+            // if any window is focused display Finder
+            "^(?!.*\\S).*": "Finder"
+        }
+    },
+    "custom/launcher": {
+        "format": ""
+    },
+    "custom/texttwo": {
+        "exec": "echo 'File'",
+        "interval": 60,
+        "return-type": "plain",
+        "on-click": "Thunar" //or you favorite Filer Explorer
+    },
+    "custom/textthree": {
+        "exec": "echo 'Edit'",
+        "interval": 60,
+        "return-type": "plain",
+        "on-click": "krita" // or you favorite Image editor
+    },
+    "custom/textfour": {
+        "exec": "echo 'View'",
+        "interval": 60,
+        "return-type": "plain"
+    },
+    "custom/textfive": {
+        "exec": "echo 'Help'",
+        "interval": 60,
+        "return-type": "plain",
+        "on-click": "yad --title='Help' --text-info --width=600 --height=400 --filename=<(man hyprland | col -bx)"
+    },
+    "image#ethernetart": {
+        // put you username here
+        "path": "/home/$username/.config/waybar/icons/wifi-white.png",
+        "size": 13,
+        "interval": 60
+    },
     "network": {
         "format-wifi": " ",
         "format-ethernet":"",
@@ -47,25 +81,6 @@
         "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
         "on-click": "ghostty --class=com.connection.editor -e nmtui"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon}",
-        "format-muted": "󰝟",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
     },
     "bluetooth": {
         "format-on": "󰂯",
@@ -79,65 +94,4 @@
         "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
         "on-click-right": "blueman-manager",
     },
-    "battery": {
-        "interval":30,
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󰂄 ",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "󰁻",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰂂",
-            "󰁹"
-        ],
-    },
-    "custom/expand": {
-        "format": "",
-        "tooltip": false
-    },
-    "custom/endpoint":{
-        "format": "|",
-        "tooltip": false
-    },
-    "group/expand": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 600,
-            "transition-to-left": true,
-            "click-to-reveal": true
-        },
-        "modules": ["custom/expand", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
-    },
-    "custom/colorpicker": {
-        "format": "{}",
-        "return-type": "json",
-        "interval": "once",
-        "exec": "~/.config/waybar/scripts/colorpicker.sh -j",
-        "on-click": "~/.config/waybar/scripts/colorpicker.sh",
-        "signal": 1
-    },
-    "cpu": {
-        "format": "",
-        "tooltip": true
-    },
-    "memory": {
-        "format": ""
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "",
-    },
-    "tray": {
-        "icon-size": 14,
-        "spacing": 10
-    },
 }
-

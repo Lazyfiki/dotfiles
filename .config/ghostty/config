@@ -1,6 +1,7 @@
 font-family = "JetBrains Mono"
 font-size = 16
 
+title = Ghostty
 theme = ghostty-wal
 background-opacity = 0.8
 
@@ -10,7 +11,7 @@ shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = true
 
-window-decoration = false
+window-decoration = none
 window-padding-balance = true
 
 desktop-notifications = false
