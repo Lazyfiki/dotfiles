@@ -74,7 +74,7 @@
     libinput
     lutris
     maestral
-    unstable.mesa
+    mesa
     mpd
     mpv
     ncmpcpp
@@ -111,7 +111,7 @@
     unstable.pywal16
     unstable.pywalfox-native
     wacomtablet
-    unstable.waybar
+    waybar
     wayland-protocols
     winetricks
     wl-clipboard
