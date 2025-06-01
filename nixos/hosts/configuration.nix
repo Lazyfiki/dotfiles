@@ -67,6 +67,12 @@
     xwayland.enable = true;
   };
 
+  xdg.portal = {
+    enable = true;
+    # extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    xdgOpenUsePortal = true;
+  };
+
   networking.networkmanager.enable = true;
 
   time.timeZone = "Africa/Tunis";
