@@ -10,12 +10,6 @@ in {
     inputs.spicetify-nix.nixosModules.default
   ];
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
-    xdgOpenUsePortal = true;
-  };
-
   programs.spicetify = {
     enable = true;
     spotifyPackage = pkgs.spotify;
