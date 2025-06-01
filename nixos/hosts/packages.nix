@@ -67,7 +67,7 @@
     grim
     gvfs
     htop-vim
-    hyprland
+    unstable.hyprland
     hyprpicker
     imagemagick
     krita
