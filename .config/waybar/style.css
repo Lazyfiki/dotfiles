@@ -18,7 +18,7 @@
     /* background: transparent; */
     /* background: @background; */
     /* background: linear-gradient(90deg, @color1 0%, @color4 100%); */
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0);
 }
 
 #clock,

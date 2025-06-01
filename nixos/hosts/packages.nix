@@ -74,7 +74,7 @@
     libinput
     lutris
     maestral
-    mesa
+    unstable.mesa
     mpd
     mpv
     ncmpcpp
