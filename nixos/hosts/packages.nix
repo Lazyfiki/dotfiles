@@ -67,7 +67,7 @@
     grim
     gvfs
     htop-vim
-    unstable.hyprland
+    hyprland
     hyprpicker
     imagemagick
     krita
@@ -111,7 +111,7 @@
     unstable.pywal16
     unstable.pywalfox-native
     wacomtablet
-    waybar
+    unstable.waybar
     wayland-protocols
     winetricks
     wl-clipboard
