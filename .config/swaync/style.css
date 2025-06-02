@@ -7,7 +7,6 @@
     font-size: 18px;
 }
 
-/* Control center container */
 .control-center {
     background: rgba(0,0,0,0);
     border: none;
@@ -17,7 +16,6 @@
     box-shadow: none;
 }
 
-/* Notification window */
 .notification {
     background: rgba(0,0,0,0);
     border: none;
@@ -27,27 +25,23 @@
     box-shadow: none;
 }
 
-/* Ensure notifications align properly */
 .notification-content {
-    background: rgba(30, 30, 46, 0.7);
+    background: alpha(@background, 0.2);
     margin: 0;
     padding: 5px;
 }
 
-/* Title widget */
 .control-center .widget-title {
     color: #ffffff;
     font-weight: bold;
     padding: 5px;
 }
 
-/* MPRIS widget (media player) */
 .control-center .widget-mpris {
     color: #ffffff;
     padding: 5px;
 }
 
-/* Remove any unwanted offsets */
 .window {
     margin: 0;
     padding: 0;

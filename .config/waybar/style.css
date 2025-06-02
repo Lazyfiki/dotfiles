@@ -3,22 +3,21 @@
 * {
     font-size: 18px;
     font-family: "JetBrains Mono", monospace;
-    color: white;
     background: transparent;
     padding: 0;
-    /* padding: 1px 0 1px 0; */
     margin: 0;
 }
 
-/* #waybar { */
-/*     background: @background; */
-/*     background: linear-gradient(90deg, @color1 0%, @color2 50%, @color3 100%); */
-/* } */
 #waybar {
-    /* background: transparent; */
-    /* background: @background; */
-    /* background: linear-gradient(90deg, @color1 0%, @color4 100%); */
-    background: rgba(0,0,0,0.6);
+    background: alpha(@background, 0.7);
+}
+
+#workspaces button {
+    color: alpha(white, 0.2);
+}
+
+#workspaces button.active {
+    color: white;
 }
 
 #clock,
@@ -26,13 +25,18 @@
 #pulseaudio,
 #cpu,
 #memory,
+#bluetooth,
+#custom-weather,
+#custom-expand,
 #temperature {
+    color: white;
 }
 
 #network,
 #pulseaudio,
 #memory,
 #temperature {
+    color: white;
 }
 
 #clock {
@@ -41,6 +45,7 @@
 
 #window {
     font-weight: 900;
+    color: white;
 }
 
 #battery {
@@ -50,7 +55,8 @@
 
 #custom-launcher {
     padding-left: 20px;
-    font-size: 23px;
+    font-size: 24px;
+    color: white;
 }
 
 #custom-text {
