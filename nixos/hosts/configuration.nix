@@ -60,10 +60,11 @@
 
   networking.hostName = "nixos";
 
-  services.xserver.enable = false;
+  # services.xserver.enable = false;
   programs.steam.enable = true;
   programs.hyprland = {
     enable = true;
+    withUWSM = true;
     xwayland.enable = true;
   };
 
