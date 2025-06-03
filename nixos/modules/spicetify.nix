@@ -25,7 +25,7 @@ in {
     ];
 
     enabledCustomApps = with spicePkgs.apps; [
-      # marketplace
+      marketplace
       # lyricsPlus
       # localFiles
     ];
