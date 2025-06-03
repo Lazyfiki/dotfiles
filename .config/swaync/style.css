@@ -1,14 +1,47 @@
 @import url("/home/ahmed/.cache/wal/colors-waybar.css");
 
 * {
+    background: transparent;
+    box-shadow: none;
+    border: none;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: JetBrains Mono;
     font-size: 18px;
+    color: white;
 }
 
+.widget-title {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.widget-title > label {
+    color: white; /* Notification title text (e.g., "Notifications") */
+}
+
+.widget-title > button {
+    color: white;
+    background: alpha(@background, 0.5);
+    font-size: 14px;  /* Adjust icon size */
+    padding-right: 10px;
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+}
+
+.widget-title > button:hover {
+    background: alpha(@foreground, 0.5);
+}
+
+
 .control-center {
-    background: rgba(0,0,0,0);
+    background: transparent;
     border: none;
     border-radius: 0;
     margin: 0;
@@ -17,19 +50,18 @@
 }
 
 .notification {
-    background: rgba(0,0,0,0);
+    background: transparent;
     border: none;
     border-radius: 25px;
     margin: 0;
     padding: 10px;
-    box-shadow: none;
 }
 
 .notification-content {
-    background: @background;
+    background: alpha(@background, 0.5);
     margin: 0;
     border-radius: 25px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .control-center .widget-title {
@@ -40,10 +72,19 @@
 
 .control-center .widget-mpris {
     color: #ffffff;
-    padding: 5px;
+    padding: 20px;
+    border-radius: 25px;
+    background: alpha(@background, 0.5);
 }
 
 .window {
     margin: 0;
     padding: 0;
+}
+
+.notification {
+}
+
+.widget-mpris {
+    margin-top: 0;
 }

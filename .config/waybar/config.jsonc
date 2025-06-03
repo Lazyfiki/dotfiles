@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "margin": 0,
-    "spacing": 30,
+    "spacing": 25,
     "border-size": 0,
     "modules-left": [
         "custom/launcher",
@@ -15,6 +15,7 @@
         "bluetooth",
         "pulseaudio",
         "battery",
+        "tray",
         "clock"
     ],
     "clock": {

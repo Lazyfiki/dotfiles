@@ -74,6 +74,7 @@
     libinput
     lutris
     maestral
+    mako
     mesa
     mpd
     mpv
@@ -97,10 +98,10 @@
     stow
     swappy
     swaynotificationcenter
-    mako
     swww
     texliveFull
     transmission_4
+    udiskie
     unstable.clock-rs
     unstable.ghostty
     unstable.hyprland-qtutils
