@@ -12,9 +12,8 @@ in {
 
   programs.spicetify = {
     enable = true;
-    spotifyPackage = pkgs.spotify;
 
-    theme = spicePkgs.themes.text;
+    theme = spicePkgs.themes.hazy;
     # colorScheme = "mocha";
 
     enabledExtensions = with spicePkgs.extensions; [
