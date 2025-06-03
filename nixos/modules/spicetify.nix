@@ -23,9 +23,10 @@ in {
       shuffle
     ];
 
-    # Optional: Add marketplace to browse more themes/extensions
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
+      lyricsPlus
+      localFiles
     ];
   };
 }
