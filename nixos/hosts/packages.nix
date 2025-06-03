@@ -97,6 +97,7 @@
     stow
     swappy
     swaynotificationcenter
+    mako
     swww
     texliveFull
     transmission_4
