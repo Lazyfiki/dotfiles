@@ -13,6 +13,8 @@
         "custom/weather",
         "network",
         "bluetooth",
+        "pulseaudio",
+        "battery",
         "clock"
     ],
     "clock": {
@@ -63,10 +65,46 @@
         "on-click-right": "blueman-manager"
     },
     "custom/weather": {
-        "exec": "curl -s 'wttr.in/?format=%c%t' | sed 's/ +//'",
+        "exec": "~/.config/waybar/scripts/wttr.sh",
         "interval": 600,
     },
-
+    "battery": {
+        "interval":30,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄 ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "󰝟",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
     "custom/expand": {
         "format": "",
         "tooltip": false

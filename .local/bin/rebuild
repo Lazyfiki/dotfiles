@@ -22,7 +22,8 @@ git diff -U0 '*.nix'
 
 echo "NixOS Rebuilding..."
 
-sudo nixos-rebuild switch --flake "$path" &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+# sudo nixos-rebuild switch --flake "$path" &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake "$path" | tee nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
 current=$(nixos-rebuild list-generations --flake "$path" | grep current)
 

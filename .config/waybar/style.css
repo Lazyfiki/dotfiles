@@ -8,6 +8,14 @@
     margin: 0;
 }
 
+tooltip {
+    background: alpha(@background, 0.7);
+    border-radius: 12px;
+    border: 2px solid alpha(@foreground,0.5);
+    padding: 6px;
+    margin: 6px;
+}
+
 #waybar {
     background: alpha(@background, 0.7);
 }
@@ -16,11 +24,27 @@
     color: alpha(white, 0.2);
 }
 
+#workspaces button:hover {
+    all: unset;
+    background: alpha(@background, 0.5);
+}
+
 #workspaces button.active {
     color: white;
+    background: transparent;
+    border: none;
+}
+
+#battery {
+    padding: 0 10px 0 0;
+}
+
+#pulseaudio {
+    padding-right: 6px;
 }
 
 #clock,
+#battery,
 #network,
 #pulseaudio,
 #cpu,
@@ -48,11 +72,6 @@
     color: white;
 }
 
-#battery {
-    background: white;
-    border-radius: 15px;
-}
-
 #custom-launcher {
     padding-left: 20px;
     font-size: 24px;
@@ -68,9 +87,6 @@
 #custom-textfour,
 #custom-textfive {
     font-size: 13px;
-}
-
-#image.ethernetart {
 }
 
 #custom-date {

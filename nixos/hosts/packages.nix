@@ -106,10 +106,10 @@
     unstable.hyprlock
     unstable.hyprpolkitagent
     unstable.mpc
+    unstable.nautilus
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
-    unstable.nautilus
     wacomtablet
     waybar
     wayland-protocols
@@ -118,6 +118,7 @@
     xdg-utils
     xwayland
     ydotool
+    youtube-music
     zathura
   ];
 in {
