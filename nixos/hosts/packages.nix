@@ -92,7 +92,6 @@
     qbittorrent
     rofi
     slurp
-    spotify
     steam
     stow
     swappy
@@ -110,6 +109,7 @@
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
+    unstable.spotify
     wacomtablet
     waybar
     wayland-protocols
