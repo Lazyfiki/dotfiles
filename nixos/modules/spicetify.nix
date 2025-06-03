@@ -14,6 +14,8 @@ in {
     enable = true;
     spotifyPackage = pkgs.spotify;
 
+    theme = spicePkgs.themes.defaultDynamic;
+
     enabledExtensions = with spicePkgs.extensions; [
       fullAppDisplay
       shuffle
