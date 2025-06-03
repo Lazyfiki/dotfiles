@@ -14,7 +14,7 @@ in {
     enable = true;
     spotifyPackage = pkgs.spotify;
 
-    theme = spicePkgs.themes.hazy;
+    theme = spicePkgs.themes.text;
     # colorScheme = "mocha";
 
     enabledExtensions = with spicePkgs.extensions; [
