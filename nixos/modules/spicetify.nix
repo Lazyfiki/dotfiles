@@ -12,7 +12,7 @@ in {
 
   programs.spicetify = {
     enable = true;
-    # spotifyPackage = pkgs.spotify;
+    spotifyPackage = pkgs.spotify;
 
     theme = spicePkgs.themes.hazy;
     colorScheme = "Base"; # Re-enabled for hazy theme compatibility
