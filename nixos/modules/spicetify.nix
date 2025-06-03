@@ -15,7 +15,7 @@ in {
     spotifyPackage = pkgs.spotify;
 
     theme = spicePkgs.themes.hazy;
-    colorScheme = "base"; # Re-enabled for hazy theme compatibility
+    colorScheme = "Base"; # Re-enabled for hazy theme compatibility
 
     enabledExtensions = with spicePkgs.extensions; [
       adblock
