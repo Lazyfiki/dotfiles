@@ -18,6 +18,7 @@ in {
     colorScheme = "base"; # Re-enabled for hazy theme compatibility
 
     enabledExtensions = with spicePkgs.extensions; [
+      adblock
       adblockify
       hidePodcasts
       shuffle
