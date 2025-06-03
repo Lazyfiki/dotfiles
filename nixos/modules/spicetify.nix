@@ -12,12 +12,15 @@ in {
 
   programs.spicetify = {
     enable = true;
+    spotifyPackage = pkgs.spotify;
+
+    theme = spicePkgs.themes.hazy;
+    # colorScheme = "mocha";
+
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       hidePodcasts
       shuffle # shuffle+ (special characters are sanitized out of extension names)
     ];
-    theme = spicePkgs.themes.default;
-    # colorScheme = "mocha";
   };
 }
