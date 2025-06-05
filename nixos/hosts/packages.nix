@@ -61,6 +61,7 @@
     ddcutil
     discord
     dunst
+    eww
     firefox
     gimp
     gjs
