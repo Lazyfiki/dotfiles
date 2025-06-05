@@ -78,6 +78,7 @@
     maestral
     mako
     mesa
+    mpc-cli
     mpd
     mpv
     ncmpcpp
@@ -109,7 +110,6 @@
     unstable.hyprland-qtutils
     unstable.hyprlock
     unstable.hyprpolkitagent
-    mpc-cli
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
