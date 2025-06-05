@@ -15,7 +15,6 @@
         "bluetooth",
         "pulseaudio",
         "battery",
-        "tray",
         "clock"
     ],
     "clock": {

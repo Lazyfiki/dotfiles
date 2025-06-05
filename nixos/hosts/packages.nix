@@ -112,6 +112,7 @@
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
+    unstable.sushi
     wacomtablet
     waybar
     wayland-protocols

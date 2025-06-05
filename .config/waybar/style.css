@@ -43,6 +43,10 @@ tooltip {
     padding-right: 6px;
 }
 
+#network {
+    padding-right: 4px;
+}
+
 #clock,
 #battery,
 #network,

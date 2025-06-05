@@ -15,3 +15,4 @@ wal -n -i ~/.local/share/bg.jpg
 pkill waybar; hyprctl dispatch exec waybar
 pkill swaync; hyprctl dispatch exec swaync
 hyprctl dispatch exec reload-nvim
+pkill nautilus
