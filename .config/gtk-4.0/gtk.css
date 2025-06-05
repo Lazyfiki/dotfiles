@@ -50,6 +50,6 @@
     color: black;
 }
 
-.view header {
+.view header .activatable {
     background: red;
 }

@@ -121,7 +121,7 @@
     xdg-utils
     xwayland
     ydotool
-    youtube-music
+    unstable.youtube-music
     zathura
   ];
 in {
