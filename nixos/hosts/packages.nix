@@ -64,6 +64,8 @@
     firefox
     gimp
     gjs
+    gnome.nautilus
+    gnome.sushi
     grim
     gvfs
     htop-vim
@@ -108,11 +110,9 @@
     unstable.hyprlock
     unstable.hyprpolkitagent
     unstable.mpc
-    unstable.nautilus
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
-    unstable.sushi
     wacomtablet
     waybar
     wayland-protocols
