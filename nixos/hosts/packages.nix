@@ -113,6 +113,7 @@
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
+    unstable.youtube-music
     wacomtablet
     waybar
     wayland-protocols
@@ -121,7 +122,6 @@
     xdg-utils
     xwayland
     ydotool
-    unstable.youtube-music
     zathura
   ];
 in {
