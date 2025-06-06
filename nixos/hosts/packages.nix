@@ -41,10 +41,10 @@
     brightnessctl
     cifs-utils
     curl
-    dconf-editor
     ffmpeg
     file
     gnome.adwaita-icon-theme
+    gnome.dconf-editor
     jq
     killall
     libnotify
