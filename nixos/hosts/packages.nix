@@ -96,7 +96,6 @@
     pyprland
     qbittorrent
     rofi
-    wofi
     slurp
     spotify
     steam

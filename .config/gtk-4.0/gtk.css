@@ -59,11 +59,3 @@
     background-color: @color1;
     color: black;
 }
-
-.view header .activatable {
-    background: red;
-}
-
-.flat > .popup {
-    background: red;
-}
