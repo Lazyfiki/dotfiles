@@ -43,7 +43,7 @@
     },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12,
+      "image-radius": 16,
       "blur": true
     },
     "buttons-grid": {

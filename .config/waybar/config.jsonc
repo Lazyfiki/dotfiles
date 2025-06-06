@@ -65,7 +65,7 @@
         "on-click-right": "blueman-manager"
     },
     "custom/weather": {
-        "exec": "~/.config/waybar/scripts/wttr.sh",
+        "exec": "~/.config/waybar/scripts/weather.sh",
         "interval": 600,
     },
     "battery": {
@@ -106,20 +106,29 @@
         "on-click": "pavucontrol"
     },
     "custom/expand": {
-        "format": "",
+        "format": " ",
         "tooltip": false
     },
     "custom/endpoint":{
-        "format": "|",
+        "format": "| ",
         "tooltip": false
     },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+
     "group/expand": {
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 600,
             "transition-to-left": true,
-            "click-to-reveal": true
+            "click-to-reveal": true,
         },
-        "modules": ["custom/expand","cpu","memory","temperature","custom/endpoint"]
+        "modules": [
+            "custom/expand",
+            "custom/endpoint",
+            "tray",
+        ],
     }
 }
