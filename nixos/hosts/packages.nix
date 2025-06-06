@@ -41,18 +41,19 @@
     brightnessctl
     cifs-utils
     curl
+    dconf-editor
     ffmpeg
     file
     gnome.adwaita-icon-theme
     jq
     killall
     libnotify
+    libwacom
     man-pages
     tree
     tree-sitter
     unzip
     wget
-    libwacom
   ];
 
   apps = with pkgs; [
