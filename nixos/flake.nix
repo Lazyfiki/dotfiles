@@ -5,7 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&ref=v0.40.0"; # use the version you want
+    # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&ref=v0.40.0"; # use the version you want
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&ref=main";
     hy3 = {
       url = "github:outfoxxed/hy3?ref=hl0.40.0"; # same version branch as Hyprland
       inputs.hyprland.follows = "hyprland";
