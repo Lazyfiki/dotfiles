@@ -1,9 +1,5 @@
 {inputs, ...}: {
-  # additions = final: _prev: import ../pkgs final.pkgs;
-  additions = final: _prev: {
-    inherit (inputs.hyprland.packages.${final.system}) hyprland;
-    hy3 = inputs.hy3.packages.${final.system}.hy3;
-  };
+  additions = final: _prev: import ../pkgs final.pkgs;
 
   modifications = final: prev: {
     ciscoPacketTracer8 = prev.ciscoPacketTracer8.overrideAttrs (oldAttrs: {
