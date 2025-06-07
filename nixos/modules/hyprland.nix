@@ -4,7 +4,7 @@
     enableNvidiaPatches = true;
     xwayland.enable = true;
 
-    plugins = [
+    plugins = with pkgs; [
       unstable.hyprlandPlugins.hy3
     ];
   };
