@@ -71,7 +71,7 @@
     grim
     gvfs
     htop-vim
-    hyprland
+    # hyprland
     hyprpicker
     imagemagick
     krita
@@ -125,8 +125,6 @@
     xwayland
     ydotool
     zathura
-
-    unstable.hyprlandPlugins.hy3
   ];
 in {
   environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;

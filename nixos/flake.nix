@@ -5,6 +5,12 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&ref={version}";
+    hy3 = {
+      url = "github:outfoxxed/hy3?ref=hl{version}";
+      inputs.hyprland.follows = "hyprland";
+    };
+
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
@@ -12,6 +18,8 @@
   outputs = {
     self,
     nixpkgs,
+    hy3,
+    hyprland,
     zen-browser,
     ...
   } @ inputs: let
