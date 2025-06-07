@@ -3,6 +3,10 @@
     enable = true;
     enableNvidiaPatches = true;
     xwayland.enable = true;
+
+    plugins = [
+      unstable.hyprlandPlugins.hy3
+    ];
   };
 
   environment.sessionVariables = {
