@@ -11,6 +11,7 @@
     outputs.modules.bootloader
     outputs.modules.docker
     outputs.modules.firewall
+    outputs.modules.hyprland
     outputs.modules.power
     outputs.modules.spicetify
     outputs.modules.ssh
@@ -62,10 +63,6 @@
 
   services.xserver.enable = false;
   programs.steam.enable = true;
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
 
   networking.networkmanager.enable = true;
 

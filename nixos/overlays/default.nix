@@ -8,8 +8,6 @@
         sha256 = "sha256-bNK4iR35LSyti2/cR0gPwIneCFxPP+leuA1UUKKn9y0=";
       };
     });
-    hyprland = inputs.hyprland.packages.x86_64-linux.hyprland;
-    hy3 = inputs.hy3.packages.x86_64-linux.hy3;
   };
 
   unstable-packages = final: _prev: {

@@ -4,6 +4,7 @@
   bootloader = import ./bootloader.nix;
   docker = import ./docker.nix;
   firewall = import ./firewall.nix;
+  hyprland = import ./hyprland.nix;
   power = import ./power.nix;
   spicetify = import ./spicetify.nix;
   ssh = import ./ssh.nix;
