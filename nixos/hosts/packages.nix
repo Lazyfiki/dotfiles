@@ -37,8 +37,7 @@
   ];
 
   utils = with pkgs; [
-    albert
-    qt5.qtbase
+    unstable.albert
     bc
     brightnessctl
     cifs-utils
