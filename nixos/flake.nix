@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&ref={version}";
+    hyprland.url = "github:hyprwm/Hyprland?submodules=1";
     hy3 = {
       url = "github:outfoxxed/hy3?ref=hl{version}";
       inputs.hyprland.follows = "hyprland";
