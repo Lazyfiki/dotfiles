@@ -37,7 +37,7 @@
   ];
 
   utils = with pkgs; [
-    pantheon.elementary-camera
+    albert
     bc
     brightnessctl
     cifs-utils
