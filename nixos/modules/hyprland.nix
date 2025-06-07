@@ -1,12 +1,8 @@
-{pkgs, ...}: {
+{
   programs.hyprland = {
     enable = true;
     enableNvidiaPatches = true;
     xwayland.enable = true;
-
-    plugins = with pkgs; [
-      unstable.hyprlandPlugins.hy3
-    ];
   };
 
   environment.sessionVariables = {
