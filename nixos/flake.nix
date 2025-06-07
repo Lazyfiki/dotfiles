@@ -5,6 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
@@ -12,6 +17,7 @@
   outputs = {
     self,
     nixpkgs,
+    quickshell,
     zen-browser,
     ...
   } @ inputs: let
@@ -38,6 +44,7 @@
           {
             environment.systemPackages = [
               zen-browser.packages.x86_64-linux.default
+              quickshell.packages.x86_64-linux.default
             ];
           }
           ./hosts/configuration.nix
