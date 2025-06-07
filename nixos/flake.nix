@@ -48,6 +48,8 @@
           {
             environment.systemPackages = [
               zen-browser.packages.x86_64-linux.default
+              inputs.hyprland.packages.x86_64-linux.hyprland
+              inputs.hy3.packages.x86_64-linux.hy3
             ];
           }
           ./hosts/configuration.nix
