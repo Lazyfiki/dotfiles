@@ -35,13 +35,12 @@
 
     "hyprland/window": {
         "format": "{initialTitle}",
-        "max-length": 20,
+        "max-length": 200,
         "rewrite": {
             "^(?!.*\\S).*": "Finder"
         }
     },
     "custom/launcher": {
-        // "format": ""
         "format": ""
     },
     "network": {
