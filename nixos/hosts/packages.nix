@@ -37,8 +37,6 @@
   ];
 
   utils = with pkgs; [
-    unstable.hyprcursor
-    unstable.albert
     bc
     brightnessctl
     cifs-utils
@@ -46,8 +44,6 @@
     ffmpeg
     file
     gnome.adwaita-icon-theme
-    bibata-cursors
-    glib
     gnome.dconf-editor
     jq
     killall
@@ -56,6 +52,7 @@
     man-pages
     tree
     tree-sitter
+    unstable.albert
     unzip
     wget
   ];
