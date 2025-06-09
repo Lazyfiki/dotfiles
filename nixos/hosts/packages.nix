@@ -45,7 +45,7 @@
     ffmpeg
     file
     gnome.adwaita-icon-theme
-    bibata-cursors
+    unstable.bibata-cursors
     glib
     gnome.dconf-editor
     jq
