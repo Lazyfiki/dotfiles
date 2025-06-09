@@ -37,6 +37,7 @@
   ];
 
   utils = with pkgs; [
+    unstable.hyprcursor
     unstable.albert
     bc
     brightnessctl
