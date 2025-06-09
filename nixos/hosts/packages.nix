@@ -100,7 +100,7 @@
     qbittorrent
     rofi
     slurp
-    spotify
+    unstable.spotify
     steam
     stow
     swappy
