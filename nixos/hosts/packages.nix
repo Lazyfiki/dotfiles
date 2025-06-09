@@ -44,7 +44,9 @@
     curl
     ffmpeg
     file
-    gnome.adwaita-icon-theme
+    # gnome.adwaita-icon-theme
+    bibata-cursors
+    glib
     gnome.dconf-editor
     jq
     killall
@@ -98,7 +100,7 @@
     qbittorrent
     rofi
     slurp
-    spotify
+    unstable.spotify
     steam
     stow
     swappy
