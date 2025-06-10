@@ -55,7 +55,7 @@
     man-pages
     tree
     tree-sitter
-    unstable.albert
+    albert
     unzip
     wget
   ];
