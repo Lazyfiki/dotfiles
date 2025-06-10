@@ -43,7 +43,8 @@
     curl
     ffmpeg
     file
-    gnome.adwaita-icon-theme
+    # gnome.adwaita-icon-theme
+    colloid-icon-theme
     gnome.dconf-editor
     jq
     killall

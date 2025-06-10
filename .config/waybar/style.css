@@ -47,11 +47,16 @@ tooltip {
     padding-right: 4px;
 }
 
+#backlight {
+    padding-right: 6px;
+}
+
 #clock,
 #battery,
 #network,
 #pulseaudio,
 #cpu,
+#backlight,
 #memory,
 #bluetooth,
 #custom-weather,
