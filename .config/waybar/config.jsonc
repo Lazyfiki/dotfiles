@@ -43,13 +43,16 @@
 
     "hyprland/window": {
         "format": "{initialTitle}",
+        "on-click": "activate",
         "max-length": 200,
         "rewrite": {
             "^(?!.*\\S).*": "Finder"
         }
     },
     "custom/launcher": {
-        "format": ""
+        "format": "",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
     },
     "network": {
         "format-wifi": " ",

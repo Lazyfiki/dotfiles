@@ -52,7 +52,7 @@
     libnotify
     libwacom
     man-pages
-    nwg-look
+    themechanger
     tree
     tree-sitter
     unstable.albert
