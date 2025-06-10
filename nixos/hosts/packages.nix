@@ -56,7 +56,7 @@
     tree
     tree-sitter
     albert
-    xterm2
+    xterm
     kitty
     unzip
     wget
