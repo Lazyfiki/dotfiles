@@ -39,6 +39,7 @@
   utils = with pkgs; [
     bc
     brightnessctl
+    nwg-look
     cifs-utils
     curl
     ffmpeg

@@ -86,7 +86,7 @@
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% 󰂄 ",
-        "format-alt": "{time} {icon}",
+        "format-alt": "{icon}",
         "format-icons": [
             "",
             "",
@@ -112,7 +112,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click-right": "pavucontrol"
     },
     "custom/expand": {
         "format": " ",
