@@ -39,25 +39,23 @@
   utils = with pkgs; [
     bc
     brightnessctl
-    nwg-look
     cifs-utils
+    colloid-icon-theme
     curl
     ffmpeg
     file
-    gnome.adwaita-icon-theme
     glib
-    colloid-icon-theme
+    gnome.adwaita-icon-theme
     gnome.dconf-editor
     jq
     killall
     libnotify
     libwacom
     man-pages
+    nwg-look
     tree
     tree-sitter
-    albert
-    xterm
-    kitty
+    unstable.albert
     unzip
     wget
   ];
