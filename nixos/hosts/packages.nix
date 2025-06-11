@@ -56,6 +56,7 @@
     tree
     tree-sitter
     unstable.albert
+    unstable.code-cursor
     unzip
     wget
   ];
