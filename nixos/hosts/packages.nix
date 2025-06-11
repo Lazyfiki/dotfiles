@@ -72,7 +72,6 @@
     gimp
     gjs
     gnome.nautilus
-    # gnome.sushi
     grim
     gvfs
     htop-vim
