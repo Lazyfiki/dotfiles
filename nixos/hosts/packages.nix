@@ -55,8 +55,7 @@
     themechanger
     tree
     tree-sitter
-    unstable.albert
-    ulauncher
+    albert
     unzip
     wget
   ];
