@@ -72,7 +72,7 @@
     gimp
     gjs
     gnome.nautilus
-    gnome.sushi
+    # gnome.sushi
     grim
     gvfs
     htop-vim
