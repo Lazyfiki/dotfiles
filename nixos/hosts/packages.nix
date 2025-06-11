@@ -136,9 +136,10 @@ in {
   environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;
 
   fonts.packages = with pkgs; [
+    cantarell-fonts
+    font-awesome
     jetbrains-mono
     joypixels
-    font-awesome
     nerdfonts
   ];
 }
