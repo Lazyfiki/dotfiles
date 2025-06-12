@@ -9,6 +9,10 @@
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
+.icon {
+    font-family: "Font Awesome 6 Pro", "Nerd Fonts", sans-serif;
+}
+
 tooltip {
     background: alpha(@background, 0.7);
     border-radius: 12px;
@@ -42,11 +46,11 @@ tooltip {
 }
 
 #battery {
-    padding-right: 10px;
+    padding-right: 0px;
 }
 
 #pulseaudio {
-    padding-right: 6px;
+    padding-right: 0px;
 }
 
 #network {
@@ -54,7 +58,7 @@ tooltip {
 }
 
 #backlight {
-    padding-right: 6px;
+    padding-right: 0px;
 }
 
 #clock,

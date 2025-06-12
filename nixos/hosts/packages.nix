@@ -137,7 +137,7 @@ in {
   fonts.packages = with pkgs; [
     jetbrains-mono
     joypixels
-    # nerdfonts
+    nerdfonts
     inter
   ];
 }

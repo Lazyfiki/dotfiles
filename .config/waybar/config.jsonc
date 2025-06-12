@@ -55,7 +55,7 @@
         "on-click": "rofi -show drun"
     },
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "",
         "format-ethernet":"",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
@@ -64,7 +64,7 @@
         "on-click": "ghostty --class=com.connection.editor -e nmtui"
     },
     "bluetooth": {
-        "format-on": "󰂯",
+        "format-on": "\uf293",
         "format-off": "BT-off",
         "format-disabled": "󰂲",
         "format-connected-battery": "{device_battery_percentage}% 󰂯",
@@ -91,17 +91,11 @@
         "format-plugged": "{capacity}% 󰂄 ",
         "format-alt": "{icon}",
         "format-icons": [
-            // "",
-            // "",
-            // "",
-            // "",
-            // ""
             "",
             "",
             "",
             "",
             "",
-            "\uf2e2\uf2e2",
         ],
     },
     "pulseaudio": {
