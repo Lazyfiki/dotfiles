@@ -77,6 +77,7 @@
     htop-vim
     hyprpicker
     imagemagick
+    inkscape
     krita
     libinput
     lutris
@@ -101,7 +102,6 @@
     qbittorrent
     rofi
     slurp
-    unstable.spotify
     steam
     stow
     swappy
@@ -118,6 +118,7 @@
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
+    unstable.spotify
     unstable.youtube-music
     wacomtablet
     waybar
@@ -128,8 +129,6 @@
     xwayland
     ydotool
     zathura
-
-    unstable.hyprlandPlugins.hy3
   ];
 in {
   environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;

@@ -50,7 +50,8 @@
         }
     },
     "custom/launcher": {
-        "format": "",
+        // "format": "",
+        "format": "",
         "tooltip": false,
         "on-click": "rofi -show drun"
     },
@@ -64,7 +65,7 @@
         "on-click": "ghostty --class=com.connection.editor -e nmtui"
     },
     "bluetooth": {
-        "format-on": "\uf293",
+        "format-on": "",
         "format-off": "BT-off",
         "format-disabled": "󰂲",
         "format-connected-battery": "{device_battery_percentage}% 󰂯",
@@ -119,7 +120,7 @@
     },
     "custom/expand": {
         "format": " ",
-        "tooltip": false
+        "tooltip": true
     },
     "custom/endpoint":{
         "format": "| ",
