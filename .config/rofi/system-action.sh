@@ -10,7 +10,7 @@ host=`hostname`
 
 # Options (format: key:icon)
 options=(
-    "l:"
+    "l:"
     "u:"
     "o:"
     "r:"
@@ -71,7 +71,6 @@ run_cmd() {
 chosen=$(rofi_cmd)
 exit_code=$?
 
-# Map keybindings to actions
 case $exit_code in
     10) # kb-custom-1 (s)
         run_cmd --shutdown

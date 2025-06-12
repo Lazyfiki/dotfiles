@@ -45,22 +45,6 @@ tooltip {
     border: none;
 }
 
-#battery {
-    padding-right: 0px;
-}
-
-#pulseaudio {
-    padding-right: 0px;
-}
-
-#network {
-    padding-right: 0px;
-}
-
-#backlight {
-    padding-right: 0px;
-}
-
 #clock,
 #battery,
 #network,

@@ -34,7 +34,7 @@
         "device": "intel_backlight",
         "format": "{icon}",
         "format-alt": "{percent}% {icon}",
-        "format-icons": [""]
+        "format-icons": [""]
     },
 
     "hyprland/workspaces": {
@@ -51,23 +51,24 @@
     },
     "custom/launcher": {
         // "format": "",
-        "format": "",
+        // "format": "",
+        "format": "",
         "tooltip": false,
         "on-click": "rofi -show drun"
     },
     "network": {
         "format-wifi": "",
-        "format-ethernet":"",
-        "format-disconnected": "",
+        "format-ethernet":"",
+        "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
-        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "tooltip-format-ethernet": "{ifname}  ",
         "on-click": "ghostty --class=com.connection.editor -e nmtui"
     },
     "bluetooth": {
         "format-on": "",
         "format-off": "BT-off",
-        "format-disabled": "󰂲",
+        "format-disabled": "",
         "format-connected-battery": "{device_battery_percentage}% 󰂯",
         "format-alt": "{device_alias}󰂯",
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
@@ -120,7 +121,8 @@
     },
     "custom/expand": {
         "format": " ",
-        "tooltip": true
+        // "format-alt": " v",
+        "tooltip": false
     },
     "custom/endpoint":{
         "format": "| ",
