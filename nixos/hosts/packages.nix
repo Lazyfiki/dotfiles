@@ -43,15 +43,15 @@
     colloid-icon-theme
     curl
     ffmpeg
-    gst_all_1.gstreamer
-    gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-base
-    gst_all_1.gst-libav
     ffmpegthumbnailer
     file
     glib
     gnome.adwaita-icon-theme
     gnome.dconf-editor
+    gst_all_1.gst-libav
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gstreamer
     jq
     killall
     libnotify
