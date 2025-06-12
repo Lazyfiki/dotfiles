@@ -135,10 +135,9 @@ in {
   environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;
 
   fonts.packages = with pkgs; [
-    # unstable.font-awesome
     jetbrains-mono
     joypixels
-    # nerdfonts
+    nerdfonts
     inter
   ];
 }
