@@ -43,6 +43,7 @@
     colloid-icon-theme
     curl
     ffmpeg
+    ffmpegthumbnailer
     file
     glib
     gnome.adwaita-icon-theme
