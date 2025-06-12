@@ -6,6 +6,7 @@
     background: transparent;
     padding: 0;
     margin: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 tooltip {
@@ -16,8 +17,13 @@ tooltip {
     margin: 6px;
 }
 
-#waybar {
+#waybar > box {
     background: alpha(@background, 0.7);
+    padding: 2px;
+    /* background: rgba(0,0,0,0.3); */
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    /* box-shadow: 5px 5px 5px 5px black; */
 }
 
 #workspaces button {
