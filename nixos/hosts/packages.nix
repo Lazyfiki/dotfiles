@@ -138,7 +138,7 @@ in {
     # unstable.font-awesome
     jetbrains-mono
     joypixels
-    nerdfonts
+    # nerdfonts
     inter
   ];
 }
