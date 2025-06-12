@@ -34,7 +34,8 @@
         "device": "intel_backlight",
         "format": "{icon}",
         "format-alt": "{percent}% {icon}",
-        "format-icons": [""]
+        "format-icons": [""],
+        "tooltip-format": "{percent}% {icon}"
     },
 
     "hyprland/workspaces": {
