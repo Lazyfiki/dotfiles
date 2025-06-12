@@ -77,7 +77,7 @@
     htop-vim
     hyprpicker
     imagemagick
-    inkscape
+    unstalbe.inkscape
     krita
     libinput
     lutris
