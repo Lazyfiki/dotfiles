@@ -43,10 +43,10 @@
     colloid-icon-theme
     curl
     ffmpeg
-    gstAll_1.gstreamer
-    gstAll_1.gst-plugins-good
-    gstAll_1.gst-plugins-base
-    gstAll_1.gst-libav
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-libav
     ffmpegthumbnailer
     file
     glib
