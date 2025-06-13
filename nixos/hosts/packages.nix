@@ -60,7 +60,7 @@
     themechanger
     tree
     tree-sitter
-    albert
+    unstable.albert
     unstable.code-cursor
     unzip
     wget
