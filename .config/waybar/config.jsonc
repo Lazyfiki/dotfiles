@@ -16,8 +16,9 @@
         "bluetooth",
         "pulseaudio",
         "battery",
-        "clock"
+        "clock",
     ],
+
     "clock": {
         "format": "{:%b %d %I:%M%p}",
         "interval": 1,

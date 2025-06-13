@@ -103,7 +103,7 @@
     pulsemixer
     pyprland
     qbittorrent
-    rofi
+    rofi-wayland
     slurp
     steam
     stow
