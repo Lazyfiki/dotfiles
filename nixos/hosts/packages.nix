@@ -52,6 +52,7 @@
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
     gst_all_1.gstreamer
+    htop-vim
     jq
     killall
     libnotify
@@ -78,7 +79,6 @@
     gnome.nautilus
     grim
     gvfs
-    htop-vim
     hyprpicker
     imagemagick
     krita
@@ -139,7 +139,6 @@ in {
   fonts.packages = with pkgs; [
     jetbrains-mono
     joypixels
-    # nerdfonts
     inter
   ];
 }

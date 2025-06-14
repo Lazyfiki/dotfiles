@@ -26,12 +26,10 @@
 
 .widget-title > button {
     color: white;
-    background: rgba(0,0,0,0.5);
-    font-size: 14px;  /* Adjust icon size */
-    padding-right: 10px;
+    background: rgba(40,40,40,0.5);
+    font-size: 16px;
     padding-left: 4px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-right: 4px;
     border-radius: 50%;
 }
 
@@ -57,7 +55,7 @@
 }
 
 .notification-content {
-    background: rgba(0,0,0,0.5);
+    background: rgba(40,40,40,0.5);
     margin: 0;
     border-radius: 25px;
     padding: 20px;
@@ -81,7 +79,7 @@
     color: #ffffff;
     padding: 20px;
     border-radius: 25px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(40,40,40,0.5);
 }
 
 .widget-mpris {
