@@ -52,11 +52,10 @@
         }
     },
     "custom/launcher": {
-        // "format": "",
-        // "format": "",
-        "format": "",
+        // "format": "", // aparture since
+        "format": "", // pixel art thingy
         "tooltip": false,
-        "on-click": "rofi -show drun"
+        "on-click": "/home/ahmed/.config/rofi/system-action.sh"
     },
     "network": {
         "format-wifi": "",
