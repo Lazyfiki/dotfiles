@@ -26,7 +26,7 @@
 
 .widget-title > button {
     color: white;
-    background: rgba(40,40,40,0.5);
+    background: rgba(32,32,32,0.5);
     font-size: 16px;
     padding-left: 4px;
     padding-right: 4px;
@@ -55,7 +55,7 @@
 }
 
 .notification-content {
-    background: rgba(40,40,40,0.5);
+    background: rgba(32,32,32,0.5);
     margin: 0;
     border-radius: 35px;
     padding: 20px;
@@ -79,7 +79,7 @@
     color: #ffffff;
     padding: 20px;
     border-radius: 35px;
-    background: rgba(40,40,40,0.5);
+    background: rgba(32,32,32,0.5);
 }
 
 .widget-mpris {

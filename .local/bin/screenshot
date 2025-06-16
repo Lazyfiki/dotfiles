@@ -6,5 +6,5 @@ screenshot_filename="$HOME/pix/ss/$(date +%s).png"
 grim -o $active_workspace_monitor $screenshot_filename
 
 if [ -e $screenshot_filename ]; then
-    notify-send -i $screenshot_filename "Grim" "Active Monitor Screenshot Saved \n $screenshot_filename"
+    preview $screenshot_filename
 fi

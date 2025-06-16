@@ -119,6 +119,7 @@
     unstable.hyprland-qtutils
     unstable.hyprlock
     unstable.hyprpolkitagent
+    unstable.notion-app
     unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
