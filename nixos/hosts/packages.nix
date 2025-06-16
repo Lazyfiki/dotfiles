@@ -69,6 +69,7 @@
   ];
 
   apps = with pkgs; [
+    ani-cli
     bottles
     chromium
     ddcutil
