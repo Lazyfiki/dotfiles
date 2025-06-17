@@ -62,8 +62,6 @@
     themechanger
     tree
     tree-sitter
-    unstable.albert
-    unstable.code-cursor
     unzip
     wget
   ];
@@ -86,7 +84,6 @@
     libinput
     lutris
     maestral
-    mako
     mesa
     mpc-cli
     mpd
