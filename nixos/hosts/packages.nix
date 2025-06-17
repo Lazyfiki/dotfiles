@@ -117,7 +117,6 @@
     unstable.hyprlock
     unstable.hyprpolkitagent
     unstable.obsidian
-    unstable.notion-app-enhanced
     unstable.pywal16
     unstable.pywalfox-native
     unstable.spotify
