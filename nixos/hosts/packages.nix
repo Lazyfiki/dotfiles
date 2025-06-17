@@ -117,6 +117,7 @@
     unstable.hyprlock
     unstable.hyprpolkitagent
     unstable.obsidian
+    notion-app
     notion-app-enhanced
     unstable.pywal16
     unstable.pywalfox-native
