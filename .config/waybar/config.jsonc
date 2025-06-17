@@ -20,7 +20,8 @@
     ],
 
     "clock": {
-        "format": "{:%b %d %I:%M%p}",
+        // "format": "{:%b %d %I:%M%p}",
+        "format": "{:%a %b %d %I:%M}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -58,7 +59,7 @@
         "on-click": "/home/ahmed/.config/rofi/system-action.sh"
     },
     "network": {
-        "format-wifi": "",
+        "format-wifi": "<span font_family='Font Awesome 6 Pro'></span>",
         "format-ethernet":"",
         "format-disconnected": "",
         "tooltip-format-disconnected": "Error",
@@ -67,7 +68,7 @@
         "on-click": "ghostty --class=com.connection.editor -e nmtui"
     },
     "bluetooth": {
-        "format-on": "",
+        "format-on": "<span font_family='Font Awesome 6 Pro'></span>",
         "format-off": "BT-off",
         "format-disabled": "",
         "format-connected-battery": "{device_battery_percentage}% 󰂯",
@@ -89,10 +90,10 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% <span font_family='Font Awesome 6 Pro' size='16000' rise='-1600'>{icon}</span>",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% 󰂄 ",
-        "format-alt": "{icon}",
+        "format-alt": "<span font_family='Font Awesome 6 Pro' size='16000' rise='-1600'>{icon}</span>",
         "format-icons": [
             "",
             "",
@@ -102,11 +103,11 @@
         ],
     },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-alt": "{volume}% {icon}",
+        "format": "<span font_family='Font Awesome 6 Pro Solid'>{icon}</span>",
+        "format-alt": "{volume}% {<span font_family='Font Awesome 6 Pro Solid'>{icon}</span>icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon}",
-        "format-muted": "",
+        "format-muted": "<span font_family='Font Awesome 6 Pro Solid'></span>",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
