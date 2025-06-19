@@ -20,7 +20,6 @@
     ],
 
     "clock": {
-        // "format": "{:%b %d %I:%M%p}",
         "format": "{:%a %b %d %I:%M}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -53,15 +52,14 @@
         }
     },
     "custom/launcher": {
-        // "format": "", // aparture since
-        "format": "", // pixel art thingy
+        "format": "<span font_family='Font Awesome 6 Duotone'>\uf8f6</span>",
         "tooltip": false,
         "on-click": "/home/ahmed/.config/rofi/system-action.sh"
     },
     "network": {
-        "format-wifi": "<span font_family='Font Awesome 6 Pro'></span>",
+        "format-wifi": "<span font_family='Font Awesome 6 Pro' font_weight='bold'></span>",
         "format-ethernet":"",
-        "format-disconnected": "",
+        "format-disconnected": "<span font_family='Font Awesome 6 Duotone Solid' font_weight='bold'>\uf6ac</span>",
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
         "tooltip-format-ethernet": "{ifname}  ",
@@ -90,12 +88,13 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{capacity}% <span font_family='Font Awesome 6 Pro' size='16000' rise='-1600'>{icon}</span>",
-        "format-charging": "{capacity}% ",
+        "format": "{capacity}% <span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
+        "format-charging": "{capacity}% <span font_family='Font Awesome 6 Duotone' size='18000' rise='-2600'>\uf376</span>",
         "format-plugged": "{capacity}% 󰂄 ",
-        "format-alt": "<span font_family='Font Awesome 6 Pro' size='16000' rise='-1600'>{icon}</span>",
+        "format-alt": "<span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
         "format-icons": [
             "",
+            "",
             "",
             "",
             "",
@@ -104,10 +103,10 @@
     },
     "pulseaudio": {
         "format": "<span font_family='Font Awesome 6 Pro Solid'>{icon}</span>",
-        "format-alt": "{volume}% {<span font_family='Font Awesome 6 Pro Solid'>{icon}</span>icon}",
+        "format-alt": "{volume}% <span font_family='Font Awesome 6 Pro Solid'>{icon}</span>",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon}",
-        "format-muted": "<span font_family='Font Awesome 6 Pro Solid'></span>",
+        "format-muted": "<span font_family='Font Awesome 6 Duotone Solid'>\uf2e2</span>",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -123,7 +122,6 @@
     },
     "custom/expand": {
         "format": " ",
-        // "format-alt": " v",
         "tooltip": false
     },
     "custom/endpoint":{
@@ -147,5 +145,20 @@
             "custom/endpoint",
             "tray",
         ],
-    }
+    },
+    "cpu": {
+        // "format": "\uF201 {usage}%",
+        "format-critical":  "<span color='#c20821'><b>\uF201 {usage}%</b></span>",
+        "format-high":      "<span color='#e03c52'>\uF201 {usage}%</span>",
+        "format-medium":    "<span color='#85c600'>\uF201 {usage}%</span>",
+        "format-low":       "<span color='grey'>\uF201 {usage}%</span>",
+        "tooltip": false,
+        "interval": 2,
+        "states": {
+            "critical": 80,
+            "high": 50,
+            "medium": 5,
+            "low": 0,
+        },
+    },
 }

@@ -19,4 +19,4 @@ case $code in
     *) icon="?" ;;
 esac
 
-echo "$icon ${temp}°C"
+echo "<span font_family='Font Awesome 6 Pro Solid'>$icon</span> ${temp}°C"

@@ -135,8 +135,9 @@ in {
   environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;
 
   fonts.packages = with pkgs; [
+    inter
     jetbrains-mono
     joypixels
-    inter
+    nerdfonts
   ];
 }
