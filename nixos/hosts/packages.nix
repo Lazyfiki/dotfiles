@@ -79,6 +79,7 @@
     grim
     gvfs
     hyprpicker
+    hyprshade
     imagemagick
     krita
     libinput

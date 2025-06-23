@@ -52,7 +52,7 @@
         }
     },
     "custom/launcher": {
-        "format": "<span font_family='Font Awesome 6 Duotone'>\uf8f6</span>",
+        "format": "",
         "tooltip": false,
         "on-click": "/home/ahmed/.config/rofi/system-action.sh"
     },

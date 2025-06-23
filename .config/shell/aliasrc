@@ -24,4 +24,3 @@ alias \
     df="df -h" \
 
 alias nix-shell="nix-shell --run zsh"
-alias mnt="sudo mount -t cifs //lazyfiki.duckdns.org/myfiles /mnt/ -o username=ahmed,password=1919est1919"
