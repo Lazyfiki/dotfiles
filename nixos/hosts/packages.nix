@@ -64,6 +64,7 @@
     tree-sitter
     unzip
     wget
+    wineWow64Packages.stagingFull
   ];
 
   apps = with pkgs; [
