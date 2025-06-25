@@ -68,7 +68,6 @@
   ];
 
   apps = with pkgs; [
-    anyrun
     bottles
     chromium
     ddcutil
@@ -114,6 +113,7 @@
     texliveFull
     transmission_4
     udiskie
+    unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
     unstable.hyprland-qtutils
