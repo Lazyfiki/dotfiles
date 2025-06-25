@@ -41,6 +41,7 @@
     brightnessctl
     cifs-utils
     colloid-icon-theme
+    bibata-cursors
     curl
     ffmpeg
     ffmpegthumbnailer
