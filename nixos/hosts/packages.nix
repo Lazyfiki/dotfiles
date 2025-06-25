@@ -68,6 +68,7 @@
   ];
 
   apps = with pkgs; [
+    anyrun
     bottles
     chromium
     ddcutil
