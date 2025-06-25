@@ -16,7 +16,7 @@ case $code in
     61|63|65|66|67|80|81|82) icon="" ;;
     71|73|75|77|85|86) icon="" ;;
     95|96|99) icon="" ;;
-    *) icon="?" ;;
+    *) icon="" ;;
 esac
 
 echo "<span font_family='Font Awesome 6 Pro Solid'>$icon</span> ${temp}°C"

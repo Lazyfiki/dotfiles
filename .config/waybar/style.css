@@ -19,7 +19,7 @@ tooltip {
 
 #waybar > box {
     background: alpha(@background, 0.7);
-    padding: 2px;
+    padding: 1px;
     /* background: rgba(0,0,0,0.3); */
     /* margin-top: 5px; */
     /* margin-bottom: 5px; */

@@ -48,7 +48,7 @@
         "on-click": "activate",
         "max-length": 200,
         "rewrite": {
-            "^(?!.*\\S).*": "Finder"
+            "^(?!.*\\S).*": "Desktop"
         }
     },
     "custom/launcher": {
