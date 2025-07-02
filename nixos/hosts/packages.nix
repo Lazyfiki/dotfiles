@@ -113,7 +113,7 @@
     texliveFull
     transmission_4
     udiskie
-    hyprland
+    unstable.hyprland
     unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
