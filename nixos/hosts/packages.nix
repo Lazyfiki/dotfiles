@@ -114,7 +114,7 @@
     transmission_4
     udiskie
     # unstable.hyprland
-    uwsm
+    unstable.uwsm
     unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
