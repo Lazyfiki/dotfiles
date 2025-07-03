@@ -1,18 +1,14 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, inputs, ...}: {
   programs.hyprland = {
     enable = true;
-    nvidiaPatches = true;
+    enableNvidiaPatches = true;
     xwayland.enable = true;
 
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    # package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    # portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
