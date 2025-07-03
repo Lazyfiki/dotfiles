@@ -1,17 +1,28 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   programs.hyprland = {
     enable = true;
-    # enableNvidiaPatches = true;
+    nvidiaPatches = true;
     xwayland.enable = true;
+
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
-  # environment.sessionVariables = {
-  #   WLR_NO_HARDWARE_CURSORS = "1";
-  #   NIXOS_OZONE_WL = "1";
-  # };
+  services.xserver.videoDrivers = ["nvidia"];
 
-  # hardware = {
-  #   opengl.enable = true;
-  #   nvidia.modesetting.enable = true;
-  # };
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";
+    NIXOS_OZONE_WL = "1";
+    QT_QPA_PLATFORM = "wayland";
+    MOZ_ENABLE_WAYLAND = "1";
+  };
+
+  hardware = {
+    opengl.enable = true;
+    nvidia.modesetting.enable = true;
+  };
 }
