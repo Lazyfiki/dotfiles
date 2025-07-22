@@ -16,7 +16,7 @@
     outputs.modules.spicetify
     outputs.modules.ssh
     outputs.modules.users
-    # outputs.modules.zram
+    outputs.modules.zram
     outputs.modules.zsh
 
     ./packages.nix
