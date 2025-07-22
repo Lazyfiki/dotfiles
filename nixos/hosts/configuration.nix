@@ -70,6 +70,12 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
+  services.logind = {
+    lidSwitch = "suspend";
+    lidSwitchDocked = "ignore";
+    lidSwitchExternalPower = "ignore";
+  };
+
   system = {
     autoUpgrade = {
       enable = true;
