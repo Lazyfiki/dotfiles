@@ -7,7 +7,6 @@
 
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      allRevs = true;
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
