@@ -23,7 +23,7 @@
     ripgrep
     tmux
     unstable.neovim
-    # vim
+    vim
     virt-manager
   ];
 
