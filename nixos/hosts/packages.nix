@@ -113,8 +113,6 @@
     texliveFull
     transmission_4
     udiskie
-    # unstable.hyprland
-    unstable.uwsm
     unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
@@ -125,6 +123,7 @@
     unstable.pywal16
     unstable.pywalfox-native
     unstable.spotify
+    unstable.uwsm
     unstable.youtube-music
     wacomtablet
     waybar
@@ -133,6 +132,7 @@
     wl-clipboard
     xdg-utils
     xwayland
+    yacreader
     ydotool
     zathura
   ];
