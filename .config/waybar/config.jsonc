@@ -10,6 +10,7 @@
     "modules-right": [
         "group/expand",
         "hyprland/workspaces",
+        "hyprland/language",
         "custom/weather",
         "backlight",
         "network",
@@ -52,6 +53,12 @@
             "^(?!.*\\S).*": "Desktop"
         }
     },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "ENG",
+    },
+
     "custom/launcher": {
         "format": "",
         "tooltip": false,
