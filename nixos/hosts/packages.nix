@@ -45,6 +45,7 @@
     curl
     fcitx5
     fcitx5-mozc
+    fcitx5-configtool
     ffmpeg
     ffmpegthumbnailer
     file
