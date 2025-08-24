@@ -9,7 +9,7 @@
   };
 
   # Use integrated GPU
-  services.xserver.videoDrivers = ["modesetting"];
+  services.xserver.videoDrivers = ["nvidia"];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -24,14 +24,11 @@
     driSupport32Bit = true;
   };
 
-  # Load Intel GPU driver
-  boot.kernelModules = ["i915"];
-
   # Prevent NVIDIA drivers from loading
-  boot.blacklistedKernelModules = [
-    "nvidia"
-    "nvidia_drm"
-    "nvidia_modeset"
-    "nvidia_uvm"
-  ];
+  # boot.blacklistedKernelModules = [
+  #   "nvidia"
+  #   "nvidia_drm"
+  #   "nvidia_modeset"
+  #   "nvidia_uvm"
+  # ];
 }
