@@ -73,7 +73,6 @@
 
   i18n.inputMethod = {
     enabled = "fcitx5";
-    fcitx5.addons = [config.environment.systemPackages.fcitx5-mozc];
   };
 
   services.logind = {
