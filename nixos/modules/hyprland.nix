@@ -1,15 +1,10 @@
 {
-  pkgs,
-  inputs,
-  ...
-}: {
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
 
-  # Use integrated GPU
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["modesetting"];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -24,11 +19,10 @@
     driSupport32Bit = true;
   };
 
-  # Prevent NVIDIA drivers from loading
-  # boot.blacklistedKernelModules = [
-  #   "nvidia"
-  #   "nvidia_drm"
-  #   "nvidia_modeset"
-  #   "nvidia_uvm"
-  # ];
+  boot.blacklistedKernelModules = [
+    "nvidia"
+    "nvidia_drm"
+    "nvidia_modeset"
+    "nvidia_uvm"
+  ];
 }
