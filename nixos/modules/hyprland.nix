@@ -8,7 +8,7 @@
     xwayland.enable = true;
   };
 
-  services.xserver.videoDrivers = ["modesetting"];
+  services.xserver.videoDrivers = ["nvidia"];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -23,10 +23,10 @@
     driSupport32Bit = true;
   };
 
-  boot.blacklistedKernelModules = [
-    "nvidia"
-    "nvidia_drm"
-    "nvidia_modeset"
-    "nvidia_uvm"
-  ];
+  # boot.blacklistedKernelModules = [
+  #   "nvidia"
+  #   "nvidia_drm"
+  #   "nvidia_modeset"
+  #   "nvidia_uvm"
+  # ];
 }
