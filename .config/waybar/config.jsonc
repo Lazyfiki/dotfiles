@@ -20,7 +20,8 @@
     ],
 
     "clock": {
-        "format": "{:%a %b %d %I:%M}",
+        "format": "{:%a %b %d %I:%M}", // english
+        // "format": "{:%B %d日, %A %I:%M}", // japanese
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
