@@ -141,5 +141,7 @@ in {
     jetbrains-mono
     joypixels
     nerdfonts
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
   ];
 }
