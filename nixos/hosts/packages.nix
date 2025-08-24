@@ -68,7 +68,7 @@
   ];
 
   apps = with pkgs; [
-    notion-app-enhanced
+    unstable.notion-app-enhanced
     bottles
     chromium
     ddcutil
@@ -85,7 +85,6 @@
     imagemagick
     krita
     libinput
-    lutris
     maestral
     mesa
     mpc-cli
@@ -106,7 +105,6 @@
     qbittorrent
     rofi-wayland
     slurp
-    steam
     stow
     swappy
     swaynotificationcenter
@@ -120,11 +118,9 @@
     unstable.hyprland-qtutils
     unstable.hyprlock
     unstable.hyprpolkitagent
-    unstable.obsidian
     unstable.pywal16
     unstable.pywalfox-native
     unstable.spotify
-    unstable.uwsm
     unstable.yacreader
     unstable.youtube-music
     wacomtablet
