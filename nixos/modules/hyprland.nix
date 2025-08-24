@@ -8,7 +8,8 @@
     xwayland.enable = true;
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  # Use integrated GPU
+  services.xserver.videoDrivers = ["modesetting"];
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -23,10 +24,14 @@
     driSupport32Bit = true;
   };
 
-  # boot.blacklistedKernelModules = [
-  #   "nvidia"
-  #   "nvidia_drm"
-  #   "nvidia_modeset"
-  #   "nvidia_uvm"
-  # ];
+  # Load Intel GPU driver
+  boot.kernelModules = ["i915"];
+
+  # Prevent NVIDIA drivers from loading
+  boot.blacklistedKernelModules = [
+    "nvidia"
+    "nvidia_drm"
+    "nvidia_modeset"
+    "nvidia_uvm"
+  ];
 }
