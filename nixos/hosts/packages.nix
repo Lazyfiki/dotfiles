@@ -68,6 +68,7 @@
   ];
 
   apps = with pkgs; [
+    notion-app-enhanced
     bottles
     chromium
     ddcutil
@@ -124,6 +125,7 @@
     unstable.pywalfox-native
     unstable.spotify
     unstable.uwsm
+    unstable.yacreader
     unstable.youtube-music
     wacomtablet
     waybar
@@ -132,7 +134,6 @@
     wl-clipboard
     xdg-utils
     xwayland
-    yacreader
     ydotool
     zathura
   ];
