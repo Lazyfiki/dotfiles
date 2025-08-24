@@ -38,11 +38,13 @@
 
   utils = with pkgs; [
     bc
+    bibata-cursors
     brightnessctl
     cifs-utils
     colloid-icon-theme
-    bibata-cursors
     curl
+    fcitx5
+    fcitx5-mozc
     ffmpeg
     ffmpegthumbnailer
     file
