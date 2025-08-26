@@ -71,7 +71,7 @@
   ];
 
   apps = with pkgs; [
-    unstable.notion-app-enhanced
+    notion-app-enhanced
     bottles
     chromium
     ddcutil
