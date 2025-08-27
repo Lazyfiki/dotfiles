@@ -100,8 +100,6 @@
     pavucontrol
     pkg-config
     playerctl
-    protontricks
-    protonup-qt
     pulseaudio
     pulsemixer
     pyprland
@@ -112,7 +110,6 @@
     swappy
     swaynotificationcenter
     swww
-    texliveFull
     transmission_4
     udiskie
     unstable.anyrun
