@@ -13,12 +13,9 @@
     docker-compose
     fd
     fzf
-    gcc
-    gdb
     git
     gnumake
     nodejs
-    openjdk17
     qemu
     ripgrep
     tmux
@@ -28,7 +25,6 @@
   ];
 
   lspPkgs = with pkgs; [
-    clang-tools
     gopls
     lua-language-server
     nil
@@ -43,9 +39,6 @@
     cifs-utils
     colloid-icon-theme
     curl
-    fcitx5
-    fcitx5-mozc
-    fcitx5-configtool
     ffmpeg
     ffmpegthumbnailer
     file
@@ -95,8 +88,6 @@
     mpv
     ncmpcpp
     nsxiv
-    obs-studio
-    pango
     pavucontrol
     pkg-config
     playerctl
