@@ -7,7 +7,7 @@
   ];
 
   devPkgs = with pkgs; [
-    ciscoPacketTracer8
+    # ciscoPacketTracer8
     clang
     direnv
     docker-compose
