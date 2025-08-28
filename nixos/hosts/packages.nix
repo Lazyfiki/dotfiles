@@ -18,6 +18,7 @@
     nodejs
     qemu
     ripgrep
+    stow
     tmux
     unstable.neovim
     vim
@@ -47,8 +48,6 @@
     libnotify
     libwacom
     man-pages
-    nwg-look
-    themechanger
     tree
     tree-sitter
     unzip
@@ -60,7 +59,6 @@
     chromium
     ddcutil
     discord
-    dunst
     firefox
     gimp
     gjs
@@ -88,7 +86,6 @@
     qbittorrent
     rofi-wayland
     slurp
-    stow
     swappy
     swaynotificationcenter
     swww
