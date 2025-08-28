@@ -90,7 +90,7 @@
     swaynotificationcenter
     swww
     transmission_4
-    # unstable.udiskie
+    udiskie
     unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
