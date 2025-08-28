@@ -1,6 +1,0 @@
-[1mdiff --git a/nixos/hosts/packages.nix b/nixos/hosts/packages.nix[m
-[1mindex bc5a20f..9fc16ac 100644[m
-[1m--- a/nixos/hosts/packages.nix[m
-[1m+++ b/nixos/hosts/packages.nix[m
-[36m@@ -120 +119,0 @@[m
-[31m-    unstable.notion-app-enhanced[m
