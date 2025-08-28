@@ -24,14 +24,6 @@
     virt-manager
   ];
 
-  lspPkgs = with pkgs; [
-    gopls
-    lua-language-server
-    nil
-    nodePackages.typescript-language-server
-    rust-analyzer
-  ];
-
   utils = with pkgs; [
     bc
     bibata-cursors
@@ -125,7 +117,7 @@
     zathura
   ];
 in {
-  environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ lspPkgs ++ utils;
+  environment.systemPackages = apps ++ localPkgs ++ devPkgs ++ utils;
 
   fonts.packages = with pkgs; [
     inter
