@@ -50,7 +50,7 @@
 
     gc = {
       automatic = true;
-      dates = "weekly";
+      dates = "monthly";
       options = "--delete-older-than 10d";
     };
 
@@ -62,7 +62,6 @@
   networking.hostName = "nixos";
 
   services.xserver.enable = false;
-  programs.steam.enable = true;
 
   networking.networkmanager.enable = true;
 
