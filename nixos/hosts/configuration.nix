@@ -69,7 +69,7 @@
 
   virtualisation.waydroid.enable = true;
 
-  services.xserver.enable = false;
+  # services.xserver.enable = false;
   services.udisks2.enable = true;
   services.logind = {
     lidSwitch = "suspend";
