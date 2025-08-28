@@ -56,7 +56,6 @@
   ];
 
   apps = with pkgs; [
-    notion-app-enhanced
     bottles
     chromium
     ddcutil
