@@ -13,10 +13,6 @@
     MOZ_ENABLE_WAYLAND = "1";
   };
 
-  hardware.opengl = {
-    enable = true;
-  };
-
   hardware.graphics.enable = true;
 
   boot.blacklistedKernelModules = [
