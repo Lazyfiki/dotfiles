@@ -36,7 +36,7 @@
     ffmpegthumbnailer
     file
     glib
-    gnome.adwaita-icon-theme
+    adwaita-icon-theme
     gnome.dconf-editor
     gst_all_1.gst-libav
     gst_all_1.gst-plugins-base
