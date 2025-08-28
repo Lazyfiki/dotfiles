@@ -37,7 +37,7 @@
     file
     glib
     adwaita-icon-theme
-    gnome.dconf-editor
+    dconf-editor
     gst_all_1.gst-libav
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
