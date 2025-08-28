@@ -70,9 +70,7 @@
 
   i18n.defaultLocale = "ja_JP.UTF-8";
 
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-  };
+  virtualisation.waydroid.enable = true;
 
   services.logind = {
     lidSwitch = "suspend";
