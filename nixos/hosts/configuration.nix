@@ -61,8 +61,6 @@
 
   networking.hostName = "nixos";
 
-  services.xserver.enable = false;
-
   networking.networkmanager.enable = true;
 
   time.timeZone = "Africa/Tunis";
@@ -71,6 +69,8 @@
 
   virtualisation.waydroid.enable = true;
 
+  services.xserver.enable = false;
+  services.udisks2.enable = true;
   services.logind = {
     lidSwitch = "suspend";
     lidSwitchDocked = "ignore";
