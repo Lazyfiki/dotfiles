@@ -62,7 +62,7 @@
     firefox
     gimp
     gjs
-    gnome.nautilus
+    nautilus
     grim
     gvfs
     hyprpicker
