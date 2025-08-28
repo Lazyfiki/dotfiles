@@ -17,6 +17,8 @@
     enable = true;
   };
 
+  hardware.graphics.enable = true;
+
   boot.blacklistedKernelModules = [
     "nvidia"
     "nvidia_drm"
