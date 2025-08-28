@@ -119,7 +119,6 @@ in {
     inter
     jetbrains-mono
     joypixels
-    # nerdfonts
     nerd-fonts.fira-code
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
