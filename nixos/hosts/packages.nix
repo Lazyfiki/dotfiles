@@ -92,7 +92,7 @@
     swww
     transmission_4
     udiskie
-    unstable.anyrun
+    # unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
     unstable.hyprland-qtutils
