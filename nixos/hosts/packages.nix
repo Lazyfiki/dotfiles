@@ -121,7 +121,8 @@ in {
     jetbrains-mono
     joypixels
     # nerdfonts
-    nerd-fonts.fira-code
+    # nerd-fonts.fira-code
+    nerdfonts.fira-code
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
   ];
