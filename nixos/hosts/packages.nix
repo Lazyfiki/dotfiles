@@ -100,7 +100,7 @@
     unstable.hyprpolkitagent
     unstable.pywal16
     unstable.pywalfox-native
-    unstable.spotify
+    # unstable.spotify
     unstable.yacreader
     unstable.youtube-music
     wacomtablet
