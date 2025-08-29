@@ -122,7 +122,7 @@ in {
     joypixels
     # nerdfonts
     # nerd-fonts.fira-code
-    nerdfonts.fira-code
+    # nerdfonts.fira-code
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
   ];
