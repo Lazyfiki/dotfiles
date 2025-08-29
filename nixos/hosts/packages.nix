@@ -30,13 +30,13 @@
     bibata-cursors
     brightnessctl
     cifs-utils
-    colloid-icon-theme
+    # colloid-icon-theme
     curl
     ffmpeg
     ffmpegthumbnailer
     file
     glib
-    # adwaita-icon-theme
+    adwaita-icon-theme
     dconf-editor
     gst_all_1.gst-libav
     gst_all_1.gst-plugins-base
