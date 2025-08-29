@@ -27,10 +27,8 @@
 
   utils = with pkgs; [
     bc
-    bibata-cursors
     brightnessctl
     cifs-utils
-    # colloid-icon-theme
     curl
     ffmpeg
     ffmpegthumbnailer
@@ -55,7 +53,7 @@
   ];
 
   apps = with pkgs; [
-    notion-app-enhanced
+    unstable.notion-app-enhanced
     bottles
     chromium
     ddcutil
