@@ -22,7 +22,7 @@
 
     "clock": {
         // "format": "{:%a %b %d %I:%M}", // english us
-        "format": "{:%B %d日、%A %H:%M}", // japanese
+        "format": "{:L%B %d日、%A %H:%M}", // japanese
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {

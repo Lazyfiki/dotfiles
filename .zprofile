@@ -14,6 +14,8 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export MANPAGER="nvim +Man!"
 export PATH=$PATH:$HOME/.local/bin
 
+export XCURSOR_THEME=Adwaita
+
 export MPD_HOST="localhost"
 export MPD_PORT="6600"
 

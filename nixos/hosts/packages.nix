@@ -92,7 +92,6 @@
     swww
     transmission_4
     udiskie
-    # unstable.anyrun
     unstable.clock-rs
     unstable.ghostty
     unstable.hyprland-qtutils
@@ -100,7 +99,7 @@
     unstable.hyprpolkitagent
     unstable.pywal16
     unstable.pywalfox-native
-    # unstable.spotify
+    unstable.spotify
     unstable.yacreader
     unstable.youtube-music
     wacomtablet
@@ -121,8 +120,6 @@ in {
     jetbrains-mono
     joypixels
     nerdfonts
-    # nerd-fonts.fira-code
-    # nerdfonts.fira-code
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
   ];
