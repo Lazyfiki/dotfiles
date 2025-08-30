@@ -111,7 +111,7 @@
         },
         "format": "{capacity}% <span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
         "format-charging": "{capacity}% <span font_family='Font Awesome 6 Duotone' size='18000' rise='-2600'>\uf376</span>",
-        "format-plugged": "{capacity}% 󰂄 ",
+        "format-plugged": "{capacity}% <span font_family='Font Awesome 6 Duotone' size='18000' rise='-2600'>\uf376</span>",
         "format-alt": "<span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
         "format-icons": [
             "",
