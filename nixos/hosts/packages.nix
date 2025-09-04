@@ -26,16 +26,17 @@
   ];
 
   utils = with pkgs; [
+    adwaita-icon-theme
+    bat
     bc
     brightnessctl
     cifs-utils
     curl
+    dconf-editor
     ffmpeg
     ffmpegthumbnailer
     file
     glib
-    adwaita-icon-theme
-    dconf-editor
     gst_all_1.gst-libav
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
