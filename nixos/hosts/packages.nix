@@ -97,7 +97,7 @@
     unstable.clock-rs
     unstable.hyprland-qtutils
     unstable.yacreader
-    unstable.youtube-music
+    youtube-music
     wacomtablet
     waybar
     wayland-protocols
