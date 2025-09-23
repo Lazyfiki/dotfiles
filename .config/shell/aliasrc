@@ -18,9 +18,10 @@ alias \
     vim="nvim" \
 
 alias \
-    ip="ip -color=auto" \
-    free="free -h" \
-    du="du -h" \
     df="df -h" \
+    du="du -h" \
+    free="free -h" \
+    ip="ip -color=auto" \
+    lsblk="lsblk | bat -l conf -p" \
 
 alias nix-shell="nix-shell --run zsh"

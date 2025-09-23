@@ -61,9 +61,9 @@
     firefox
     gimp
     gjs
-    nautilus
     grim
     gvfs
+    hyprlock
     hyprpicker
     hyprshade
     imagemagick
@@ -74,6 +74,7 @@
     mpc-cli
     mpd
     mpv
+    nautilus
     ncmpcpp
     nsxiv
     pavucontrol
@@ -93,7 +94,6 @@
     unstable.clock-rs
     unstable.ghostty
     unstable.hyprland-qtutils
-    unstable.hyprlock
     unstable.hyprpolkitagent
     unstable.pywal16
     unstable.pywalfox-native
