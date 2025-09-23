@@ -59,12 +59,14 @@
     ddcutil
     discord
     firefox
+    ghostty
     gimp
     gjs
     grim
     gvfs
     hyprlock
     hyprpicker
+    hyprpolkitagent
     hyprshade
     imagemagick
     krita
@@ -83,6 +85,7 @@
     pulseaudio
     pulsemixer
     pyprland
+    pywal16
     qbittorrent
     rofi-wayland
     slurp
@@ -92,12 +95,7 @@
     transmission_4
     udiskie
     unstable.clock-rs
-    unstable.ghostty
     unstable.hyprland-qtutils
-    unstable.hyprpolkitagent
-    unstable.pywal16
-    unstable.pywalfox-native
-    unstable.spotify
     unstable.yacreader
     unstable.youtube-music
     wacomtablet
