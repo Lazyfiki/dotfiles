@@ -97,7 +97,6 @@
     unstable.clock-rs
     unstable.hyprland-qtutils
     unstable.yacreader
-    youtube-music
     wacomtablet
     waybar
     wayland-protocols
@@ -106,6 +105,7 @@
     xdg-utils
     xwayland
     ydotool
+    youtube-music
     zathura
   ];
 in {
