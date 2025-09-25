@@ -14,18 +14,17 @@ if [ "$status" == "Charging" ]; then
     icon=""
 else
     if [ "$capacity" -ge 90 ]; then
-        icon=""
+        icon=" "
     elif [ "$capacity" -ge 70 ]; then
-        icon=""
+        icon=" "
     elif [ "$capacity" -ge 50 ]; then
-        icon=""
+        icon=" "
     elif [ "$capacity" -ge 30 ]; then
-        icon=""
+        icon=" "
     else
-        icon=""
+        icon=" "
     fi
 fi
 
 
-echo "$capacity% $icon"
-
+echo "$capacity% $icon."

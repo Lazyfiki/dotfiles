@@ -1,117 +1,62 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-cmdline",
         "hrsh7th/nvim-cmp",
-        "L3MON4D3/LuaSnip",
-        "saadparwaiz1/cmp_luasnip",
-        "j-hui/fidget.nvim",
+        "hrsh7th/cmp-nvim-lsp",
     },
 
     config = function()
         local cmp = require("cmp")
         local cmp_lsp = require("cmp_nvim_lsp")
-        local capabilities = vim.tbl_deep_extend(
-            "force",
-            {},
-            vim.lsp.protocol.make_client_capabilities(),
-            cmp_lsp.default_capabilities())
+        local util = require("lspconfig.util")
 
-        -- Setup fidget
-        require("fidget").setup({ notification = { window = { winblend = 0 } } })
+        local capabilities = cmp_lsp.default_capabilities()
 
-        -- LSP server setup (without mason)
-        local lspconfig = require("lspconfig")
-
-        -- List of LSP servers you installed manually
-        local lsp_servers = {
-            -- "lua_ls",
-            -- "rust_analyzer",
-            -- "gopls",
-            -- "clangd",
-            -- "nil_ls",
-            -- "ts_ls",
+        -- Table of servers
+        local servers = {
+            zls = {
+                cmd = { "zls" },
+                root_dir = util.root_pattern(".git", "build.zig", "zls.json"),
+                filetypes = { "zig" },
+            },
+            lua_ls = {
+                cmd = { "lua-language-server" },
+                root_dir = util.root_pattern(".git", "."),
+                filetypes = { "lua" },
+                settings = {
+                    Lua = {
+                        diagnostics = { globals = { "vim" } },
+                    },
+                },
+            },
         }
 
-        -- Set up each LSP server manually
-        for _, server in ipairs(lsp_servers) do
-            lspconfig[server].setup({
-                capabilities = capabilities,
-                -- You can add additional server-specific settings here
+        -- Register configs
+        for name, config in pairs(servers) do
+            config.capabilities = capabilities
+            vim.lsp.config[name] = { default_config = config }
+
+            -- Autostart on matching filetypes
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = config.filetypes,
+                callback = function()
+                    vim.lsp.start(vim.lsp.config[name])
+                end,
             })
         end
 
-        -- Specific configuration for zig (zls)
-        lspconfig.zls.setup({
-            root_dir = lspconfig.util.root_pattern(".git", "build.zig", "zls.json"),
-            settings = {
-                zls = {
-                    enable_inlay_hints = true,
-                    enable_snippets = true,
-                    warn_style = true,
-                },
-            },
-        })
-
-        vim.g.zig_fmt_parse_errors = 0
-        vim.g.zig_fmt_autosave = 0
-
-        -- Specific configuration for lua_ls
-        lspconfig.lua_ls.setup({
-            capabilities = capabilities,
-            settings = {
-                Lua = {
-                    runtime = { version = "Lua 5.1" },
-                    diagnostics = {
-                        globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
-                    }
-                }
-            }
-        })
-
-        -- Setup nvim-cmp for autocompletion
-        local cmp_select = { behavior = cmp.SelectBehavior.Select }
-
+        -- nvim-cmp setup
         cmp.setup({
-            snippet = {
-                expand = function(args)
-                    require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
-                end,
-            },
             mapping = cmp.mapping.preset.insert({
-                ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-                ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+                ["<C-n>"] = cmp.mapping.select_next_item(),
+                ["<C-p>"] = cmp.mapping.select_prev_item(),
+                ["<CR>"]  = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             }),
-            sources = cmp.config.sources({
+            sources = {
                 { name = "nvim_lsp" },
-                { name = "luasnip" }, -- For luasnip users.
-            }, {
-                { name = "buffer" },
-                { name = "path" },
-            })
-        })
-
-        -- Diagnostic configuration
-        vim.diagnostic.config({
-            -- update_in_insert = true,
-            float = {
-                focusable = false,
-                style = "minimal",
-                border = "single",
-                source = "always",
-                header = "",
-                prefix = "",
             },
         })
-        vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-            vim.lsp.handlers.hover, {
-                border = "single"
-            }
-        )
-    end
+    end,
 }
+
