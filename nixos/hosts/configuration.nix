@@ -10,6 +10,7 @@
     outputs.modules.bluetooth
     outputs.modules.bootloader
     outputs.modules.docker
+    outputs.modules.fcitx5
     outputs.modules.firewall
     outputs.modules.hyprland
     outputs.modules.power
@@ -66,14 +67,6 @@
   time.timeZone = "Africa/Tunis";
 
   i18n.defaultLocale = "ja_JP.UTF-8";
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5.addons = with pkgs; [
-      fcitx5-mozc
-      fcitx5-gtk
-      fcitx5-qt
-    ];
-  };
 
   virtualisation.waydroid.enable = true;
 

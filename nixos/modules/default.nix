@@ -3,6 +3,7 @@
   bluetooth = import ./bluetooth.nix;
   bootloader = import ./bootloader.nix;
   docker = import ./docker.nix;
+  fcitx5 = import ./fcitx5.nix;
   firewall = import ./firewall.nix;
   hyprland = import ./hyprland.nix;
   power = import ./power.nix;
