@@ -12,6 +12,7 @@
     fcitx5
     fcitx5-mozc
     fcitx5-gtk
+    ibus-engines.mozc
   ];
 
   i18n.inputMethod.ibus = {
@@ -23,8 +24,4 @@
     QT_IM_MODULE = "ibus";
     XMODIFIERS = "@im=ibus";
   };
-
-  environment.systemPackages = with pkgs; [
-    ibus-engines.mozc
-  ];
 }
