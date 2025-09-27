@@ -5,7 +5,7 @@
 }: {
   i18n.inputMethod = {
     enable = true;
-    type = "fcitx5";
+    # type = "fcitx5";
   };
 
   environment.systemPackages = with pkgs; [
