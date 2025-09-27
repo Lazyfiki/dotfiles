@@ -10,7 +10,7 @@
     "modules-right": [
         "group/expand",
         "hyprland/workspaces",
-        "hyprland/language",
+        "input-method",
         "custom/weather",
         "backlight",
         "network",

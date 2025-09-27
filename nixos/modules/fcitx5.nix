@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
@@ -8,5 +12,19 @@
     fcitx5
     fcitx5-mozc
     fcitx5-gtk
+  ];
+
+  i18n.inputMethod.ibus = {
+    engines = with pkgs.ibus-engines; [mozc];
+  };
+
+  environment.variables = {
+    GTK_IM_MODULE = "ibus";
+    QT_IM_MODULE = "ibus";
+    XMODIFIERS = "@im=ibus";
+  };
+
+  environment.systemPackages = with pkgs; [
+    ibus-engines.mozc
   ];
 }
