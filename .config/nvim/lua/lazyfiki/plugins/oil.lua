@@ -20,7 +20,7 @@ return {
             columns = {
                 "permissions",
                 "size",
-                "mtime",
+                {"mtime", format = "%_m月%d日 %H:%M"},
             },
 
             skip_confirm_for_simple_edits = true,

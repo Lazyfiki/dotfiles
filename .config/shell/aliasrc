@@ -18,6 +18,8 @@ alias \
     vim="nvim" \
 
 alias \
+    ls="ls --color=tty --time-style='+%_m月%d日  %Y
+%_m月%d日 %H:%M'" \
     df="df -h" \
     du="du -h" \
     free="free -h" \
