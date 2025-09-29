@@ -5,12 +5,12 @@
     "border-size": 0,
     "modules-left": [
         "custom/launcher",
+        "hyprland/workspaces",
         "hyprland/window",
     ],
     "modules-right": [
         "group/expand",
-        "hyprland/workspaces",
-        "input-method",
+        "custom/input",
         "custom/weather",
         "backlight",
         "network",
@@ -20,9 +20,13 @@
         "clock",
     ],
 
+    "custom/input": {
+        "exec": "/home/ahmed/.config/waybar/scripts/input.sh",
+        "interval": 1
+    },
+
     "clock": {
-        // "format": "{:%a %b %d %I:%M}", // english us
-        "format": "{:L%B%d日、%A %H:%M}", // japanese
+        "format": "{:L%B%d日、%A %H:%M}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -43,7 +47,7 @@
 
     "hyprland/workspaces": {
         "format": "{icon}",
-        "active-only": true,
+        "active-only": false,
         "format-icons": {
             "1": "一",
             "2": "二",

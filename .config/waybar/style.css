@@ -20,14 +20,11 @@ tooltip {
 #waybar > box {
     background: alpha(@background, 0.7);
     padding: 1px;
-    /* background: rgba(0,0,0,0.3); */
-    /* margin-top: 5px; */
-    /* margin-bottom: 5px; */
-    /* box-shadow: 5px 5px 5px 5px black; */
 }
 
 #workspaces button {
-    color: alpha(white, 0.2);
+    padding: 0 4px;
+    color: alpha(white, 0.5);
 }
 
 #workspaces button:hover {
@@ -80,6 +77,13 @@ tooltip {
 
 #custom-text {
     font-weight: 600;
+}
+
+#custom-input {
+    font-size: 22px;
+    padding: 0 2px;
+    margin: 0;
+    color: white;
 }
 
 #custom-texttwo,

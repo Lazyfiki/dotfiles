@@ -70,12 +70,24 @@
 
   virtualisation.waydroid.enable = true;
 
-  services.xserver.enable = false;
-  services.udisks2.enable = true;
-  services.logind = {
-    lidSwitch = "suspend";
-    lidSwitchDocked = "ignore";
-    lidSwitchExternalPower = "ignore";
+  services = {
+    xserver.enable = false;
+    udisks2.enable = true;
+    logind = {
+      lidSwitch = "suspend";
+      lidSwitchDocked = "ignore";
+      lidSwitchExternalPower = "ignore";
+    };
+    avahi = {
+      enable = true;
+      nssmdns = true;
+      openFirewall = true;
+      publish = {
+        enable = true;
+        userServices = true;
+        addresses = true;
+      };
+    };
   };
 
   system = {
