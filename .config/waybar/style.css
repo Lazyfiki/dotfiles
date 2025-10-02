@@ -22,42 +22,53 @@ tooltip {
     padding: 1px;
 }
 
+#workspaces {
+    background: alpha(white, 0.1);
+    margin: 2px 0;
+    border-radius: 20px;
+}
+
 #workspaces button {
-    padding: 0 4px;
+    padding: 0 10px;
     color: alpha(white, 0.5);
 }
 
 #workspaces button:hover {
     all: unset;
-    background: alpha(@background, 0.5);
+    background: alpha(@color1, 0.5);
+    border-radius: 100%;
+    padding: 0 10px;
 }
 
 #workspaces button.active {
     color: white;
+    font-weight: 900;
     background: transparent;
+    background: @color2;
+    border-radius: 99px;
+    padding: 0 2em;
     border: none;
 }
 
-#clock,
+#backlight,
 #battery,
+#bluetooth,
+#clock,
+#cpu,
+#custom-endpoint,
+#custom-expand,
+#custom-weather,
+#language,
+#memory,
 #network,
 #pulseaudio,
-#cpu,
-#backlight,
-#memory,
-#language,
-#bluetooth,
-#custom-weather,
-#custom-expand,
-#temperature {
+#temperature,
+#tray {
     color: white;
 }
 
-#network,
-#pulseaudio,
-#memory,
-#temperature {
-    color: white;
+#tray {
+    padding: 0 15px;
 }
 
 #clock {
@@ -71,8 +82,8 @@ tooltip {
 
 #custom-launcher {
     padding-left: 20px;
-    font-size: 24px;
-    color: white;
+    font-size: 28px;
+    color: @color2;
 }
 
 #custom-text {
@@ -80,10 +91,11 @@ tooltip {
 }
 
 #custom-input {
-    font-size: 22px;
-    padding: 0 2px;
-    margin: 0;
     color: white;
+    font-family: "Noto Serif CJK", "JetBrains Mono", monospace;
+    font-size: 22px;
+    margin: 0;
+    padding: 0 2px;
 }
 
 #custom-texttwo,

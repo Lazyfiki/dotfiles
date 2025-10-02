@@ -1,4 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=PDF reader
-Exec=/run/current-system/sw/bin/zathura %u

@@ -3,10 +3,12 @@
 while read file
 do
   case "$1" in
-    "w") set_wallpaper "$file" ;;
+	"R") magick "$file" -rotate -90 "$file" ;;
     "d") rm "$file" ;;
-    "s") curl -F "file=@$file" 0x0.st | wl-copy ;;
     "g") setsid -f gimp "$file" ;;
     "p") scp $file phone:~/storage/pictures/Screenshots ;;
+    "r") magick "$file" -rotate 90 "$file" ;;
+    "s") curl -F "file=@$file" 0x0.st | wl-copy ;;
+    "w") set_wallpaper "$file" ;;
   esac
 done

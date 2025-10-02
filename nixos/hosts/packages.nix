@@ -63,6 +63,7 @@
     gimp
     gjs
     grim
+    hyprshot
     gvfs
     hyprlock
     hyprpicker

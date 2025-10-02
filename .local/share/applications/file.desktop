@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=File Manager
-# Exec=/run/current-system/sw/bin/ghostty -e nvim %u .
-Exec=/run/current-system/sw/bin/nautilus %u
