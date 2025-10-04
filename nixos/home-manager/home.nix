@@ -11,7 +11,7 @@
 
     ./git.nix
     ./hyprland.nix
-    # ./zsh.nix
+    ./zsh.nix
   ];
 
   nixpkgs = {
@@ -81,17 +81,8 @@
     wl-clipboard
     youtube-music
     zathura
+    oh-my-zsh
   ];
-
-  programs.zsh = {
-    enable = true;
-    oh-my-zsh = {
-      enable = true;
-      plugins = ["git" "fzf"];
-      theme = "robbyrussell";
-    };
-    syntaxHighlighting.enable = true;
-  };
 
   programs.home-manager.enable = true;
 
