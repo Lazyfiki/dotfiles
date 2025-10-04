@@ -63,12 +63,13 @@
     gimp
     gjs
     grim
-    hyprshot
     gvfs
+    hyprlandPlugins.hypr-dynamic-cursors
     hyprlock
     hyprpicker
     hyprpolkitagent
     hyprshade
+    hyprshot
     imagemagick
     krita
     libinput
