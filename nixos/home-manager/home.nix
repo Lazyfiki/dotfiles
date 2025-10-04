@@ -8,6 +8,9 @@
 }: {
   imports = [
     # outputs.homeManagerModules.spicetify
+
+    ./git.nix
+    ./zsh.nix
   ];
 
   nixpkgs = {
@@ -81,44 +84,44 @@
 
   programs.home-manager.enable = true;
 
-  programs.zsh = {
-    enable = true;
-    oh-my-zsh = {
-      enable = true;
-      plugins = ["git" "fzf"];
-      theme = "robbyrussell";
-    };
-    syntaxHighlighting.enable = true;
-  };
-
-  programs.git = {
-    enable = true;
-    userName = "Ahmed Hamzaoui";
-    userEmail = "lazyfiki@gmail.com";
-    extraConfig = {
-      core = {
-        compression = 9;
-        whitespace = "error";
-        preloadindex = true;
-      };
-
-      advice = {
-        addEmptyPathspec = false;
-        pushNonFastForward = false;
-        statusHints = false;
-      };
-
-      init = {
-        defaultBranch = "master";
-      };
-
-      url = {
-        "git@github.com:Lazyfiki/" = {
-          insteadOf = "ahmed:";
-        };
-      };
-    };
-  };
+  # programs.zsh = {
+  #   enable = true;
+  #   oh-my-zsh = {
+  #     enable = true;
+  #     plugins = ["git" "fzf"];
+  #     theme = "robbyrussell";
+  #   };
+  #   syntaxHighlighting.enable = true;
+  # };
+  #
+  # programs.git = {
+  #   enable = true;
+  #   userName = "Ahmed Hamzaoui";
+  #   userEmail = "lazyfiki@gmail.com";
+  #   extraConfig = {
+  #     core = {
+  #       compression = 9;
+  #       whitespace = "error";
+  #       preloadindex = true;
+  #     };
+  #
+  #     advice = {
+  #       addEmptyPathspec = false;
+  #       pushNonFastForward = false;
+  #       statusHints = false;
+  #     };
+  #
+  #     init = {
+  #       defaultBranch = "master";
+  #     };
+  #
+  #     url = {
+  #       "git@github.com:Lazyfiki/" = {
+  #         insteadOf = "ahmed:";
+  #       };
+  #     };
+  #   };
+  # };
 
   systemd.user.startServices = "sd-switch";
 
