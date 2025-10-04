@@ -95,7 +95,7 @@
     extraConfig = {
       core = {
         compression = 9;
-        whitespace = error;
+        whitespace = "error";
         preloadindex = true;
       };
 
