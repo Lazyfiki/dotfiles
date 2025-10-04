@@ -35,7 +35,56 @@
 
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+  home.packages = with pkgs; [
+    bat
+    bc
+    bottles
+    chromium
+    curl
+    dconf-editor
+    direnv
+    discord
+    fd
+    firefox
+    fzf
+    gimp
+    git
+    htop-vim
+    jq
+    krita
+    maestral
+    mpc-cli
+    mpv
+    nautilus
+    ncmpcpp
+    nodejs
+    nsxiv
+    pavucontrol
+    playerctl
+    pulsemixer
+    pywal16
+    qbittorrent
+    ripgrep
+    rofi-wayland
+    stow
+    swappy
+    swaynotificationcenter
+    swww
+    tmux
+    transmission_4
+    tree
+    tree-sitter
+    unstable.clock-rs
+    unstable.neovim
+    unstable.yacreader
+    unzip
+    vim
+    wget
+    winetricks
+    wl-clipboard
+    youtube-music
+    zathura
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
