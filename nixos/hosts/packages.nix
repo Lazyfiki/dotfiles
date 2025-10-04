@@ -64,6 +64,7 @@
     gjs
     grim
     gvfs
+    hyprlandPlugins.hypr-dynamic-cursors
     hyprlock
     hyprpicker
     hyprpolkitagent
