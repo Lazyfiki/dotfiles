@@ -11,7 +11,6 @@
 
     ./git.nix
     ./hyprland.nix
-    ./zsh.nix
   ];
 
   nixpkgs = {

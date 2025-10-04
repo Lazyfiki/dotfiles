@@ -10,4 +10,5 @@
   ssh = import ./ssh.nix;
   users = import ./users.nix;
   zram = import ./zram.nix;
+  zsh = import ./zsh.nix;
 }

@@ -17,6 +17,7 @@
     outputs.nixosModules.ssh
     outputs.nixosModules.users
     outputs.nixosModules.zram
+    outputs.nixosModules.zsh
 
     inputs.home-manager.nixosModules.home-manager
 
@@ -66,8 +67,6 @@
       ahmed = import ../home-manager/home.nix;
     };
   };
-
-  programs.zsh.enable = true;
 
   networking.hostName = "nixos";
 
