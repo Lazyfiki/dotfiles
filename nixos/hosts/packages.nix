@@ -40,7 +40,6 @@
     grim
     gvfs
     hyprlandPlugins.hypr-dynamic-cursors
-    hyprlandPlugins.hyprscrolling
     hyprlock
     hyprpicker
     hyprpolkitagent
