@@ -28,6 +28,8 @@
     };
   };
 
+  home-manager.backupFileExtension = "backup";
+
   home = {
     username = "ahmed";
     homeDirectory = "/home/ahmed";
