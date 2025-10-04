@@ -10,6 +10,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    home-manager = {
+      url = "github:nix-community/home-manager/release-24.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
@@ -17,6 +22,7 @@
   outputs = {
     self,
     nixpkgs,
+    home-manager,
     quickshell,
     zen-browser,
     ...
@@ -48,6 +54,18 @@
             ];
           }
           ./hosts/configuration.nix
+        ];
+      };
+    };
+
+    homeConfigurations = {
+      # FIXME replace with your username@hostname
+      "ahmed@nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main home-manager configuration file <
+          ./home-manager/home.nix
         ];
       };
     };
