@@ -20,6 +20,8 @@
     outputs.nixosModules.zram
     outputs.nixosModules.zsh
 
+    inputs.home-manager.nixosModules.home-manager
+
     ./packages.nix
     ./hardware-configuration.nix
   ];
@@ -63,7 +65,7 @@
   home-manager = {
     extraSpecialArgs = {inherit inputs outputs;};
     users = {
-      ahmed = import /home/ahmed/.dotfiles/nixos/home-manager/home.nix;
+      ahmed = import ../home-manager/home.nix;
     };
   };
 
