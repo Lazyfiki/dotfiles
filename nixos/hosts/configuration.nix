@@ -6,19 +6,19 @@
   ...
 }: {
   imports = [
-    outputs.modules.audio
-    outputs.modules.bluetooth
-    outputs.modules.bootloader
-    outputs.modules.docker
-    outputs.modules.fcitx5
-    outputs.modules.firewall
-    outputs.modules.hyprland
-    outputs.modules.power
-    outputs.modules.spicetify
-    outputs.modules.ssh
-    outputs.modules.users
-    outputs.modules.zram
-    outputs.modules.zsh
+    outputs.nixosModules.audio
+    outputs.nixosModules.bluetooth
+    outputs.nixosModules.bootloader
+    outputs.nixosModules.docker
+    outputs.nixosModules.fcitx5
+    outputs.nixosModules.firewall
+    outputs.nixosModules.hyprland
+    outputs.nixosModules.power
+    outputs.nixosModules.spicetify
+    outputs.nixosModules.ssh
+    outputs.nixosModules.users
+    outputs.nixosModules.zram
+    outputs.nixosModules.zsh
 
     ./packages.nix
     ./hardware-configuration.nix
