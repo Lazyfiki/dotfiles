@@ -14,11 +14,9 @@
     outputs.nixosModules.firewall
     outputs.nixosModules.hyprland
     outputs.nixosModules.power
-    outputs.nixosModules.spicetify
     outputs.nixosModules.ssh
     outputs.nixosModules.users
     outputs.nixosModules.zram
-    outputs.nixosModules.zsh
 
     inputs.home-manager.nixosModules.home-manager
 

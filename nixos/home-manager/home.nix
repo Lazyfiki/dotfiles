@@ -7,6 +7,7 @@
   ...
 }: {
   imports = [
+    outputs.homeManagerModules.spicetify
   ];
 
   nixpkgs = {
@@ -26,8 +27,6 @@
   };
 
   home.packages = with pkgs; [
-    inputs.zen-browser.packages.x86_64-linux.default
-    inputs.quickshell.packages.x86_64-linux.default
     bat
     bc
     bottles
@@ -42,6 +41,8 @@
     gimp
     git
     htop-vim
+    inputs.quickshell.packages.x86_64-linux.default
+    inputs.zen-browser.packages.x86_64-linux.default
     jq
     krita
     maestral
@@ -79,6 +80,17 @@
   ];
 
   programs.home-manager.enable = true;
+
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = ["git" "fzf"];
+      theme = "robbyrussell";
+    };
+    syntaxHighlighting.enable = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "Ahmed Hamzaoui";

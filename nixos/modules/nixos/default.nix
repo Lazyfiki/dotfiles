@@ -7,9 +7,7 @@
   firewall = import ./firewall.nix;
   hyprland = import ./hyprland.nix;
   power = import ./power.nix;
-  spicetify = import ./spicetify.nix;
   ssh = import ./ssh.nix;
   users = import ./users.nix;
   zram = import ./zram.nix;
-  zsh = import ./zsh.nix;
 }
