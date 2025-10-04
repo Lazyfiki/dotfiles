@@ -1,27 +1,31 @@
 {
-  config,
+  lib,
   pkgs,
   inputs,
   ...
 }: let
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 in {
-  imports = [
-    inputs.spicetify-nix.nixosModules.default
-  ];
+  options.programs.spicetify.enable = lib.mkOption {
+    type = lib.types.bool;
+    default = false;
+    description = "Enable Spicetify customization for Spotify.";
+  };
 
-  programs.spicetify = {
-    enable = true;
-    spotifyPackage = pkgs.spotify;
+  config = lib.mkIf config.programs.spicetify.enable {
+    home.packages = [pkgs.spotify];
 
-    theme = spicePkgs.themes.hazy;
-    colorScheme = "Base"; # Re-enabled for hazy theme compatibility
-
-    enabledExtensions = with spicePkgs.extensions; [
-      adblock
-      adblockify
-      hidePodcasts
-      shuffle
-    ];
+    programs.spicetify = {
+      enable = true;
+      spotifyPackage = pkgs.spotify;
+      theme = spicePkgs.themes.hazy;
+      colorScheme = "Base";
+      enabledExtensions = with spicePkgs.extensions; [
+        adblock
+        adblockify
+        hidePodcasts
+        shuffle
+      ];
+    };
   };
 }
