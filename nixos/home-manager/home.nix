@@ -92,15 +92,17 @@
     enable = true;
     userName = "Ahmed Hamzaoui";
     userEmail = "lazyfiki@gmail.com";
-
     extraConfig = {
-      "core.preloadIndex" = true;
       "core.compression" = "9";
       "core.whitespace" = "error";
-      "advice.addEmptyPathspec" = false;
-      "advice.pushNonFastForward" = false;
-      "advice.statusHints" = false;
+      "core.preloadIndex" = "true";
+
+      "advice.addEmptyPathspec" = "false";
+      "advice.pushNonFastForward" = "false";
+      "advice.statusHints" = "false";
+
       "init.defaultBranch" = "master";
+
       "url.git@github.com:Lazyfiki/.insteadOf" = "ahmed:";
     };
   };
