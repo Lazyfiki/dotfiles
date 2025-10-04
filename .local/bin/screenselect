@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-screenshot_filename="$HOME/pix/ss/$(date +%s).png"
-grim -g "$(slurp)" $screenshot_filename
+dir="$HOME/pix/ss"
+filename="$(date +%s).png"
 
-if [ -e $screenshot_filename ]; then
-    preview $screenshot_filename
+hyprshot -m region -s -f "$filename" -o $dir
+
+if [ -e $dir/$filename ]; then
+    preview "$dir/$filename"
 fi
