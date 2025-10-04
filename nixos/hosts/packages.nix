@@ -48,6 +48,7 @@
     hyprshot
     imagemagick
     libinput
+    localsend
     mesa
     mpd
     pkg-config
