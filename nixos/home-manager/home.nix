@@ -80,6 +80,7 @@
     wl-clipboard
     youtube-music
     zathura
+    hyprland
   ];
 
   programs.home-manager.enable = true;
