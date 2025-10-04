@@ -48,12 +48,6 @@
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          # {
-          #   environment.systemPackages = [
-          #     zen-browser.packages.x86_64-linux.default
-          #     quickshell.packages.x86_64-linux.default
-          #   ];
-          # }
           ./hosts/configuration.nix
         ];
       };
