@@ -81,7 +81,6 @@
     wl-clipboard
     youtube-music
     zathura
-    oh-my-zsh
   ];
 
   programs.home-manager.enable = true;

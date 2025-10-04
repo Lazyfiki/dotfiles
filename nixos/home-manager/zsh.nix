@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.zsh = {
     enable = true;
     oh-my-zsh = {
@@ -8,4 +8,5 @@
     };
     syntaxHighlighting.enable = true;
   };
+  users.users.ahmed.shell = pkgs.zsh;
 }
