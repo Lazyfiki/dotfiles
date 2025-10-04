@@ -48,25 +48,15 @@
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          {
-            environment.systemPackages = [
-              zen-browser.packages.x86_64-linux.default
-              quickshell.packages.x86_64-linux.default
-            ];
-          }
+          # {
+          #   environment.systemPackages = [
+          #     zen-browser.packages.x86_64-linux.default
+          #     quickshell.packages.x86_64-linux.default
+          #   ];
+          # }
           ./hosts/configuration.nix
         ];
       };
     };
-
-    # homeConfigurations = {
-    #   "ahmed@nixos" = home-manager.lib.homeManagerConfiguration {
-    #     pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    #     extraSpecialArgs = {inherit inputs outputs;};
-    #     modules = [
-    #       ./home-manager/home.nix
-    #     ];
-    #   };
-    # };
   };
 }
