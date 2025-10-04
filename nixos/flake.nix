@@ -10,13 +10,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    hyprland.url = "github:hyprwm/Hyprland";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs = {
     self,
     nixpkgs,
+    hyprland,
     quickshell,
     zen-browser,
     ...
