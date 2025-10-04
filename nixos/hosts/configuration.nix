@@ -60,6 +60,13 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
+  home-manager = {
+    extraSpecialArgs = {inherit inputs outputs;};
+    users = {
+      ahmed = import ../home-manager/home.nix;
+    };
+  };
+
   networking.hostName = "nixos";
 
   networking.networkmanager.enable = true;
@@ -78,6 +85,7 @@
       lidSwitchDocked = "ignore";
       lidSwitchExternalPower = "ignore";
     };
+
     avahi = {
       enable = true;
       nssmdns4 = true;
