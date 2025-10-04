@@ -10,7 +10,6 @@
     # outputs.homeManagerModules.spicetify
 
     ./git.nix
-    ./hyprland.nix
   ];
 
   nixpkgs = {
