@@ -92,23 +92,29 @@
     enable = true;
     userName = "Ahmed Hamzaoui";
     userEmail = "lazyfiki@gmail.com";
-    extraConfig = ''
-      [core]
-          compression = 9
-          whitespace = error
-          preloadindex = true
+    extraConfig = {
+      core = {
+        compression = 9;
+        whitespace = "error";
+        preloadindex = true;
+      };
 
-      [advice]
-          addEmptyPathspec = false
-          pushNonFastForward = false
-          statusHints = false
+      advice = {
+        addEmptyPathspec = false;
+        pushNonFastForward = false;
+        statusHints = false;
+      };
 
-      [init]
-          defaultBranch = master
+      init = {
+        defaultBranch = "master";
+      };
 
-      [url "git@github.com:Lazyfiki/"]
-          insteadOf = "ahmed:"
-    '';
+      url = {
+        "git@github.com:Lazyfiki/" = {
+          insteadOf = "ahmed:";
+        };
+      };
+    };
   };
 
   # Nicely reload system units when changing configs
