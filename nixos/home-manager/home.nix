@@ -10,6 +10,7 @@
     # outputs.homeManagerModules.spicetify
 
     ./git.nix
+    ./hyprland.nix
     ./zsh.nix
   ];
 
