@@ -20,6 +20,8 @@
     outputs.nixosModules.zram
     outputs.nixosModules.zsh
 
+    inputs.home-manager.nixosModules.home-manager
+
     ./packages.nix
     ./hardware-configuration.nix
   ];
@@ -58,6 +60,13 @@
     channel.enable = false;
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
+  };
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs outputs;};
+    users = {
+      ahmed = import ../home-manager/home.nix;
+    };
   };
 
   networking.hostName = "nixos";
