@@ -6,6 +6,8 @@
   pkgs,
   ...
 }: {
+  home.enable = false;
+
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
     # outputs.homeManagerModules.example
@@ -27,8 +29,6 @@
       allowUnfree = true;
     };
   };
-
-  home-manager.backupFileExtension = "backup";
 
   home = {
     username = "ahmed";
