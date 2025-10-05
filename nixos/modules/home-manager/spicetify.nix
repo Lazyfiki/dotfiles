@@ -20,7 +20,7 @@ in {
         owner = "nimsandu";
         repo = "spicetify-bloom";
         rev = "main";
-        hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+        hash = "sha256-+pIf2N/yR8XwltRStSePUWDkm2x96hBbDrHbCF8a86k=";
       };
 
       injectCss = true;
