@@ -7,7 +7,7 @@
   ...
 }: {
   imports = [
-    # outputs.homeManagerModules.spicetify
+    outputs.homeManagerModules.spicetify
 
     ./git.nix
   ];
