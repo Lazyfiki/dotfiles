@@ -70,6 +70,7 @@
     tree
     tree-sitter
     unstable.clock-rs
+    unstable.euphonica
     unstable.neovim
     unstable.yacreader
     unzip
@@ -79,7 +80,6 @@
     wl-clipboard
     youtube-music
     zathura
-    hyprland
   ];
 
   programs.home-manager.enable = true;
