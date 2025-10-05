@@ -11,7 +11,7 @@ in {
 
   programs.spicetify = {
     enable = true;
-    theme = spicePkgs.themes.defaultDynamic;
+    theme = spicePkgs.themes.default;
 
     enabledExtensions = with spicePkgs.extensions; [
       playlistIcons
