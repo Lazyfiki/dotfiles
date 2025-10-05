@@ -13,7 +13,7 @@ in {
     enable = true;
     # theme = spicePkgs.themes.text;
 
-    programs.spicetify.theme = {
+    theme = {
       name = "Bloom";
 
       src = pkgs.fetchFromGitHub {
