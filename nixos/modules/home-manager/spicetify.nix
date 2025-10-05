@@ -13,13 +13,6 @@ in {
     enable = true;
     theme = spicePkgs.themes.ziro;
 
-    injectCss = true;
-    injectThemeJs = true;
-    replaceColors = true;
-    homeConfig = true;
-    overwriteAssets = true;
-    additionalCss = "";
-
     enabledExtensions = with spicePkgs.extensions; [
       playlistIcons
       lastfm
