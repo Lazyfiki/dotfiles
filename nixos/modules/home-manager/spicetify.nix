@@ -11,25 +11,14 @@ in {
 
   programs.spicetify = {
     enable = true;
-    # theme = spicePkgs.themes.text;
+    theme = spicePkgs.themes.ziro;
 
-    theme = {
-      name = "Bloom";
-
-      src = pkgs.fetchFromGitHub {
-        owner = "nimsandu";
-        repo = "spicetify-bloom";
-        rev = "main";
-        hash = "sha256-+pIf2N/yR8XwltRStSePUWDkm2x96hBbDrHbCF8a86k=";
-      };
-
-      injectCss = true;
-      injectThemeJs = true;
-      replaceColors = true;
-      homeConfig = true;
-      overwriteAssets = true;
-      additionalCss = "";
-    };
+    injectCss = true;
+    injectThemeJs = true;
+    replaceColors = true;
+    homeConfig = true;
+    overwriteAssets = true;
+    additionalCss = "";
 
     enabledExtensions = with spicePkgs.extensions; [
       playlistIcons
