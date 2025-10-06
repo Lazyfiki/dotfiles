@@ -12,7 +12,7 @@ stdenv.mkDerivation rec {
     owner = "ferrebarrat";
     repo = "brrtfetch";
     rev = "main";
-    hash = "sha256-hC2R17LadoVanjLs4iBTr55qNJEDYKI9H3lQzyHQIek=";
+    hash = "sha256-M+5f4VXah6rzUWIL6PB85RzVM+nHJauFoFvN9f7HU48=";
   };
 
   nativeBuildInputs = [go];
