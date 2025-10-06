@@ -3,6 +3,7 @@
   stdenv,
   fetchFromGitHub,
   go,
+  ...
 }:
 stdenv.mkDerivation rec {
   pname = "brrtfetch";
