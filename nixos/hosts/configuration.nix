@@ -20,6 +20,7 @@
     outputs.nixosModules.zsh
 
     inputs.home-manager.nixosModules.home-manager
+
     ./packages.nix
     ./hardware-configuration.nix
   ];
