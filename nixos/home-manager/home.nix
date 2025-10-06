@@ -20,7 +20,6 @@
     ];
     config = {
       allowUnfree = true;
-      allowUnsupportedSystem = true;
     };
   };
 
@@ -72,7 +71,6 @@
     tree-sitter
     unstable.clock-rs
     unstable.neovim
-    unstable.notion-app
     unstable.yacreader
     unzip
     vim
