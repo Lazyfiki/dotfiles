@@ -9,7 +9,6 @@
     outputs.nixosModules.audio
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootloader
-    outputs.nixosModules.brrtfetch
     outputs.nixosModules.docker
     outputs.nixosModules.fcitx5
     outputs.nixosModules.firewall
