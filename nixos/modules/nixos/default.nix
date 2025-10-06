@@ -2,6 +2,7 @@
   audio = import ./audio.nix;
   bluetooth = import ./bluetooth.nix;
   bootloader = import ./bootloader.nix;
+  brrtfetch = import ./brrtfetch.nix;
   docker = import ./docker.nix;
   fcitx5 = import ./fcitx5.nix;
   firewall = import ./firewall.nix;

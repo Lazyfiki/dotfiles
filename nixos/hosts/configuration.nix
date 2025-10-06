@@ -8,6 +8,7 @@
   imports = [
     outputs.nixosModules.audio
     outputs.nixosModules.bluetooth
+    outputs.nixosModules.brrtfetch
     outputs.nixosModules.bootloader
     outputs.nixosModules.docker
     outputs.nixosModules.fcitx5
