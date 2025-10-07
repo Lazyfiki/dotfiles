@@ -17,6 +17,7 @@
 
   utils = with pkgs; [
     adwaita-icon-theme
+    bibata-cursors
     brightnessctl
     cifs-utils
     ffmpeg
