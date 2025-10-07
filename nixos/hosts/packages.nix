@@ -35,7 +35,6 @@
 
   apps = with pkgs; [
     ddcutil
-    geogebra6
     ghostty
     gjs
     grim
@@ -57,7 +56,7 @@
     pyprland
     udiskie
     unstable.hyprland-qtutils
-    unstable.wacomtablet
+    wacomtablet
     waybar
     wayland-protocols
     xdg-utils
