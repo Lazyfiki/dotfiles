@@ -29,7 +29,7 @@
     gst_all_1.gstreamer
     killall
     libnotify
-    unstable.libwacom
+    libwacom
     man-pages
   ];
 
