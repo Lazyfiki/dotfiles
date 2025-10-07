@@ -29,12 +29,13 @@
     gst_all_1.gstreamer
     killall
     libnotify
-    libwacom
+    unstable.libwacom
     man-pages
   ];
 
   apps = with pkgs; [
     ddcutil
+    geogebra6
     ghostty
     gjs
     grim
@@ -56,7 +57,7 @@
     pyprland
     udiskie
     unstable.hyprland-qtutils
-    wacomtablet
+    unstable.wacomtablet
     waybar
     wayland-protocols
     xdg-utils
