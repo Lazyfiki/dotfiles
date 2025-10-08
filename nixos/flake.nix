@@ -26,8 +26,8 @@
   outputs = {
     self,
     nixpkgs,
-    home-manager,
-    quickshell,
+    # home-manager,
+    # quickshell,
     zen-browser,
     ...
   } @ inputs: let
