@@ -29,7 +29,7 @@
   };
 
   home.packages = with pkgs; [
-    inputs.quickshell.packages.x86_64-linux.default
+    # inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
     bat
     bc
