@@ -71,7 +71,7 @@
     tree-sitter
     unstable.clock-rs
     unstable.neovim
-    unstable.yacreader
+    yacreader
     unzip
     vim
     wget
