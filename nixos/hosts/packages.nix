@@ -32,6 +32,7 @@
     libnotify
     libwacom
     man-pages
+    xdg-desktop-portal
   ];
 
   apps = with pkgs; [
