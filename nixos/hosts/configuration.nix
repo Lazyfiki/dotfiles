@@ -12,7 +12,7 @@
     outputs.nixosModules.docker
     outputs.nixosModules.fcitx5
     outputs.nixosModules.firewall
-    outputs.nixosModules.niri
+    outputs.nixosModules.hyprland
     outputs.nixosModules.portals
     outputs.nixosModules.power
     outputs.nixosModules.ssh
