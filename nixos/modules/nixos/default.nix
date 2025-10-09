@@ -7,6 +7,7 @@
   firewall = import ./firewall.nix;
   hyprland = import ./hyprland.nix;
   niri = import ./niri.nix;
+  portals = import ./portals.nix;
   power = import ./power.nix;
   ssh = import ./ssh.nix;
   users = import ./users.nix;
