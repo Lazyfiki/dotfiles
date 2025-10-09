@@ -35,7 +35,7 @@
     };
   };
 
-  networking.hostName = "nixos";
+  networking.hostName = "legionpro";
 
   system = {
     autoUpgrade = {
