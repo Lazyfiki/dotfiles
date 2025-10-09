@@ -5,7 +5,7 @@
 }: {
   programs.niri = {
     enable = true;
-    package = pkgs.unstable.niri;
+    # package = pkgs.unstable.niri;
   };
 
   services.xserver.videoDrivers = ["modesetting"];
