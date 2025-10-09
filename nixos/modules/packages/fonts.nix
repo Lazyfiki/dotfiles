@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   fonts.packages = with pkgs; [
     inter
     jetbrains-mono
