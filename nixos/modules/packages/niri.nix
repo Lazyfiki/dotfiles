@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  environment.systemPackages = with pkgs; [
+    xdg-desktop-portal
+  ];
+
   programs.niri.enable = true;
 
   xdg.portal = {
