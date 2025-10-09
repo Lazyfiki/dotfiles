@@ -12,11 +12,12 @@
     outputs.nixosModules.docker
     outputs.nixosModules.fcitx5
     outputs.nixosModules.firewall
-    outputs.nixosModules.hyprland
+    outputs.nixosModules.niri
     outputs.nixosModules.power
     outputs.nixosModules.ssh
     outputs.nixosModules.users
     outputs.nixosModules.zram
+
     outputs.nixosModules.zsh
 
     inputs.home-manager.nixosModules.home-manager
