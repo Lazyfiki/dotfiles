@@ -18,6 +18,7 @@
     outputs.nixosModules.ssh
     outputs.nixosModules.users
     outputs.nixosModules.zram
+
     outputs.nixosModules.zsh
 
     inputs.home-manager.nixosModules.home-manager
