@@ -1,16 +1,13 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    xdg-desktop-portal
-  ];
-
   programs.niri.enable = true;
 
   xdg.portal = {
     enable = true;
+    xdgOpenUsePortal = true;
     config = {
       common = {
         default = [
-          "wlr"
+          "gnome"
           "gtk"
         ];
         "org.freedesktop.impl.portal.FileChooser" = [
@@ -22,7 +19,7 @@
       };
     };
     extraPortals = with pkgs; [
-      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
     ];
   };
