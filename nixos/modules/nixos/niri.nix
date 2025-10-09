@@ -9,25 +9,24 @@
   # Enable XDG Desktop Portal
   xdg.portal = {
     enable = true;
-    config.common.default = "gtk"; # Use GTK as default backend
+    config.common.default = "gtk"; # Prefer GTK backend
     config.Niri = {
-      default = "gtk"; # GTK is lighter and more reliable for Niri
+      default = "gtk"; # GTK is lightweight and reliable
     };
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk # Primary backend
-      xdg-desktop-portal-gnome # Fallback for specific apps
-      xdg-desktop-portal-wlr # Additional fallback for Wayland
+      xdg-desktop-portal-wlr # Fallback for Wayland-specific features
     ];
     xdgOpenUsePortal = true;
   };
 
-  # Enable DBus explicitly and include portal packages
+  # Enable DBus and include portal packages
   services.dbus = {
     enable = true;
     packages = with pkgs; [
       xdg-desktop-portal
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-gnome
+      gsettings-desktop-schemas # Critical for backend settings
     ];
   };
 
@@ -35,10 +34,9 @@
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
     xdg-desktop-portal-wlr
-    gsettings-desktop-schemas # Required for GTK/GNOME portal settings
-    glib # For gsettings CLI and DBus utilities
+    gsettings-desktop-schemas # For GTK portal settings
+    glib # For gsettings CLI and DBus utils
   ];
 
   # Environment variables for Wayland and Niri
@@ -50,8 +48,8 @@
     NIXOS_OZONE_WL = "1";
     QT_QPA_PLATFORM = "wayland";
     MOZ_ENABLE_WAYLAND = "1";
-    # Ensure portals can find schemas
-    XDG_DATA_DIRS = "/run/current-system/sw/share:/usr/share:/var/empty/share";
+    # Ensure schemas are found
+    XDG_DATA_DIRS = "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}:${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}:/run/current-system/sw/share:/usr/share";
   };
 
   # Graphics and video drivers
@@ -71,18 +69,26 @@
     enable = true;
     alsa.enable = true;
     pulse.enable = true;
-    wireplumber.enable = true; # Required for portal screen sharing
+    wireplumber.enable = true;
   };
 
-  # Ensure user systemd services start after graphical session
+  # Ensure portal services start after graphical session
   systemd.user.services."xdg-desktop-portal" = {
     wantedBy = ["graphical-session.target"];
     partOf = ["graphical-session.target"];
-    after = ["graphical-session-pre.target"];
+    after = ["graphical-session-pre.target" "niri.service"];
+    serviceConfig = {
+      Restart = "always";
+      RestartSec = 3;
+    };
   };
   systemd.user.services."xdg-desktop-portal-gtk" = {
     wantedBy = ["graphical-session.target"];
     partOf = ["graphical-session.target"];
-    after = ["graphical-session-pre.target"];
+    after = ["graphical-session-pre.target" "xdg-desktop-portal.service"];
+    serviceConfig = {
+      Restart = "always";
+      RestartSec = 3;
+    };
   };
 }
