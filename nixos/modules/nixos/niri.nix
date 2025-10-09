@@ -5,6 +5,9 @@
 }: {
   programs.niri.enable = true;
   xdg.portal.enable = true;
+  environment.systemPackages = with pkgs; [
+    xdg-desktop-portal-gtk
+  ];
 
   services.xserver.videoDrivers = ["modesetting"];
 
