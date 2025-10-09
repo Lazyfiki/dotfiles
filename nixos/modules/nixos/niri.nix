@@ -5,7 +5,10 @@
 }: {
   programs.niri.enable = true;
 
-  services.xdg.portal.enable = true;
+  xdg.portal.extraPortals = [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+  ];
 
   services.xserver.videoDrivers = ["modesetting"];
 
