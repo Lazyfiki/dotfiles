@@ -4,12 +4,8 @@
   ...
 }: {
   programs.niri.enable = true;
+  xdg.portal.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-wlr
-  ];
   services.xserver.videoDrivers = ["modesetting"];
 
   environment.sessionVariables = {
@@ -27,17 +23,4 @@
     "nvidia_modeset"
     "nvidia_uvm"
   ];
-
-  systemd.user.services = {
-    "xdg-desktop-portal.service" = {
-      enable = true;
-      description = "XDG Desktop Portal";
-      serviceConfig.ExecStart = "${pkgs.xdg-desktop-portal}/bin/xdg-desktop-portal";
-    };
-    "xdg-desktop-portal-wlr.service" = {
-      enable = true;
-      description = "XDG Desktop Portal WLR Backend";
-      serviceConfig.ExecStart = "${pkgs.xdg-desktop-portal-wlr}/bin/xdg-desktop-portal-wlr";
-    };
-  };
 }
