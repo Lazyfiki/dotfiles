@@ -1,7 +1,7 @@
 {
   outputs,
-  config,
   inputs,
+  config,
   lib,
   ...
 }: {
