@@ -5,6 +5,8 @@
 }: {
   programs.niri.enable = true;
 
+  services.xdg.portal.enable = true;
+
   services.xserver.videoDrivers = ["modesetting"];
 
   environment.sessionVariables = {
