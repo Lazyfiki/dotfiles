@@ -6,7 +6,7 @@
     config = {
       common = {
         default = [
-          "gnome"
+          "wlr"
           "gtk"
         ];
         "org.freedesktop.impl.portal.FileChooser" = [
@@ -18,7 +18,7 @@
       };
     };
     extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
+      xdg-desktop-portal-wlr
       xdg-desktop-portal-gtk
     ];
   };
