@@ -3,7 +3,7 @@
 
 set -e
 
-host="legionpro"
+host=$(hostname)
 path=$HOME/.dotfiles/nixos/
 
 $EDITOR $path/hosts/legionpro/configuration.nix
