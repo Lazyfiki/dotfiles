@@ -1,15 +1,12 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}: {
-  fonts.packages = with pkgs; [
-    inter
-    jetbrains-mono
-    joypixels
-    nerdfonts
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-  ];
+{pkgs, ...}: {
+  fonts = {
+    packages = with pkgs; [
+      inter
+      jetbrains-mono
+      joypixels
+      nerdfonts
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+    ];
+  };
 }
