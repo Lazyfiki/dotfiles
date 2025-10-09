@@ -8,7 +8,6 @@
 }: {
   imports = [
     ./packages
-    ./git.nix
   ];
 
   nixpkgs = {
