@@ -13,7 +13,6 @@
     outputs.nixosModules.fcitx5
     outputs.nixosModules.firewall
     outputs.nixosModules.hyprland
-    outputs.nixosModules.portals
     outputs.nixosModules.power
     outputs.nixosModules.ssh
     outputs.nixosModules.users
