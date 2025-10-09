@@ -1,0 +1,59 @@
+{
+  imports = [
+    ./git.nix
+    ./spicetify.nix
+  ];
+
+  home.packages = with pkgs; [
+    inputs.quickshell.packages.x86_64-linux.default
+    inputs.zen-browser.packages.x86_64-linux.default
+    bat
+    bc
+    bottles
+    chromium
+    curl
+    dconf-editor
+    direnv
+    discord
+    fd
+    firefox
+    fzf
+    gimp
+    git
+    htop-vim
+    jq
+    krita
+    maestral
+    mpc-cli
+    mpv
+    nautilus
+    ncmpcpp
+    nodejs
+    nsxiv
+    pavucontrol
+    playerctl
+    pulsemixer
+    pywal16
+    qbittorrent
+    ripgrep
+    rofi-wayland
+    stow
+    swappy
+    swaynotificationcenter
+    swww
+    tmux
+    transmission_4
+    tree
+    tree-sitter
+    unstable.clock-rs
+    unstable.neovim
+    yacreader
+    unzip
+    vim
+    wget
+    winetricks
+    wl-clipboard
+    youtube-music
+    zathura
+  ];
+}
