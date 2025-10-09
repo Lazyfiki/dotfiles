@@ -32,6 +32,7 @@
     libnotify
     libwacom
     man-pages
+    xwayland-satellite
   ];
 
   apps = with pkgs; [
