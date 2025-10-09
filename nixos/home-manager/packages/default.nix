@@ -1,4 +1,11 @@
-{pkgs, ...}: {
+{
+  inputs,
+  outputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   imports = [
     ./git.nix
     ./spicetify.nix
