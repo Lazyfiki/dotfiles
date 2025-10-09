@@ -49,10 +49,10 @@
     homeManagerModules = import ./modules/home-manager;
 
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      legionpro = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          ./hosts/configuration.nix
+          ./hosts/legionpro/configuration.nix
         ];
       };
     };

@@ -5,7 +5,7 @@ set -e
 
 path=$HOME/.dotfiles/nixos/
 
-$EDITOR $path/hosts/configuration.nix
+$EDITOR $path/hosts/legionpro/configuration.nix
 
 pushd $path
 
