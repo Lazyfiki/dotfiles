@@ -6,13 +6,34 @@
   programs.niri.enable = true;
   xdg.portal = {
     enable = true;
-    extraPortals = with pkgs; [xdg-desktop-portal-gtk];
-    config = {
-      common.default = ["gtk"];
+    config.common.default = "*"; # Fallback to default for all interfaces
+    config.Niri = {
+      # Or use your $XDG_CURRENT_DESKTOP value
+      default = "gnome"; # Use xdg-desktop-portal-gnome
     };
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gnome # Core for Niri
+      xdg-desktop-portal-gtk # Fallback for GTK apps (optional but useful)
+    ];
+    # Optional: Use portal for xdg-open (helps with URL handling)
+    xdgOpenUsePortal = true;
   };
+
+  # Nautilus dependency for file chooser in portal-gnome
+  services.dbus.packages = [pkgs.nautilus];
+
+  # Ensure environment vars are set (Niri should handle most, but explicit helps)
+  environment.sessionVariables = {
+    XDG_CURRENT_DESKTOP = "Niri";
+    XDG_SESSION_DESKTOP = "Niri";
+    XDG_SESSION_TYPE = "wayland";
+  };
+
+  # Add portal packages to user env (helps with manual restarts)
   environment.systemPackages = with pkgs; [
+    xdg-desktop-portal
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
   ];
 
   services.xserver.videoDrivers = ["modesetting"];
