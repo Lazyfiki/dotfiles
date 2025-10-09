@@ -37,6 +37,7 @@
   apps = with pkgs; [
     ddcutil
     ghostty
+    alacritty
     gjs
     grim
     gvfs
