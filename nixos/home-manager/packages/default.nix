@@ -25,6 +25,7 @@
     fd
     firefox
     fzf
+    ghostty
     gimp
     git
     htop-vim
@@ -54,12 +55,12 @@
     tree-sitter
     unstable.clock-rs
     unstable.neovim
-    yacreader
     unzip
     vim
     wget
     winetricks
     wl-clipboard
+    yacreader
     youtube-music
     zathura
   ];

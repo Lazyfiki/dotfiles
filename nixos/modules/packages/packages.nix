@@ -27,7 +27,6 @@
   environment.systemPackages = with pkgs; [
     # ciscoPacketTracer8
     adwaita-icon-theme
-    alacritty
     bibata-cursors
     brightnessctl
     cifs-utils
@@ -37,7 +36,6 @@
     ffmpeg
     ffmpegthumbnailer
     file
-    ghostty
     gjs
     glib
     gnumake
