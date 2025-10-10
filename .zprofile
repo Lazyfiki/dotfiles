@@ -23,5 +23,5 @@ export MPD_PORT="6600"
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   # exec Hyprland
-  exec niri
+  exec niri-session
 fi
