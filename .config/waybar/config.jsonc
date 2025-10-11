@@ -7,6 +7,8 @@
         "custom/launcher",
         "hyprland/workspaces",
         "hyprland/window",
+        "niri/workspaces",
+        "niri/window",
     ],
     "modules-right": [
         "group/expand",
@@ -50,6 +52,10 @@
         "tooltip-format": "{percent}% {icon}"
     },
 
+    "niri/workspaces": {
+        "format": "{icon}",
+        "current-only": true,
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "active-only": false,

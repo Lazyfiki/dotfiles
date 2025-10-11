@@ -41,6 +41,7 @@
     pavucontrol
     playerctl
     pulsemixer
+    pureref
     pywal16
     qbittorrent
     ripgrep
