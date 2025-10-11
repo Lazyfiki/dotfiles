@@ -23,11 +23,5 @@
       xdg-desktop-portal-gtk
     ];
   };
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = ["modesetting"]; # or "nvidia" if needed
-  # services.xserver.layout = "us";
-  # services.xserver.displayManager.startx.enable = true; # optional
-  # services.xserver.desktopManager.default = "none"; # we use niri
-  # services.xserver.windowManager.enable = false;
-  # services.xserver.enableXWayland = true;
+  services.xserver.videoDrivers = ["modesetting"];
 }
