@@ -29,5 +29,5 @@
   # services.xserver.displayManager.startx.enable = true; # optional
   # services.xserver.desktopManager.default = "none"; # we use niri
   # services.xserver.windowManager.enable = false;
-  services.xserver.enableXWayland = true;
+  # services.xserver.enableXWayland = true;
 }
