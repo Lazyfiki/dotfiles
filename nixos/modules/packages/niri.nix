@@ -24,4 +24,7 @@
     ];
   };
   services.xserver.videoDrivers = ["modesetting"];
+  environment.systemPackages = with pkgs; [
+    xwayland
+  ];
 }
