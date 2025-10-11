@@ -56,6 +56,7 @@
     tree
     tree-sitter
     unstable.clock-rs
+    unstable.input-leap
     unstable.neovim
     unzip
     vim
