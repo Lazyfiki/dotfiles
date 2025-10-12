@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   programs.niri.enable = true;
+  programs.niri.enableXwayland = true;
 
   xdg.portal = {
     enable = true;
