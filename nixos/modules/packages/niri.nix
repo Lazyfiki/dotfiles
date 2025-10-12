@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   programs.niri.enable = true;
-  programs.niri.enableXwayland = true;
 
   xdg.portal = {
     enable = true;
@@ -24,8 +23,4 @@
       xdg-desktop-portal-gtk
     ];
   };
-  services.xserver.videoDrivers = ["modesetting"];
-  environment.systemPackages = with pkgs; [
-    xwayland
-  ];
 }

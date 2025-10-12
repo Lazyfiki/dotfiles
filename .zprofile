@@ -22,6 +22,6 @@ export MPD_PORT="6600"
 [ ! -s ~/.config/mpd/pid ] && mpd
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  # exec Hyprland
-  exec niri-session
+  exec Hyprland
+  # exec niri-session
 fi
