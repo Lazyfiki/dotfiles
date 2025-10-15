@@ -29,6 +29,7 @@
     ghostty
     gimp
     git
+    gparted
     htop-vim
     jq
     krita

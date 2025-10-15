@@ -12,8 +12,7 @@ magick "$wall" ~/.local/share/bg.jpg
 swww img ~/.local/share/bg.jpg --transition-duration 1 -t wave
 wal -c
 wal -n -i ~/.local/share/bg.jpg
-# pkill waybar; hyprctl dispatch exec waybar
-pkill waybar; waybar &
+pkill waybar; hyprctl dispatch exec waybar
 swaync-client --reload-css
 hyprctl dispatch exec reload-nvim
 pkill nautilus

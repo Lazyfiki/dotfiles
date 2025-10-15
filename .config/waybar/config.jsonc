@@ -7,8 +7,6 @@
         "custom/launcher",
         "hyprland/workspaces",
         "hyprland/window",
-        "niri/workspaces",
-        "niri/window",
     ],
     "modules-right": [
         "group/expand",
