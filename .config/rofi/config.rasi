@@ -1,10 +1,1 @@
-configuration{
-    modi: "drun,filebrowser";
-    show-icons: true;
-    terminal: "Ghostty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-}
-@theme "~/.config/rofi/menu.rasi"
+// @import "/home/ahmed/.cache/wal/colors-rofi-dark.rasi"

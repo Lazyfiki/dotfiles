@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+IMAGE="$1"
+TMPFILE=$(mktemp --suffix=.qml)
+
+cat > "$TMPFILE" <<EOF
+import QtQuick
+import QtQuick.Layouts
+import Quickshell
+import Quickshell.Wayland
+
+ShellRoot {
+    Variants {
+        model: Quickshell.screens
+
+        PanelWindow {
+            id: screenshot
+            property var modelData
+            screen: modelData
+            anchors {
+                bottom: true
+                right: true
+            }
+            margins {
+                bottom: 6
+                right: 6
+            }
+
+            implicitWidth: 370
+            implicitHeight: 254
+
+            color: "transparent"
+
+            WlrLayershell.layer: WlrLayer.Overlay
+
+            Timer {
+                id: killTimer
+                interval: 5000
+                running: true
+                repeat: false
+                onTriggered: Qt.quit()
+            }
+
+            Rectangle {
+                id: container
+                anchors.fill: parent
+                radius: 10
+                color: "#80202020"
+
+                anchors.margins: 10
+
+                Image {
+                    id: content
+                    anchors.fill: parent
+                    anchors.margins: 10
+                    source: "$IMAGE"
+                    fillMode: Image.PreserveAspectFit
+                    smooth: true
+
+                    MouseArea {
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            Qt.openUrlExternally("file://$IMAGE")
+                            killTimer.stop()
+                            Qt.quit()
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+EOF
+
+qs -p "$TMPFILE"
+
+rm "$TMPFILE"
