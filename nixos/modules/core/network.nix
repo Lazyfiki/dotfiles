@@ -3,7 +3,7 @@
     networkmanager.enable = true;
     firewall = {
       enable = true;
-      allowedTCPPorts = [80 443];
+      allowedTCPPorts = [80 443 24800];
       allowedUDPPortRanges = [
         {
           from = 4000;
