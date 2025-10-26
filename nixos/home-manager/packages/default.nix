@@ -15,6 +15,7 @@
     inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
     barrier
+    keepassxc
     bat
     bc
     bottles
