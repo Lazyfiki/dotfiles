@@ -29,7 +29,7 @@
   };
 
   fileSystems."/home/ahmed/pub/share" = {
-    device = "//192.168.10.2/Share";
+    device = "//192.168.10.2/Storage";
     fsType = "cifs";
     options = ["credentials=/etc/samba/smbcredentials" "uid=1000" "gid=1000"];
   };
