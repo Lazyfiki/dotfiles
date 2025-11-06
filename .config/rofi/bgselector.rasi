@@ -58,6 +58,7 @@ configuration {
     kb-custom-17: "Alt+ampersand";
     kb-custom-18: "Alt+asterisk";
     kb-custom-19: "Alt+parenleft";
+    kb-custom-20: "r";
     kb-select-1: "Super+1";
     kb-select-2: "Super+2";
     kb-select-3: "Super+3";

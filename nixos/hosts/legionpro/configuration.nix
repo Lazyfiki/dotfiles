@@ -28,6 +28,12 @@
     };
   };
 
+  fileSystems."/home/ahmed/pub/share" = {
+    device = "//192.168.10.2/Share";
+    fsType = "cifs";
+    options = ["credentials=/etc/samba/smbcredentials" "uid=1000" "gid=1000"];
+  };
+
   home-manager = {
     extraSpecialArgs = {inherit inputs outputs;};
     users = {
