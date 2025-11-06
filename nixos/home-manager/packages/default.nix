@@ -14,7 +14,7 @@
   home.packages = with pkgs; [
     inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
-    input-leap
+    unstable.input-leap
     bat
     bc
     bottles
@@ -29,7 +29,6 @@
     ghostty
     gimp
     git
-    # gparted
     htop-vim
     jq
     krita
