@@ -1,6 +1,16 @@
 {
   networking = {
     networkmanager.enable = true;
+
+    interfaces.enp12s0 = {
+      ipv4.addresses = [
+        {
+          address = "192.168.10.1";
+          prefixLength = 24;
+        }
+      ];
+    };
+
     firewall = {
       enable = true;
       allowedTCPPorts = [80 443 24800];
