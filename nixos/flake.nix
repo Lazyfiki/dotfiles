@@ -53,7 +53,6 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/legionpro/configuration.nix
-          inputs.vicinae.homeManagerModules.default
         ];
       };
     };

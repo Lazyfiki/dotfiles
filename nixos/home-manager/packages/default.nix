@@ -7,6 +7,7 @@
   ...
 }: {
   imports = [
+    inputs.vicinae.homeManagerModules.default
     ./git.nix
     ./spicetify.nix
   ];
