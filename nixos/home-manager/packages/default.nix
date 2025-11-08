@@ -11,16 +11,15 @@
     ./spicetify.nix
   ];
 
-  # services.vicinae = {
-  #   enable = true; # default: false
-  #   autoStart = true; # default: true
-  #   # package = # specify package to use here. Can be omitted.
-  # };
+  services.vicinae = {
+    enable = true; # default: false
+    autoStart = true; # default: true
+    # package = # specify package to use here. Can be omitted.
+  };
 
   home.packages = with pkgs; [
     inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
-    inputs.vicinae.packages.x86_64-linux.vicinae
     # rkvm
     bat
     bc
