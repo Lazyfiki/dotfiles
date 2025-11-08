@@ -20,7 +20,7 @@
   home.packages = with pkgs; [
     inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
-    inputs.vicinae.packages.${pkgs.system}.vicinae
+    inputs.vicinae.packages.x86_64-linux.vicinae
     # rkvm
     bat
     bc
