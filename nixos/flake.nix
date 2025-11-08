@@ -52,7 +52,6 @@
       legionpro = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          inputs.vicinae.nixosModules.default
           ./hosts/legionpro/configuration.nix
         ];
       };
