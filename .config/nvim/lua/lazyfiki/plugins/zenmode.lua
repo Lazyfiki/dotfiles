@@ -38,7 +38,7 @@ return {
             ColorMyPencils()
             local path = vim.fn.expand("~/.cache/wal/colors.json")
             local colors = vim.fn.json_decode(vim.fn.readfile(path))
-            vim.api.nvim_set_hl(0, "Normal",      { fg = colors.colors.color1, bg = "none" })
+            vim.api.nvim_set_hl(0, "Normal",      { fg = colors.colors.color4, bg = "none" })
             vim.api.nvim_set_hl(0, "SpellBad", { undercurl = true, sp = "#ff5555", })
         end)
     end
