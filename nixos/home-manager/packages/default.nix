@@ -13,9 +13,16 @@
   ];
 
   services.vicinae = {
-    enable = true; # default: false
-    autoStart = true; # default: true
-    # package = # specify package to use here. Can be omitted.
+    enable = true;
+    autoStart = true;
+
+    extensions = [
+      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+        inherit pkgs;
+        name = "vicinae-pywal";
+        src = "/home/ahmed/.cache/wal/vicinae-pywal.toml";
+      })
+    ];
   };
 
   home.packages = with pkgs; [

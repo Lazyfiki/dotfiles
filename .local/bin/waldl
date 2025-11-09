@@ -39,7 +39,9 @@ atleast=1920x1080
 sh_menu () {
 	# : | rofi -dmenu -p "search wallhaven:"
 	# ROFI: comment the previous line and uncomment the next line for rofi
-	rofi -dmenu -l 0 -p "search wallpapers"
+	# rofi -dmenu -l 0 -p "search wallpapers"
+    # rofi -dmenu -l 0 -p "search wallpapers"
+    vicinae dmenu --placeholder "Select option"
 }
 
 ##########################
