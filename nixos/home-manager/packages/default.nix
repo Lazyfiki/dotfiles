@@ -20,7 +20,7 @@
       (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
         inherit pkgs;
         name = "vicinae-pywal";
-        src = "/home/ahmed/.cache/wal/vicinae-pywal.toml";
+        src = ../../.cache/wal/vicinae-pywal.toml;
       })
     ];
   };
