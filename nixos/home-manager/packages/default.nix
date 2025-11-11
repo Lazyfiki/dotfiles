@@ -8,6 +8,7 @@
 }: {
   imports = [
     inputs.vicinae.homeManagerModules.default
+
     ./git.nix
     ./spicetify.nix
   ];
@@ -20,7 +21,6 @@
   home.packages = with pkgs; [
     inputs.quickshell.packages.x86_64-linux.default
     inputs.zen-browser.packages.x86_64-linux.default
-    # rkvm
     bat
     bc
     bottles
@@ -61,7 +61,6 @@
     transmission_4
     tree
     tree-sitter
-    unstable.clock-rs
     unstable.neovim
     unzip
     vim
