@@ -11,7 +11,7 @@
       enable = true;
       settings = {
         listen = "0.0.0.0:5258";
-        switch-keys = ["super" "left-alt"];
+        switch-keys = ["left-alt" "right-alt"];
         certificate = "/etc/rkvm/certificate.pem";
         key = "/etc/rkvm/key.pem";
         password = "1919est1919";
