@@ -39,7 +39,7 @@
     jq
     krita
     maestral
-    mpc-cli
+    mpc
     mpv
     nautilus
     ncmpcpp
