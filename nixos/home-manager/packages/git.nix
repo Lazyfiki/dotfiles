@@ -5,8 +5,8 @@
       user = {
         name = "Ahmed Hamzaoui";
         email = "lazyfiki@gmail.com";
-      }
-    };
+      };
+
       core = {
         compression = 9;
         whitespace = "error";
@@ -28,5 +28,6 @@
           insteadOf = "ahmed:";
         };
       };
+    };
   };
 }
