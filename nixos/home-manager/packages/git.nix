@@ -1,9 +1,12 @@
 {
   programs.git = {
     enable = true;
-    userName = "Ahmed Hamzaoui";
-    userEmail = "lazyfiki@gmail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Ahmed Hamzaoui";
+        email = "lazyfiki@gmail.com";
+      }
+    };
       core = {
         compression = 9;
         whitespace = "error";
@@ -25,6 +28,5 @@
           insteadOf = "ahmed:";
         };
       };
-    };
   };
 }
