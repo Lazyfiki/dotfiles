@@ -3,7 +3,7 @@
     inter
     jetbrains-mono
     joypixels
-    nerd-fonts
+    # nerd-fonts
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
   ];
