@@ -52,7 +52,7 @@
     pywal16
     qbittorrent
     ripgrep
-    rofi-wayland
+    rofi
     stow
     swappy
     swaynotificationcenter
