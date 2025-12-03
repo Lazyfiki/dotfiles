@@ -68,7 +68,6 @@
     udiskie
     unstable.hyprland-qtutils
     virt-manager
-    wacomtablet
     waybar
     wayland-protocols
     xdg-utils
