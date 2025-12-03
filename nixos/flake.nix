@@ -43,8 +43,8 @@
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {
-    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
-    formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
+    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${stdenv.hostPlatform.system});
+    formatter = forAllSystems (system: nixpkgs.legacyPackages.${stdenv.hostPlatform.system}.alejandra);
 
     overlays = import ./overlays {inherit inputs;};
 
