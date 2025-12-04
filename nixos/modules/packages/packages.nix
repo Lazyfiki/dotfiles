@@ -26,6 +26,7 @@
 
   environment.systemPackages = with pkgs; [
     # ciscoPacketTracer8
+    obsidian
     adwaita-icon-theme
     bibata-cursors
     brightnessctl
