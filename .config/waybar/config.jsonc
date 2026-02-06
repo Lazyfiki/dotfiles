@@ -86,7 +86,7 @@
     },
 
     "custom/launcher": {
-        "format": "",
+        "format": "<span font_family='Symbols Nerd Font Mono'></span>",
         "tooltip": false,
         "on-click": "rofi -show drun -config $HOME/.config/rofi/appdrawer.rasi"
     },

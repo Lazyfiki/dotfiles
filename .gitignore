@@ -1,2 +1,9 @@
 .config/nvim/lazy-lock.json
+.zcompdump
+.zcompdump-legionpro-5.9
+.zcompdump-legionpro-5.9.lock/
+.zcompdump-legionpro-5.9.zwc
+.zcompdump-nixos-5.9
+.zcompdump-nixos-5.9.lock/
+.zcompdump-nixos-5.9.zwc
 nixos-switch.log

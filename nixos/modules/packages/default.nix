@@ -2,11 +2,12 @@
   imports = [
     ./audio.nix
     ./bluetooth.nix
-    ./fcitx5.nix
+    ./common.nix
+    # ./fcitx5.nix
     ./fonts.nix
     ./hyprland.nix
-    ./packages.nix
-    ./rkvm.nix
+    # ./rkvm.nix
+    ./services.nix
     ./ssh.nix
     ./zsh.nix
   ];

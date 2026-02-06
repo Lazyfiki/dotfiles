@@ -1,1 +1,19 @@
-/nix/store/4p1j5hyk9gk9xvfwvh3zf6kcf316zjwp-home-manager-files/.config/git/config
+[advice]
+	addEmptyPathspec = false
+	pushNonFastForward = false
+	statusHints = false
+
+[core]
+	compression = 9
+	preloadindex = true
+	whitespace = "error"
+
+[init]
+	defaultBranch = "master"
+
+[url "git@github.com:Lazyfiki/"]
+	insteadOf = "ahmed:"
+
+[user]
+	email = "lazyfiki@gmail.com"
+	name = "Ahmed Hamzaoui"

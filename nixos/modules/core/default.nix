@@ -1,6 +1,7 @@
 {
   imports = [
     ./boot.nix
+    ./hosts.nix
     ./locale.nix
     ./network.nix
     ./nix-settings.nix

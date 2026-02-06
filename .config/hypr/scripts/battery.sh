@@ -27,4 +27,4 @@ else
 fi
 
 
-echo "$capacity% $icon."
+echo "$capacity% $icon"

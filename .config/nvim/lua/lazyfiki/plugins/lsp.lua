@@ -1,47 +1,52 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
+        "hrsh7th/nvim-cmp",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-path",
-        "hrsh7th/nvim-cmp",
     },
+
     config = function()
         local cmp = require("cmp")
 
         cmp.setup({
-            completion = { autocomplete = false },
+            completion = {
+                autocomplete = {
+                    cmp.TriggerEvent.TextChanged,
+                },
+            },
+
             mapping = cmp.mapping.preset.insert({
-                ["<C-Space>"] = cmp.mapping.complete(),
                 ["<CR>"] = cmp.mapping.confirm({ select = true }),
+                ["<C-n>"] = cmp.mapping.select_next_item(),
+                ["<C-p>"] = cmp.mapping.select_prev_item(),
             }),
+
             sources = {
+                { name = "nvim_lsp" },
                 { name = "path" },
             },
         })
 
+        local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-        local capabilities = vim.lsp.protocol.make_client_capabilities()
+        vim.lsp.handlers["textDocument/hover"] = function() end
+        vim.lsp.handlers["textDocument/signatureHelp"] = function() end
 
-        capabilities.textDocument.completion.completionItem = {
-            documentationFormat = { "markdown", "plaintext" },
-            snippetSupport = true,
-            preselectSupport = true,
-            insertReplaceSupport = true,
-            labelDetailsSupport = true,
-            deprecatedSupport = true,
-            commitCharactersSupport = true,
-            tagSupport = { valueSet = { 1 } },
-            resolveSupport = {
-                properties = {
-                    "documentation",
-                    "detail",
-                    "additionalTextEdits",
-                },
-            },
-        }
+        vim.diagnostic.config({
+            virtual_text = false,
+            signs = false,
+            underline = false,
+            update_in_insert = false,
+        })
 
-        vim.lsp.config("*", { capabilities = capabilities })
-        local servers = { "html", "cssls" , 'lua_ls' }
+        local servers = { "lua_ls" }
+
+        for _, server in ipairs(servers) do
+            vim.lsp.config(server, {
+                capabilities = capabilities,
+            })
+        end
 
         vim.lsp.enable(servers)
     end,

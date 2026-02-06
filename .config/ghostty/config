@@ -3,11 +3,11 @@ font-size = 16
 
 title = Ghostty
 theme = ghostty-wal
-background-opacity = 0.8
+background-opacity = 0.85
 unfocused-split-opacity = 0.6
 
 shell-integration = zsh
-shell-integration-features = no-cursor
+shell-integration-features = no-cursor, ssh-env
 
 cursor-style = block
 cursor-style-blink = true
@@ -17,5 +17,8 @@ window-padding-balance = true
 
 desktop-notifications = false
 confirm-close-surface = false
+
+initial-window = true
+quit-after-last-window-closed = false
 
 keybind = ctrl+backspace=text:\x17

@@ -11,3 +11,4 @@ if [[ -n "$IN_NIX_SHELL" ]]; then
 fi
 
 eval "$(direnv hook zsh)"
+eval "$(starship init zsh)"

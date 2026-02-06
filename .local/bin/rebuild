@@ -3,12 +3,11 @@
 
 set -e
 
-host=$(hostname)
 path=$HOME/.dotfiles/nixos/
 
-$EDITOR $path/hosts/legionpro/configuration.nix
+$EDITOR $path/hosts/legionpro/configuration.nix -c "cd $path"
 
-pushd $path
+pushd "$path"
 
 if git diff --quiet '*.nix'; then
     echo "No changes detected, exiting."
@@ -23,9 +22,10 @@ git diff -U0 '*.nix'
 
 echo "NixOS Rebuilding..."
 
-sudo nixos-rebuild switch --flake "$path#$host" | tee nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake "$path#$HOST" | tee nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
-current=$(nixos-rebuild list-generations --flake "$path#$host" | grep current)
+
+current=$(nixos-rebuild list-generations --flake "$path#$HOST" | grep current)
 
 git commit -am "$current"
 

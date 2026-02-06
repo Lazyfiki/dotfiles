@@ -11,8 +11,10 @@ fi
 magick "$wall" ~/.local/share/bg.jpg
 swww img ~/.local/share/bg.jpg --transition-duration 1 -t wave
 wal -c
-wal -n -i ~/.local/share/bg.jpg
-pkill waybar; hyprctl dispatch exec waybar
+wal --cols16 lighten --saturate 0.1 -ni ~/.local/share/bg.jpg
+pkill -SIGUSR2 ghostty
+pkill -SIGUSR2 nautilus
+pkill -SIGUSR2 waybar
+hyprctl dispatch exec "QT_SCALE_FACTOR=1.5 vicinae server --replace"
 swaync-client --reload-css
 hyprctl dispatch exec reload-nvim
-pkill nautilus

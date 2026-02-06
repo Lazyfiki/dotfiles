@@ -9,6 +9,6 @@
     };
   };
 
-  boot.kernelModules = ["i915" "i2c-dev"];
+  boot.kernelModules = ["i915"];
   hardware.i2c.enable = true;
 }

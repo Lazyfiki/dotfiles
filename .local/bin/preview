@@ -1,12 +1,14 @@
-#!/usr/bin/env bash
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p satty
 
-IMAGE="$1"
+IMAGE=$(realpath $1)
 TMPFILE=$(mktemp --suffix=.qml)
 
 cat > "$TMPFILE" <<EOF
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
+import Quickshell.Io
 import Quickshell.Wayland
 
 ShellRoot {
@@ -61,7 +63,8 @@ ShellRoot {
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
                         onClicked: {
-                            Qt.openUrlExternally("file://$IMAGE")
+                            // Qt.openUrlExternally("file://$IMAGE")
+                            Quickshell.execDetached(["satty", "--filename", "$IMAGE"])
                             killTimer.stop()
                             Qt.quit()
                         }

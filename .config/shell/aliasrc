@@ -24,6 +24,6 @@ alias \
     du="du -h" \
     free="free -h" \
     ip="ip -color=auto" \
-    lsblk="lsblk | bat -l conf -p" \
+    # lsblk="lsblk | bat -l conf -p" \
 
 alias nix-shell="nix-shell --run zsh"

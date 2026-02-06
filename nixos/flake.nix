@@ -1,5 +1,5 @@
 {
-  description = "idk";
+  description = "narilamb funnybunny";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
@@ -10,26 +10,14 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    vicinae.url = "github:vicinaehq/vicinae";
+    hyprland.url = "github:hyprwm/Hyprland";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs = {
     self,
     nixpkgs,
-    home-manager,
     quickshell,
-    vicinae,
     zen-browser,
     ...
   } @ inputs: let

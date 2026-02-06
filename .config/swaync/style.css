@@ -21,12 +21,12 @@
 }
 
 .widget-title > label {
-    color: white; /* Notification title text (e.g., "Notifications") */
+    color: white;
 }
 
 .widget-title > button {
     color: white;
-    background: rgba(32,32,32,0.5);
+    background: @color1;
     font-size: 16px;
     padding-left: 4px;
     padding-right: 4px;
@@ -38,12 +38,12 @@
 }
 
 .control-center {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 0;
     margin: 0;
     padding: 15px;
-    box-shadow: none;
+    box-shadow: -10px 0 100px 100px rgba(0, 0, 0, 0.3);
 }
 
 .notification {
@@ -55,7 +55,7 @@
 }
 
 .notification-content {
-    background: rgba(32,32,32,0.5);
+    background: alpha(@color8, 0.5);
     margin: 0;
     border-radius: 35px;
     padding: 20px;
@@ -72,16 +72,28 @@
     padding: 0;
 }
 
-.notification {
-}
-
 .control-center .widget-mpris {
     color: #ffffff;
     padding: 20px;
     border-radius: 35px;
-    background: rgba(32,32,32,0.5);
+    background: rgba(32, 32, 32, 0.5);
 }
 
 .widget-mpris {
     margin-top: 0;
+}
+
+.close-button {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  color: white;
+  background-color: @color1;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.close-button:active {
+  background-color: blue;
 }

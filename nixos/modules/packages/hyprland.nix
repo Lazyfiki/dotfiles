@@ -5,8 +5,17 @@
 }: {
   programs.hyprland = {
     enable = true;
+    withUWSM = true;
     xwayland.enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
   };
+
+  environment.systemPackages = with pkgs; [
+    hyprgraphics
+    hyprutils
+    hyprcursor
+    hyprlang
+  ];
 
   services.xserver.videoDrivers = ["modesetting"];
 

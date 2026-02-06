@@ -1,5 +1,9 @@
 {
+  services.cloudflare-warp.enable = true;
+  systemd.services.NetworkManager-wait-online.enable = false;
+
   networking = {
+    hostName = "legionpro";
     networkmanager.enable = true;
 
     interfaces.enp12s0 = {

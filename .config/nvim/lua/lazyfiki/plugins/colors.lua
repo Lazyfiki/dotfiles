@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-    color = color or "rose-pine"
+    color = color or "catppuccin"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -36,6 +36,10 @@ function ColorMyPencils(color)
         fg = colors.special.foreground,
         bg = colors.colors.color0,
     })
+    vim.api.nvim_set_hl(0, "TreesitterContextBottom", {
+        underline = false,
+        sp = "NONE",
+    })
 end
 
 vim.api.nvim_create_user_command("ReloadColors", function()
@@ -43,16 +47,36 @@ vim.api.nvim_create_user_command("ReloadColors", function()
 end, {})
 
 return {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-        require("rose-pine").setup({
-            styles = {
-                bold = true,
-                italic = true,
-                transparency = true,
-            },
-        })
-        ColorMyPencils()
-    end,
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+        config = function()
+            require("catppuccin").setup({
+                transparent_background = true,
+                float = {
+                    transparent = true,
+                    solid = true,
+                },
+                no_italic = false,
+                no_bold = false,
+            })
+            ColorMyPencils()
+        end,
+    },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        priority = 1000,
+        config = function()
+            require("rose-pine").setup({
+                styles = {
+                    bold = true,
+                    italic = true,
+                    transparency = true,
+                },
+            })
+            ColorMyPencils()
+        end,
+    },
 }
