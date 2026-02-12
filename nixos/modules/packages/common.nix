@@ -15,6 +15,7 @@
     swaynotificationcenter
     swww
     unstable.hyprland-qtutils
+    unstable.pyprland
     waybar
     wayland-protocols
     wl-clipboard
@@ -86,14 +87,11 @@
     krita
     nsxiv
     pureref
-    unstable.pywal16
-    j
+    pywal16
   ];
 
   apps = with pkgs; [
-    # ciscoPacketTracer8
     aircrack-ng
-    unstable.bottles
     brightnessctl
     cifs-utils
     dconf-editor
@@ -115,10 +113,11 @@
     metasploit
     nautilus
     nmap
-    pyprland
     qemu
     rofi
     udiskie
+    unstable.bottles
+    unstable.ciscoPacketTracer9
     unstable.obsidian
     vicinae
     winetricks

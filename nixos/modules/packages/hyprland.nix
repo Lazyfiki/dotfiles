@@ -28,10 +28,19 @@
 
   hardware.graphics.enable = true;
 
-  boot.blacklistedKernelModules = [
-    "nvidia"
-    "nvidia_drm"
-    "nvidia_modeset"
-    "nvidia_uvm"
-  ];
+  boot = {
+    blacklistedKernelModules = [
+      "nvidia"
+      "nvidia_drm"
+      "nvidia_modeset"
+      "nvidia_uvm"
+      "nouveau"
+      "nvidia_wmi_ec_backlight"
+    ];
+
+    extraModprobeConfig = ''
+      blacklist nouveau
+      options nouveau modeset=0
+    '';
+  };
 }

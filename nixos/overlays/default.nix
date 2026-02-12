@@ -3,10 +3,8 @@
 
   modifications = final: prev: {
     ciscoPacketTracer8 = prev.ciscoPacketTracer8.overrideAttrs (oldAttrs: {
-      src = final.fetchurl {
-        url = "https://archive.org/download/cpt822/CiscoPacketTracer822_amd64_signed.deb";
-        sha256 = "sha256-bNK4iR35LSyti2/cR0gPwIneCFxPP+leuA1UUKKn9y0=";
-      };
+      src = "../../../dl/cisco/CiscoPacketTracer_900_Ubuntu_64bit.deb";
+      hash = "sha256-3ZrA1Mf8N9y2j2J/18fm+m1CAMFEklJuVhi5vRcu2SA=";
     });
   };
 
