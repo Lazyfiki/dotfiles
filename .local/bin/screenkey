@@ -1,0 +1,9 @@
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p screenkey
+
+while true; do
+    screenkey --geometry 711x700+1212+350 -s medium --opacity 0.4 --font "JetBrains Mono"
+    pid=$!
+    sleep 10
+    kill $pid
+done

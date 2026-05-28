@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+dir="$HOME/pix/ss"
+filename="$(date +%s).png"
+
+hyprshot -m region -s -f "$filename" -o $dir
+
+if [ -e $dir/$filename ]; then
+    preview "$dir/$filename"
+fi

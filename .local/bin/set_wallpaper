@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+wall_dir=~/pix/wall/
+
+if [ -z "$1" ]; then
+  wall="$(find "$wall_dir" -type f | shuf -n1)"
+else
+  wall="$1"
+fi
+
+magick "$wall" ~/.local/share/bg.jpg
+swww img ~/.local/share/bg.jpg --transition-duration 2 -t wave
+wal -c
+wal --cols16 lighten --saturate 0.2 -ni ~/.local/share/bg.jpg
+pkill -SIGUSR2 ghostty
+pkill -SIGUSR2 nautilus
+pkill -9 waybar; waybar &
+QT_SCALE_FACTOR=1.5 vicinae server --replace &
+pkill make; mako &
+reload-nvim &

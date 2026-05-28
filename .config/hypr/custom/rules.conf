@@ -1,0 +1,104 @@
+# Disable blur for XWayland windows (or context menus with shadow would look weird)
+# TODO: rewrite this bad boi in new format
+
+windowrule = match:xwayland 1, no_blur on
+
+# Applications
+windowrule = match:class zen-beta, workspace 3
+windowrule = match:class firefox, workspace 3
+
+# Floating
+windowrule = match:class albert, float on
+windowrule = match:class blueberry\.py, float on
+windowrule = match:class steam, float on
+windowrule = match:class lutris, float on
+windowrule = match:class guifetch, float on
+windowrule = match:class pavucontrol, float on
+windowrule = match:class pavucontrol, size 45% 45%
+windowrule = match:class pavucontrol, center on
+windowrule = match:class org.pulseaudio.pavucontrol, float on
+windowrule = match:class org.pulseaudio.pavucontrol, size 45% 45%
+windowrule = match:class org.pulseaudio.pavucontrol, center on
+windowrule = match:class com.connection.editor, float on
+windowrule = match:class com.connection.editor, size 40% 40%
+windowrule = match:class com.connection.editor, center on
+windowrule = match:class org.gnome.Nautilus, float on
+
+# Tiling
+windowrule = tile on, match:class ^dev\.warp\.Warp$
+
+# Picture-in-Picture
+windowrule = match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$, float on
+windowrule = keep_aspect_ratio on, match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
+windowrule = move 73% 72%, match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
+windowrule = size 25% 25%, match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
+windowrule = float on, match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
+windowrule = pin on, match:title ^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
+
+# Dialog windows – float+center these windows.
+windowrule = center on, match:title ^(Open File)(.*)$
+windowrule = center on, match:title ^(Select a File)(.*)$
+windowrule = center on, match:title ^(Choose wallpaper)(.*)$
+windowrule = center on, match:title ^(Open Folder)(.*)$
+windowrule = center on, match:title ^(Save As)(.*)$
+windowrule = center on, match:title ^(Library)(.*)$
+windowrule = center on, match:title ^(File Upload)(.*)$
+windowrule = float on, match:title ^(Open File)(.*)$
+windowrule = float on, match:title ^(Select a File)(.*)$
+windowrule = float on, match:title ^(Choose wallpaper)(.*)$
+windowrule = float on, match:title ^(Open Folder)(.*)$
+windowrule = float on, match:title ^(Save As)(.*)$
+windowrule = float on, match:title ^(Library)(.*)$
+windowrule = float on, match:title ^(File Upload)(.*)$
+
+# --- Tearing ---
+windowrule = immediate on, match:title .*\.exe
+windowrule = immediate on, match:class steam_app
+
+# No shadow for tiled windows (matches windows that are not floating).
+windowrule = no_shadow on, match:float no
+
+# ######## Workspace rules ########
+workspace = special:special, gapsout:30
+
+# ######## Layer rules ########
+layerrule = xray off .*
+# layerrule = noanim, .*
+layerrule = no_anim walker
+layerrule = no_anim selection
+layerrule = no_anim overview
+layerrule = no_anim anyrun
+layerrule = no_anim indicator.*
+layerrule = no_anim osk
+layerrule = no_anim hyprpicker
+
+# hl.layer_rule({ match = { namespace = "gtk-layer-shell" }, blur = true, ignore_alpha = 0, })
+# hl.layer_rule({ match = { namespace = launcher }, blur = true, ignore_alpha = 0.5, })
+# hl.layer_rule({ match = { namespace = logout_dialog }, blur = true })
+# hl.layer_rule({ match = { namespace = noanim }, no_anim = true })
+# hl.layer_rule({ match = { namespace = notifications }, blur = true, ignore_alpha = 0.69, })
+
+windowrule = match:class com.mitchellh.ghostty, no_blur on
+layerrule = match:namespace waybar, blur on
+
+layerrule = match:namespace swaync-control-center, blur on
+layerrule = match:namespace swaync-notification-window, blur on
+
+layerrule = match:namespace swaync-control-center, ignore_alpha 0
+layerrule = match:namespace swaync-notification-window, ignore_alpha 0
+
+layerrule = match:namespace swaync-control-center, ignore_alpha 0.5
+layerrule = match:namespace swaync-notification-window, ignore_alpha 0.5
+
+layerrule = match:namespace quickshell, ignore_alpha 0
+layerrule = match:namespace quickshell, blur on
+layerrule = match:namespace quickshell, ignore_alpha 0.5
+
+layerrule = match:namespace vicinae, blur on
+layerrule = match:namespace vicinae, ignore_alpha 0
+
+# hl.layer_rule({
+#     match = { namespace = vicinae },
+#     blur = true,
+#     ignore_alpha = 0,
+# })

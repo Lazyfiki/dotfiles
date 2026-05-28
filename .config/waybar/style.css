@@ -1,0 +1,113 @@
+@import url('../../.cache/wal/colors-waybar.css');
+
+* {
+    font-size: 18.5px;
+    font-family: "JetBrains Mono", monospace;
+    background: transparent;
+    /* color: @color15; */
+    color:white;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 0px 8px alpha(@background, 0.9);
+}
+
+tooltip {
+    background: alpha(@background, 0.7);
+    border-radius: 12px;
+    border: 2px solid alpha(@foreground,0.5);
+    padding: 6px;
+    margin: 6px;
+}
+
+#waybar > box {
+    background: alpha(@background, 0.0);
+    padding: 2px;
+}
+
+#workspaces {
+    background: alpha(white, 0.1);
+    margin: 2px 0;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: alpha(white, 0.5);
+}
+
+#workspaces button:hover {
+    all: unset;
+    background: alpha(@color1, 0.5);
+    border-radius: 100%;
+    padding: 0 10px;
+}
+
+#workspaces button.active {
+    color: white;
+    font-weight: 900;
+    background: transparent;
+    background: @color2;
+    border-radius: 99px;
+    padding: 0 2em;
+    border: none;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#custom-endpoint,
+#custom-expand,
+#custom-weather,
+#language,
+#memory,
+#network,
+#pulseaudio,
+#temperature,
+#tray {
+    /* color: white; */
+}
+
+#tray {
+    padding: 0 15px;
+}
+
+#clock {
+    padding-right: 20px;
+}
+
+#window {
+    font-weight: 900;
+    color: white;
+}
+
+#custom-launcher {
+    padding-left: 20px;
+    font-size: 28px;
+    color: @color10;
+}
+
+#custom-text {
+    font-weight: 600;
+}
+
+#custom-input {
+    font-family: "Noto Serif CJK", "JetBrains Mono", monospace;
+    font-size: 22px;
+    margin: 0;
+    padding: 0 2px;
+}
+
+#custom-texttwo,
+#custom-textthree,
+#custom-textfour,
+#custom-textfive {
+    font-size: 13px;
+}
+
+#custom-date {
+    font-size: 13px;
+    font-weight: 700;
+}

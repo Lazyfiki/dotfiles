@@ -1,0 +1,66 @@
+* {
+    background-color: transparent;
+    separator: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+window {
+    background-color: rgba(0,0,0,0.85);   // slightly stronger backdrop
+    fullscreen: true;
+    border: 0px;
+    separator: none;
+}
+
+mainbox {
+    children: [listview];
+    spacing: 0px;
+    border: 0px;
+    separator: none;
+    padding: 0% 5%;                      // use horizontal padding only
+    expand: true;                        // makes listview fill available height
+    orientation: vertical;
+    valign: 0.5;                         // center vertically
+}
+
+listview {
+    padding: 20px;
+    spacing: 12px;                       // slightly looser spacing between thumbs
+    columns: 7;
+    lines: 1;
+    flow: horizontal;
+    fixed-height: true;
+    scrollbar: false;
+    cycle: true;
+    border: 0px;
+    separator: none;
+    expand: true;                        // vertically centers content
+    valign: 0.5;
+    halign: 0.5;                         // horizontally centered too
+}
+
+element {
+    border-radius: 0px;                  // subtle rounded corners
+    children: [element-icon];
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    transition: 200;                     // smooth hover/select animations
+}
+
+element.selected {
+    border: 4px solid;
+    border-color: #ffffff;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0.05);  // soft highlight behind selection
+}
+
+element-icon {
+    size: 330px 500px;                   // slightly refined proportions
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+    expand: true;
+    scale: "fit";
+}

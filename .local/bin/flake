@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+nix flake init --template github:lazyfiki/templates#$1
+direnv allow

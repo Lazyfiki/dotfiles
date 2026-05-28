@@ -1,0 +1,68 @@
+@import url("/home/ahmed/.cache/wal/colors-waybar.css");
+
+.nautilus-window {
+    background: transparent;
+    color: white;
+}
+
+.nautilus-window .sidebar-pane .navigation-sidebar {
+    background: transparent;
+    color: white;
+}
+
+.sidebar-row:selected, .sidebar-row:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.image-button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.image-button > button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.image-button > button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-icon {
+    color: @color1;
+}
+
+.collapse-spacing {
+    background: @background;
+    color: white;
+}
+
+.sidebar-pane, headerbar {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.nautilus-window headerbar {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: white;
+}
+
+.top-bar {
+    background: transparent;
+    color: white;
+}
+
+.nautilus-window .view,
+.nautilus-window .content {
+    background: @background;
+    color: white;
+}
+
+.nautilus-window .nautilus-list-view row:selected {
+    background-color: @color1;
+    color: black;
+}

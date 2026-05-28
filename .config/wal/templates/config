@@ -1,0 +1,13 @@
+sort=-time
+layer=overlay
+background-color={color8}
+width=420
+height=180
+border-size=2
+border-color={color8}
+border-radius=32
+margin=20
+padding=24
+max-icon-size=64
+default-timeout=10000
+font=JetBrains Mono 16

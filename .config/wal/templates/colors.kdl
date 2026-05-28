@@ -1,0 +1,44 @@
+overview {
+    backdrop-color "{color8}"
+}
+
+recent-windows {
+    highlight {
+        active-color "{color1}"
+        urgent-color "#ff9999ff"
+    }
+}
+
+layout {
+    focus-ring {
+        active-color "#527c68"
+        inactive-color "#50505000"
+    }
+
+    border {
+        active-color "{background}00"
+        inactive-color "{color1}"
+        urgent-color "#9b0000"
+    }
+
+    shadow {
+        color "{background}a0"
+    }
+
+    insert-hint {
+        color "{color1}"
+    }
+
+
+    tab-indicator {
+        active-color "{foreground}"
+        inactive-color "{background}"
+    }
+}
+
+layer-rule {
+    match namespace="^waybar$"
+    shadow {
+        color "{background}"
+    }
+}

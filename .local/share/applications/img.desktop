@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Image viewer
+Icon=nsxiv
+Exec=nsxiv -a %F

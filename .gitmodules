@@ -1,0 +1,3 @@
+[submodule "swaync-widgets"]
+	path = nixos/pkgs/swaync-widgets
+	url = https://github.com/luiz734/swaync-widgets.git

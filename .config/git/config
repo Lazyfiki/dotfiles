@@ -1,0 +1,19 @@
+[advice]
+	addEmptyPathspec = false
+	pushNonFastForward = false
+	statusHints = false
+
+[core]
+	compression = 9
+	preloadindex = true
+	whitespace = "error"
+
+[init]
+	defaultBranch = "master"
+
+[url "git@github.com:Lazyfiki/"]
+	insteadOf = "ahmed:"
+
+[user]
+	email = "lazyfiki@gmail.com"
+	name = "Ahmed Hamzaoui"

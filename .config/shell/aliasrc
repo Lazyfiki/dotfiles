@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+alias \
+    ytbdl="nix run nixpkgs#yt-dlp -- -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytadl="nix run nixpkgs#yt-dlp -- -x -f bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytdl="nix run nixpkgs#yt-dlp -- -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+    ytpdl="nix run nixpkgs#yt-dlp -- -f best -o '%(playlist_index)s. %(title)s.%(ext)s' --external-downloader=aria2c" \
+
+alias \
+    hst="history 1 -1 | cut -c 8- | sort | uniq | fzf --layout reverse | tr -d '\n' | xclip -sel c" \
+    my_ip="ip address | grep -o \"inet 192.*/\" | awk '{ print \$2 }' | tr / ' ' | xargs" \
+    xsc="xclip -selection clipboard" \
+
+alias \
+    fzf="fzf --layout reverse" \
+    python="python3" \
+    sqlite="sqlite3" \
+    sxiv="nsxiv" \
+    vim="nvim" \
+
+alias \
+    ls="ls --color=tty --time-style='+%_m月%d日  %Y
+%_m月%d日 %H:%M'" \
+    df="df -h" \
+    du="du -h" \
+    free="free -h" \
+    ip="ip -color=auto" \
+    # lsblk="lsblk | bat -l conf -p" \
+
+alias nix-shell="nix-shell --run zsh"

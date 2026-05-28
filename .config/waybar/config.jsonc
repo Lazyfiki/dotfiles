@@ -1,0 +1,217 @@
+{
+    "layer": "top",
+    "margin": 0,
+    "spacing": 25,
+    "border-size": 0,
+    "modules-left": [
+        "custom/launcher",
+        "niri/window",
+    ],
+    "modules-center": [
+        "custom/workspaces",
+    ],
+    "modules-right": [
+        "group/expand",
+        "custom/input",
+        "custom/weather",
+        "backlight",
+        "network",
+        "bluetooth",
+        "pulseaudio",
+        "battery",
+        "clock",
+    ],
+
+    "wlr/taskbar": {
+        "icon-size": 36,
+        "on-click": "activate",
+    },
+
+    "niri/window": {
+        "format": "{app_id}",
+        "rewrite": {
+            "zen-beta": "Zen Browser",
+            "com.mitchellh.ghostty": "Ghostty",
+            "org.gnome.Nautilus": "Files",
+            "com.github.th_ch.youtube_music": "Youtube Music"
+        }
+    },
+
+    "custom/workspaces": {
+        "exec": "~/.config/waybar/niri-workspaces",
+        "return-type": "json",
+        "format": "{}"
+    },
+
+    "custom/input": {
+        "exec": "/home/ahmed/.config/waybar/scripts/input.sh",
+        "interval": 1
+    },
+
+    "clock": {
+        "format": "{:L%B%d日、%A %H:%M}",
+        "interval": 1,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "format": {
+                "today": "<span background='#ffffff' color='#000000'><b>{}</b></span>"
+            }
+        },
+        "on-click": "swaync-client -t -sw"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-alt": "{percent}% {icon}",
+        "format-icons": [""],
+        "tooltip-format": "{percent}% {icon}"
+    },
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "current-only": true,
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "active-only": false,
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+        },
+    },
+
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        "on-click": "activate",
+        "max-length": 200,
+        "rewrite": {
+            "^(?!.*\\S).*": "Desktop"
+        }
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "ENG",
+    },
+
+    "custom/launcher": {
+        "format": "<span font_family='Symbols Nerd Font Mono'></span>",
+        "tooltip": false,
+        "on-click": "rofi -show drun -config $HOME/.config/rofi/appdrawer.rasi"
+    },
+    "network": {
+        "format-wifi": "<span font_family='Font Awesome 6 Pro' font_weight='bold'></span>",
+        "format-ethernet":"",
+        "format-disconnected": "<span font_family='Font Awesome 6 Duotone Solid' font_weight='bold'>\uf6ac</span>",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+        "tooltip-format-ethernet": "{ifname}  ",
+        "on-click": "~/.config/quickshell/qs_manager.sh toggle network"
+    },
+    "bluetooth": {
+        "format-on": "<span font_family='Font Awesome 6 Pro'></span>",
+        "format-off": "BT-off",
+        "format-disabled": "",
+        "format-connected-battery": "{device_battery_percentage}% 󰂯",
+        "format-alt": "{device_alias}󰂯",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+        "on-click-right": "blueman-manager"
+    },
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "interval": 600,
+    },
+    "battery": {
+        "interval":30,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% <span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
+        "format-charging": "{capacity}% <span font_family='Font Awesome 6 Duotone' size='18000' rise='-2600'>\uf376</span>",
+        "format-plugged": "{capacity}% <span font_family='Font Awesome 6 Duotone' size='18000' rise='-2600'>\uf376</span>",
+        "format-alt": "<span font_family='Font Awesome 6 Pro' size='18000' rise='-2600'>{icon}</span>",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ],
+        "on-click": "~/.config/quickshell/qs_manager.sh toggle battery"
+    },
+    "pulseaudio": {
+        "format": "<span font_family='Font Awesome 6 Pro Solid'>{icon}</span>",
+        // "format-alt": "{volume}% <span font_family='Font Awesome 6 Pro Solid'>{icon}</span>",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "<span font_family='Font Awesome 6 Duotone Solid'>\uf2e2</span>",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", "", ""]
+        },
+        "on-click": "~/.config/quickshell/qs_manager.sh toggle volume"
+    },
+    "custom/expand": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/endpoint":{
+        "format": "|",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 15
+    },
+
+    "group/expand": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 600,
+            "transition-to-left": true,
+            "click-to-reveal": true,
+        },
+        "modules": [
+            "custom/expand",
+            "tray",
+            "custom/endpoint",
+        ],
+    },
+    "cpu": {
+        // "format": "\uF201 {usage}%",
+        "format-critical":  "<span color='#c20821'><b>\uF201 {usage}%</b></span>",
+        "format-high":      "<span color='#e03c52'>\uF201 {usage}%</span>",
+        "format-medium":    "<span color='#85c600'>\uF201 {usage}%</span>",
+        "format-low":       "<span color='grey'>\uF201 {usage}%</span>",
+        "tooltip": false,
+        "interval": 2,
+        "states": {
+            "critical": 80,
+            "high": 50,
+            "medium": 5,
+            "low": 0,
+        },
+    },
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-positionX": "none",
+  "control-center-positiony": "none",
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 0,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+  "control-center-width": 500,
+  "control-center-height": 1600,
+  "fit-to-screen": false,
+  "layer-shell-cover-screen": true,
+
+  "layer-shell": true,
+  "layer": "overlay",
+  "control-center-layer": "overlay",
+  "cssPriority": "user",
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "notification-inline-replies": true,
+  "notification-icon-size": 100,
+  "timeout": 10,
+  "timeout-low": 5,
+  "timeout-critical": 0,
+  "notification-window-width": 500,
+  "keyboard-shortcuts": true,
+  "image-visibility": "always",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+
+  "widgets": [
+    "title",
+    "mpris",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": ""
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Notification Center"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 16,
+      "blur": true
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰐥",
+          "command": "systemctl poweroff"
+        },
+        {
+          "label": "󰜉",
+          "command": "systemctl reboot"
+        },
+        {
+          "label": "󰌾",
+          "command": "$HOME/.config/sway/lock.sh"
+        },
+        {
+          "label": "󰍃",
+          "command": "swaymsg exit"
+        },
+        {
+          "label": "󰏥",
+          "command": "systemctl suspend"
+        },
+        {
+          "label": "󰛳",
+          "command": "nm-connection-editor"
+        },
+        {
+          "label": "󰂯",
+          "command": "blueman-manager"
+        },
+        {
+          "label": "",
+          "command": "kooha"
+        }
+      ]
+    }
+  }
+}

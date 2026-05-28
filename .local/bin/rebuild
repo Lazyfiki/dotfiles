@@ -1,0 +1,38 @@
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p alejandra nh
+
+set -e
+set -o pipefail
+
+path=$HOME/.dotfiles/nixos/
+
+$EDITOR $path/hosts/legionpro/configuration.nix -c "cd $path"
+
+pushd "$path"
+
+if git diff --quiet '*.nix'; then
+    echo "No changes detected, exiting."
+    popd
+    exit 0
+fi
+
+alejandra . &>/dev/null \
+  || ( alejandra . ; echo "formatting failed!" && exit 1)
+
+git diff -U0 '*.nix'
+
+echo "NixOS Rebuilding..."
+
+sudo nixos-rebuild switch --flake "$path#$HOST" $@
+
+current=$(nh os info | grep current)
+
+git commit -am "$current"
+
+popd
+
+if [ -n "${DISPLAY}" ]; then
+    notify-send -e "NixOS Rebuilt OK" --icon=system-software-update
+else
+    echo -e "\x1b[1;32m✅ NixOS Rebuilt Successfully!\x1b[0m"
+fi

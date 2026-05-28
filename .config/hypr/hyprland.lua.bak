@@ -1,0 +1,2 @@
+require("custom/general.lua")
+require("custom/keybinds.lua")

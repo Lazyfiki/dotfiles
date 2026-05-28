@@ -1,0 +1,9 @@
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p neovim-remote
+
+servers=$(nvr --nostart --serverlist)
+
+while IFS= read -r server; do
+    echo "Sending ReloadColors to $server"
+    nvr --servername "$server" -c "ReloadColors" --nostart -s
+done <<< "$servers"
